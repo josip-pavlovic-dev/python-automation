@@ -1,46 +1,50 @@
-# 🗂️ File Organizer Automation | Automatizacija Organizacije Fajlova
+# 📁 File Organizer Automation | Automatizacija Organizacije Fajlova
 
 ## 📌 Description | Opis
 
 **EN:**  
-This script automates file organization by sorting files in a target folder into subfolders based on file extension (e.g., .pdf, .jpg, .txt...).
+This script organizes files in a target directory by sorting them into subfolders based on file extension (e.g. `.pdf`, `.jpg`, `.txt`).
 
 **SR:**  
-Ovaj skript automatski organizuje fajlove tako što ih razvrstava po ekstenzijama u odgovarajuće podfoldere (npr. .pdf, .jpg, .txt...).
+Ova skripta automatski organizuje fajlove tako što ih razvrstava po ekstenzijama u odgovarajuće podfoldere (npr. `.pdf`, `.jpg`, `.txt`).
 
 ---
 
-## 🔧 Features | Funkcionalnosti
+## ⚙️ Features | Funkcionalnosti
 
 - **EN:** Scans the target directory  
-- **SR:** Skenira određeni folder
+  **SR:** Skenira ciljni folder
 
 - **EN:** Creates subfolders by file type (if not already present)  
-- **SR:** Kreira podfoldere za svaku vrstu fajla (ako ne postoje)
+  **SR:** Kreira podfoldere za svaku vrstu fajlova (ako ne postoje)
 
 - **EN:** Moves files into corresponding subfolders  
-- **SR:** Premesti fajlove u odgovarajuće podfoldere
+  **SR:** Premesta fajlove u odgovarajuće podfoldere
 
 ---
 
-## 🧠 What have I Learnd | Šta sam naučio
+## 🧠 What I Have Learned | Šta sam naučio
 
-- **EN:** Working with file system modules like `os` and `shutil`  
-- **SR:** Rad sa fajl sistemom pomoću modula `os` i `shutil`
+- **EN:** Working with file system modules like `os`, `shutil`  
+  **SR:** Korišćenje modula za rad sa fajlovima (`os`, `shutil`)
 
-- **EN:** Loops, conditionals, string operations  
-- **SR:** Petlje, uslovi, rad sa stringovima
+- **EN:** Looping, conditional logic, file path operations  
+  **SR:** Petlje, uslovni izrazi, operacije sa putanjama fajlova
 
-- **EN:** Practical use of `os.listdir()`, `os.path`, and `shutil.move()`  
-- **SR:** Praktična primena `os.listdir()`, `os.path`, `shutil.move()`
+- **EN:** Practical experience in writing Python automation  
+  **SR:** Praktično iskustvo u pisanju Python automatizacije
 
 ---
 
-## 📁 Project Structure | Struktura Projekta
+## 📂 Project Structure | Struktura Projekta
 
 ```
-python-automation/
-└── 01-file-organizer/
-    ├── main.py
-    └── README.md
+01-file-organizer/
+├── main.py
+├── test_files/
+│   ├── pdf/
+│   ├── jpg/
+│   └── ...
+├── README.md
+├── .gitignore
 ```
