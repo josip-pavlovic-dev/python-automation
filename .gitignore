@@ -1,19 +1,33 @@
-# Python cache files
+# .gitignore file for Python-automation project | .gitignore fajl za Python-automation projekat
+
+# Python cache files | Keš fajlovi za Python
 __pycache__/
 *.py[cod]
 
-# Environment variables
+# Test folder (globalno definisan test direktorijum) | Global test folder
+/test_folder/
+
+# Test folder in day03_file_management | Test folder unutar day03_file_management
+day03_file_management/test_folder/
+
+# File Organizer test files | Test fajlovi za File Organizer
+01-file-organizer/test_files/
+
+# Log files | Log fajlovi
+*.log
+log.txt
+
+# Environment variables | Varijable okruženja
 .env
 *.env
 
-# Virtual environments
+# Virtual environments | Virtuelna okruženja
 venv/
-env/
+.env/
 
-# macOS system files
+# macOS system files | macOS sistemski fajlovi
 .DS_Store
 
-# VS Code settings
+# VS Code settings | Podešavanja za VS Code
 .vscode/
-
 desktop.ini
