@@ -1,70 +1,60 @@
-# 🐍 Python Automation Roadmap
+# 🐍 Python Automation Projects
 
-## 🇬🇧 English Version
+![Last Commit](https://img.shields.io/github/last-commit/jolepavlovic/python-automation?style=flat-square)
+![Repo Size](https://img.shields.io/github/repo-size/jolepavlovic/python-automation?style=flat-square)
+![License](https://img.shields.io/github/license/jolepavlovic/python-automation?style=flat-square)
 
-### 📅 Duration
-6 months (Jul–Dec 2025)
-
-### 📌 Focus Split
-- 60% Python Automation
-- 20% Web Development
-- 20% Data Engineering
-
-### 🧭 Monthly Breakdown
-**Month 1 (July)**:
-- Finish "Automate the Boring Stuff with Python" (main sections)
-- Do 2–3 small automation projects (e.g. renaming files, sending emails, filling forms)
-- Learn to use Git and GitHub for each project
-- Document your work in README files
-
-**Month 2–3**:
-- Deeper focus on automation with Python libraries (e.g. `os`, `shutil`, `pyautogui`, `requests`, `smtplib`)
-- Build intermediate automations like:
-  - Web scraping with BeautifulSoup
-  - Working with PDFs/Excel
-  - Automating repetitive workflows on Windows
-
-**Month 4–6**:
-- Learn Task Scheduling (e.g. with Task Scheduler or `cron`)
-- Package your scripts as CLI tools
-- Document everything
-- Start a portfolio repo (automation-portfolio)
+> **EN/RS bilingual project repository. See project sections below.**
+>
+> **ENGLISH:** Python automation journey built through practical, self-paced learning over 6 months.  
+> **СРПСКИ:** Пут учења аутоматизације у Python-у кроз практичан рад у периоду од 6 месеци.
 
 ---
 
-## 🇷🇸 Verzija na srpskom
+## 📂 Projects Overview
 
-### 📅 Trajanje
-6 meseci (jul–decembar 2025)
-
-### 📌 Fokus
-- 60% Python automatizacija
-- 20% Web development
-- 20% Inženjering podataka
-
-### 🧭 Raspored po mesecima
-**Mesec 1 (jul)**:
-- Završiti kurs *Automate the Boring Stuff with Python*
-- Napraviti 2–3 manja projekta automatizacije (npr. preimenovanje fajlova, slanje mejlova, popunjavanje formulara)
-- Koristiti Git i GitHub za svaki projekat
-- Pisati dokumentaciju uz svaki projekat
-
-**Meseci 2–3**:
-- Fokus na biblioteke za automatizaciju (`os`, `shutil`, `pyautogui`, `requests`, `smtplib`)
-- Projekti srednje težine:
-  - Web scraping (BeautifulSoup)
-  - Rad sa PDF i Excel fajlovima
-  - Automatizacija svakodnevnih Windows zadataka
-
-**Meseci 4–6**:
-- Učenje task scheduling (Task Scheduler, `cron`)
-- Pakovanje skripti kao CLI alati
-- Dokumentovanje
-- Pokretanje repozitorijuma sa automatizacionim portfoliom
+| Day | Project Name         | Preview                                 | Description |
+|-----|----------------------|------------------------------------------|-------------|
+| 01  | [File Organizer](./01-file-organizer) | ![preview](./assets/01-file-organizer%20-preview-1.png) | Python script that organizes files in a directory into subfolders based on file extensions. |
+| 02  | [File Info Extractor](./day02_file_info) | *(preview coming soon)* | Script that reads all files in a folder and prints metadata (size, extension, creation date...). |
+| 03  | [File Management Suite](./day03_file_management) | ![preview](./assets/day03-preview-1.png) | Modular suite for scanning, cleaning and generating reports from file structures. |
 
 ---
 
-📌 *Repo: python-automation*  
-📁 *Folder: ~/dev-learning/python-automation*
+## 📌 About This Repo
 
+This repository serves as a **chronological archive** of all automation mini-projects built during my transition from civil engineering to programming.
+
+Each project folder contains:
+- `main.py` – main automation logic
+- `test_files/` – test samples used during development
+- `README.md` – bilingual project documentation (EN/RS)
+- Optional `*.sh` setup scripts for testing folders
+
+---
+
+## 🧠 Learning Goals (СРПСКИ)
+
+- ✅ Чврста основа у Python синтакси и рад са фајловима
+- ✅ Свакодневна вежба кроз мини-пројекте
+- ✅ Развој навика писања документације и тестирања
+- ⏳ Прелазак на сложеније аутоматизације (web scraping, GUI...)
+- 🎯 Циљ: job-ready Python portfolio до краја 2025
+
+---
+
+## 🖼️ Additional Screenshots
+
+| Project | View |
+|--------|------|
+| Day 01 | ![preview](./assets/01-file-organizer%20-preview-2.png) ![preview](./assets/01-file-organizer%20-preview-3.png) |
+| Day 03 | ![preview](./assets/day03-preview-2.png) ![preview](./assets/day03-preview-3.png) |
+
+---
+
+## ✅ License
+
+This repository is licensed under the MIT License.
+
+---
 

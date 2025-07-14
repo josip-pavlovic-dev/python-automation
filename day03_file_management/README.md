@@ -41,6 +41,16 @@
 - EN: Testing scripts using bash and subprocess automation  
 - SR: Testiranje skripti pomoću bash-a i subprocess automatizacije
 
+🗒️ Logging and Error Handling | 🗒️ Logovanje i Rukovanje Greškama
+
+- EN:
+    1. Introduced a reusable logger.py module that logs messages with timestamps to log.txt, helping with debugging and tracing program flow.
+    2. Also practiced using try, except, and raise to catch and handle runtime errors safely.
+
+- SR:
+    1. Uveden je višekratno upotrebljiv modul logger.py koji beleži poruke sa vremenskom oznakom u fajl log.txt, što olakšava debagovanje i praćenje toka programa.
+    2. Vežbano je i korišćenje try, except i raise za bezbedno hvatanje i obradu grešaka u toku izvršavanja.
+
 ---
 
 ## 📂 Folder Structure | 📂 Struktura Foldera
