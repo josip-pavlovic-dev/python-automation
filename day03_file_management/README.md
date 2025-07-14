@@ -73,13 +73,13 @@ Ovaj projekat je usmeren na savladavanje manipulacije fajlovima i direktorijumim
 
 🗒️ Logging and Error Handling | 🗒️ Logovanje i Rukovanje Greškama
 
-- EN:
-    1. Introduced a reusable `logger.py` module that logs messages with timestamps to `log.txt`, helping with debugging and tracing program flow.
-    2. Practiced `try`, `except`, and `raise` for safe runtime error handling.
+# EN:
+Introduced a reusable `logger.py` module that logs messages with timestamps to `log.txt`, helping with debugging and tracing program flow.
+Practiced `try`, `except`, and `raise` for safe runtime error handling.
 
-- SR:
-    1. Uveden je višekratno upotrebljiv modul `logger.py` koji beleži poruke sa vremenskom oznakom u fajl `log.txt`, što olakšava debagovanje i praćenje toka programa.
-    2. Vežbano je korišćenje `try`, `except` i `raise` za bezbedno hvatanje i obradu grešaka.
+# SR:
+Uveden je višekratno upotrebljiv modul `logger.py` koji beleži poruke sa vremenskom oznakom u fajl `log.txt`, što olakšava debagovanje i praćenje toka programa.
+Vežbano je korišćenje `try`, `except` i `raise` za bezbedno hvatanje i obradu grešaka.
 
 ---
 
