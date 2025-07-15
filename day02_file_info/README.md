@@ -3,11 +3,36 @@
 **Project type:** Python Automation  
 **Date:** 2025-07-14  
 **Status:** ✅ Completed  
-**Preview images:**  
-![Preview 1](../assets/day02_file_info/day02_file_info-preview-1.png)
-![Preview 2](../assets/day02_file_info/day02_file_info-preview-2.png)
-![Preview 3](../assets/day02_file_info/day02_file_info-preview-3.png)
-![Preview 4](../assets/day02_file_info/day02_file_info-preview-4.png)
+
+<h3 align="center">🖼️ Preview Images / Pregled slika</h3>
+
+<table align="center">
+  <tr>
+    <td align="center">
+      <img src="assets/day02_file_info-preview-3.png" width="300"/><br/>
+      <strong>EN:</strong> Initial folder with files<br/>
+      <strong>SR:</strong> Početni folder sa fajlovima
+    </td>
+    <td align="center">
+      <img src="assets/day02_file_info-preview-4.png" width="300"/><br/>
+      <strong>EN:</strong> Terminal execution<br/>
+      <strong>SR:</strong> Pokretanje skripte u terminalu
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="assets/day02_file_info-preview-2.png" width="300"/><br/>
+      <strong>EN:</strong> Extracted file metadata<br/>
+      <strong>SR:</strong> Izvučeni metapodaci o fajlovima
+    </td>
+    <td align="center">
+      <img src="assets/day02_file_info-preview-1.png" width="300"/><br/>
+      <strong>EN:</strong> Folder content after analysis<br/>
+      <strong>SR:</strong> Sadržaj foldera nakon analize
+    </td>
+  </tr>
+</table>
+
 
 ---
 
@@ -107,16 +132,7 @@ day02_file_info/
 
 ---
 
-## 🖼️ Gallery
-
-![Preview 1](../assets/day02_file_info/day02_file_info-preview-1.png)
-![Preview 2](../assets/day02_file_info/day02_file_info-preview-2.png)
-![Preview 3](../assets/day02_file_info/day02_file_info-preview-3.png)
-![Preview 4](../assets/day02_file_info/day02_file_info-preview-4.png)
-
----
-
 ## ©️ Author
 
-Josip Pavlović  
-Repository: [python-automation](https://github.com/yourusername/python-automation)
+**Josip Pavlović**  
+**Repository:** [python-automation](https://github.com/Jole85/python-automation)
