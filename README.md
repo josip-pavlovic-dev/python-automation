@@ -19,9 +19,9 @@
   <table>
     <thead>
       <tr>
-        <th align="center">Project</th>
+        <th align="left">Project</th>
         <th align="center">Preview</th>
-        <th align="center">Description</th>
+        <th align="left">Description</th>
       </tr>
     </thead>
     <tbody>
