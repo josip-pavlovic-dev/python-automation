@@ -1,8 +1,9 @@
 # 🐍 Python Automation Projects
 
-[![License](https://img.shields.io/github/license/jolepavlovic/python-automation?style=flat-square)](LICENSE)
-[![Repo Size](https://img.shields.io/github/repo-size/jolepavlovic/python-automation?style=flat-square)](https://github.com/jolepavlovic/python-automation)
-[![Last Commit](https://img.shields.io/github/last-commit/jolepavlovic/python-automation?style=flat-square)](https://github.com/jolepavlovic/python-automation/commits/main)
+[![License](https://img.shields.io/github/license/Jole85/python-automation?style=flat-square)](LICENSE)
+[![Repo Size](https://img.shields.io/github/repo-size/Jole85/python-automation?style=flat-square)](https://github.com/Jole85/python-automation)
+[![Last Commit](https://img.shields.io/github/last-commit/Jole85/python-automation?style=flat-square)](https://github.com/Jole85/python-automation/commits/main)
+
 
 
 ## ✨ Bilingual Repository / Dvojezični repozitorijum
