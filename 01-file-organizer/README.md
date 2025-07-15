@@ -2,35 +2,35 @@
 
 ## 📌 Description | Opis
 
-EN: This project automatically organizes files in a selected folder by moving them into subfolders based on file extensions. It simulates a real-life use case where a user downloads or collects various types of files and wants to keep their workspace clean.
+- **EN:** This project automatically organizes files in a selected folder by moving them into subfolders based on file extensions. It simulates a real-life use case where a user downloads or collects various types of files and wants to keep their workspace clean.
 
-SR: Projekat automatski organizuje fajlove u izabranom folderu tako što ih razvrstava u podfoldere prema tipu ekstenzije. Simulira svakodnevnu situaciju kada korisnik želi da organizuje preuzete fajlove i održi urednost svog sistema.
+- **SR:** Projekat automatski organizuje fajlove u izabranom folderu tako što ih razvrstava u podfoldere prema tipu ekstenzije. Simulira svakodnevnu situaciju kada korisnik želi da organizuje preuzete fajlove i održi urednost svog sistema.
 
 ---
 
 ## ⚙️ Features | Funkcionalnosti
 
-- EN: Automatically detects file extensions and creates matching folders
+- **EN:** Automatically detects file extensions and creates matching folders
 
-- SR: Automatski detektuje ekstenzije fajlova i kreira odgovarajuće foldere
+- **SR:** Automatski detektuje ekstenzije fajlova i kreira odgovarajuće foldere
 
-- EN: Moves files into designated folders based on type (e.g. `.txt`, `.jpg`, `.pdf`)
+- **EN:** Moves files into designated folders based on type (e.g. `.txt`, `.jpg`, `.pdf`)
 
-- SR: Premesta fajlove u pripadajuće foldere na osnovu tipa (npr. `.txt`, `.jpg`, `.pdf`)
+- **SR:** Premesta fajlove u pripadajuće foldere na osnovu tipa (npr. `.txt`, `.jpg`, `.pdf`)
 
-- EN: Skips moving files that are already in their correct folder
+- **EN:** Skips moving files that are already in their correct folder
 
-- SR: Preskače fajlove koji su već u odgovarajućem folderu
+- **SR:** Preskače fajlove koji su već u odgovarajućem folderu
 
-- EN: Logs all actions to `log.txt`
+- **EN:** Logs all actions to `log.txt`
 
-- SR: Beleži sve akcije u `log.txt` fajl
+- **SR:** Beleži sve akcije u `log.txt` fajl
 
 ---
 
 ## 🧠 What I Learned | Šta sam naučio
 
-EN:
+**EN:**
 
 - Working with `os` and `shutil` libraries for file operations
 - Creating reusable logging modules
@@ -38,7 +38,7 @@ EN:
 - Modularizing Python code and organizing folders
 - Practicing real-world CLI automation
 
-SR:
+**SR:**
 
 - Korišćenje `os` i `shutil` biblioteka za manipulaciju fajlovima
 - Kreiranje višekratno upotrebljivih modula za logovanje
@@ -71,8 +71,8 @@ SR:
 
 ## 🖼️ Preview | Pregled
 
-**EN:** Visual steps of script execution  
-**SR:** Vizuelni koraci izvršavanja skripte
+<h4 align="center"><strong>EN:</strong> Visual steps of script execution</h4>  
+<h4 align="center"><strong>SR:</strong> Vizuelni koraci izvršavanja skripte</h4>
 <div align="center">
   <table>
     <tr>

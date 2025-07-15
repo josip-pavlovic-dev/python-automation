@@ -19,9 +19,9 @@
   <table>
     <thead>
       <tr>
-        <th align="left">Project</th>
+        <th align="center">Project</th>
         <th align="center">Preview</th>
-        <th align="left">Description</th>
+        <th align="center">Description</th>
       </tr>
     </thead>
     <tbody>
@@ -117,4 +117,4 @@ Projekti su građeni od nule, bez framework-a, uz potpuno razumevanje i Git pra�
 
 ## ✅ License
 
-This repository is licensed under the MIT License.
+This repository is licensed under the **MIT License**.
