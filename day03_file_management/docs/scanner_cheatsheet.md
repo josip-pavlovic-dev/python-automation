@@ -1,42 +1,38 @@
-# 🧪 Scanner Cheatsheet / Vodič za Scanner skriptu
+# 🧪 Scanner Cheatsheet | Vodič za Scanner skriptu
 
-Dvojezični vodič za razumevanje i upotrebu `scanner.py` skripte u okviru projekta **Day 03 – File Management Suite**.
+##### 🇬🇧: A bilingual guide for understanding and using the `scanner.py' script within the **Day 03 – File Management Suite** project.
+##### 🇷🇸: Dvojezični vodič za razumevanje i upotrebu `scanner.py` skripte u okviru projekta **Day 03 – File Management Suite**.
 
----
+## 📌 Purpose | Svrha
 
-## 📌 Purpose / Svrha
+### 🇬🇧: The `scanner.py` script recursively traverses a target directory and lists all files and subdirectories, capturing key attributes.
 
-**EN:**  
-The `scanner.py` script recursively traverses a target directory and lists all files and subdirectories, capturing key attributes.
-
-**SR:**  
-Skripta `scanner.py` rekurzivno prolazi kroz ciljni direktorijum i prikazuje sve fajlove i poddirektorijume sa ključnim informacijama.
+### 🇷🇸: Skripta `scanner.py` rekurzivno prolazi kroz ciljni direktorijum i prikazuje sve fajlove i poddirektorijume sa ključnim informacijama.
 
 ---
 
-## ⚙️ Usage / Korišćenje
+## ⚙️ Usage | Korišćenje
 
 ```bash
 python scanner.py test_folder
 ```
 
-- `test_folder`: Path to the directory you want to scan. / Putanja do direktorijuma koji želite da skenirate.
+##### 🇬🇧`test_folder`: Path to the directory you want to scan.
+##### 🇷🇸 `test_folder`: Putanja do direktorijuma koji želite da skenirate.
 
 ---
 
-## 📁 Output / Izlaz
+## 📁 Output | Izlaz
 
-**EN:**  
-Prints the folder structure, listing each file and subfolder with indentation to reflect hierarchy.
+### 🇬🇧: Prints the folder structure, listing each file and subfolder with indentation to reflect hierarchy.
 
-**SR:**  
-Prikazuje strukturu direktorijuma, navodeći svaki fajl i podfolder sa uvlačenjem koje odražava hijerarhiju.
+### 🇷🇸: Prikazuje strukturu direktorijuma, navodeći svaki fajl i podfolder sa uvlačenjem koje odražava hijerarhiju.
 
 ---
 
-## 🧠 Key Concepts / Ključni koncepti
+## 🧠 Key Concepts | Ključni koncepti
 
-| Concept                     | Python Modules/Functions      | Objašnjenje (SR/EN) |
+| Concept                     | Python Modules/Functions      | Objašnjenje (🇷🇸/🇬🇧) |
 |----------------------------|-------------------------------|---------------------|
 | Directory Traversal        | `os.walk()`                   | Šeta kroz strukturu direktorijuma / Traverses directories |
 | Indented Output            | `level * "  "`                | Vizuelno prikazuje hijerarhiju foldera / Shows folder depth |
@@ -46,7 +42,7 @@ Prikazuje strukturu direktorijuma, navodeći svaki fajl i podfolder sa uvlačenj
 
 ---
 
-## 🧩 Sample Output / Primer izlaza
+## 🧩 Sample Output | Primer izlaza
 
 ```
 📁 test_folder
@@ -58,11 +54,9 @@ Prikazuje strukturu direktorijuma, navodeći svaki fajl i podfolder sa uvlačenj
 
 ---
 
-## ✍️ Author Note / Napomena autora
+## ✍️ Author Note | Napomena autora
 
-**EN:**  
-This script was created as a practice in recursive directory exploration and argument validation, aiming to understand how directory trees can be visualized in terminal.
+### 🇬🇧: This script was created as a practice in recursive directory exploration and argument validation, aiming to understand how directory trees can be visualized in terminal.
 
-**SR:**  
-Skripta je nastala kao vežba u rekurzivnom pretraživanju direktorijuma i validaciji argumenata. Cilj je bio vizualizovati strukturu direktorijuma u terminalu.
+### 🇷🇸: Skripta je nastala kao vežba u rekurzivnom pretraživanju direktorijuma i validaciji argumenata. Cilj je bio vizualizovati strukturu direktorijuma u terminalu.
 

@@ -8,7 +8,7 @@ The script `size_cleaner.py` recursively scans a folder and **removes all files 
 
 ---
 
-## 🧩 Funkcija / Function: `clean_by_size`
+## 🧩 Funkcija | Function: `clean_by_size`
 
 ```python
 clean_by_size(folder_path, min_size=100)
@@ -26,7 +26,7 @@ clean_by_size("test_folder", min_size=150)
 
 ---
 
-## 🔎 Testiranje skripte / Testing Script: `test_size_cleaner.py`
+## 🔎 Testiranje skripte | Testing Script: `test_size_cleaner.py`
 
 | Deo testa | Objašnjenje (🇷🇸)                                   | Explanation (🇬🇧)                           |
 |-----------|-----------------------------------------------------|---------------------------------------------|
@@ -37,7 +37,7 @@ clean_by_size("test_folder", min_size=150)
 
 ---
 
-## 📄 Log poruke / Log Messages
+## 📄 Log poruke | Log Messages
 
 | Nivo | Poruka (🇷🇸)                                   | Message (🇬🇧)                            |
 |------|-----------------------------------------------|------------------------------------------|
@@ -48,9 +48,9 @@ clean_by_size("test_folder", min_size=150)
 
 ---
 
-## 📦 Logički tok / Execution Flow
+## 📦 Logički tok | Execution Flow
 
-1. ✅ Ulazni folder se prosleđuje funkciji / The input folder is passed to the function
-2. 🔄 Rekurzivno se obilaze svi fajlovi / All files are traversed recursively
-3. ❌ Ako je veličina fajla < `min_size` → fajl se briše / If the file size is < `min_size` → the file is deleted
-4. 🧾 Sve radnje se loguju uz odgovarajući nivo (INFO/WARNING/ERROR) / All actions are logged with the appropriate level (INFO/WARNING/ERROR)
+1. ✅ Ulazni folder se prosleđuje funkciji | The input folder is passed to the function
+2. 🔄 Rekurzivno se obilaze svi fajlovi | All files are traversed recursively
+3. ❌ Ako je veličina fajla < `min_size` → fajl se briše | If the file size is < `min_size` → the file is deleted
+4. 🧾 Sve radnje se loguju uz odgovarajući nivo (INFO/WARNING/ERROR) | All actions are logged with the appropriate level (INFO/WARNING/ERROR)
