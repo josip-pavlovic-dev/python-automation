@@ -1,36 +1,84 @@
-# 🐍 Python Automation Projects
+## 🐍 Python Automation Projects
 
 ![Last Commit](https://img.shields.io/github/last-commit/jolepavlovic/python-automation?style=flat-square)
 ![Repo Size](https://img.shields.io/github/repo-size/jolepavlovic/python-automation?style=flat-square)
 ![License](https://img.shields.io/github/license/jolepavlovic/python-automation?style=flat-square)
 
-> **EN/RS bilingual project repository. See each project folder for full documentation.**
+>## ✨ Bilingual Repository / Dvojezični repozitorijum
 >
-> **ENGLISH:** Python automation journey built through real-world scripts and terminal-based automation.  
-> **SRPSKI:** Put učenja automatizacije u Python-u kroz skripte iz realnog života i rad u terminalu.
+>**ENGLISH:** Python automation journey built through real-world scripts and terminal-based automation.  
+>**SRPSKI (latinica):** Put učenja automatizacije u Python-u kroz skripte iz realnog života i rad u terminalu.
 
----
+
+
 
 ## 📂 Projects Overview / Pregled projekata
 
-| Day | Project Name / Naziv projekta | Preview | Description |
-|-----|-------------------------------|---------|-------------|
-| 01  | [File Organizer](./01-file-organizer) | ![preview](./assets/01-file-organizer%20-preview-1.png) | Sorts files into folders by extension using `os` and `shutil`. |
-| 02  | [File Info Extractor](./day02_file_info) | *(preview coming soon)* | Extracts file metadata (name, size, type, creation date...) from target folders. |
-| 03  | [File Management Suite](./day03_file_management) | ![preview](./assets/day03-preview-1.png) | Modular tools for creating, cleaning, scanning and testing file structures. |
+<table>
+  <thead>
+    <tr>
+      <th align="left">Project</th>
+      <th align="center">Preview</th>
+      <th align="left">Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <a href="./01-file-organizer"><strong>Day 01 – File Organizer</strong></a>
+      </td>
+      <td align="center">
+        <img src="01-file-organizer/assets/01-file-organizer -preview-3.png" width="160"/>
+        <img src="01-file-organizer/assets/01-file-organizer -preview-2.png" width="160"/>
+        <img src="01-file-organizer/assets/01-file-organizer -preview-4.png" width="160"/>
+        <img src="01-file-organizer/assets/01-file-organizer -preview-5.png" width="160"/>
+      </td>
+      <td>
+        Sorts files into folders by extension using <code>os</code> and <code>shutil</code>.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <a href="./day02_file_info"><strong>Day 02 – File Info Extractor</strong></a>
+      </td>
+      <td align="center">
+        <img src="day02_file_info/assets/day02_file_info-preview-4.png" width="160"/>
+        <img src="day02_file_info/assets/day02_file_info-preview-1.png" width="160"/>
+        <img src="day02_file_info/assets/day02_file_info-preview-2.png" width="160"/>
+        <img src="day02_file_info/assets/day02_file_info-preview-3.png" width="160"/>
+      </td>
+      <td>
+        Extracts file metadata (name, size, type, creation date...) from target folders.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <a href="./day03_file_management"><strong>Day 03 – File Management Suite</strong></a>
+      </td>
+      <td align="center">
+        <img src="day03_file_management/assets/day03-preview-4.png" width="160"/>
+        <img src="day03_file_management/assets/day03-preview-2.png" width="160"/>
+        <img src="day03_file_management/assets/day03-preview-1.png" width="160"/>
+        <img src="day03_file_management/assets/day03-preview-3.png" width="160"/>
+      </td>
+      <td>
+        Modular tools for creating, cleaning, scanning and testing file structures.
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 ---
 
-## 🗂️ Project Folder Structure / Struktura foldera
+## 📁 Project Folder Structure / Struktura foldera
 
 Each project contains:
-
-- `main.py` – core logic or CLI entry point  
-- `logger.py` – reusable logging module with timestamps  
-- `README.md` – bilingual project documentation  
-- `test_files/` or `test_folder/` – input data for testing  
-- Optional `.sh` scripts – automated test setup for Git Bash  
-- Screenshots stored in `assets/`
+- `main.py` — core logic or CLI entry point
+- `logger.py` — reusable logging module with timestamps
+- `README.md` — bilingual project documentation
+- `test_files/` or `test_folder/` — input data for testing
+- Optional `.sh` scripts — automated test setup for Git Bash
+- Screenshots stored in `assets/` folder for each project
 
 ---
 
@@ -51,15 +99,6 @@ Each project contains:
 - ✅ Učenje modularnog programiranja i ponovne upotrebe koda  
 - ⏳ Proširenje na automatizaciju (GUI, scrape, cron...)  
 - 🎯 Cilj: Python portfolio spreman za posao do kraja 2025.
-
----
-
-## 🖼️ Additional Screenshots / Dodatni pregledi
-
-| Project | View |
-|--------|------|
-| Day 01 | ![preview](./assets/01-file-organizer%20-preview-2.png) ![preview](./assets/01-file-organizer%20-preview-3.png) |
-| Day 03 | ![preview](./assets/day03-preview-2.png) ![preview](./assets/day03-preview-3.png) |
 
 ---
 
