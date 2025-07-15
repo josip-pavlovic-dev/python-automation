@@ -1,14 +1,15 @@
-## 🐍 Python Automation Projects
+# 🐍 Python Automation Projects
 
-![Last Commit](https://img.shields.io/github/last-commit/jolepavlovic/python-automation?style=flat-square)
-![Repo Size](https://img.shields.io/github/repo-size/jolepavlovic/python-automation?style=flat-square)
-![License](https://img.shields.io/github/license/jolepavlovic/python-automation?style=flat-square)
+[![License](https://img.shields.io/github/license/jolepavlovic/python-automation?style=flat-square)](LICENSE)
+[![Repo Size](https://img.shields.io/github/repo-size/jolepavlovic/python-automation?style=flat-square)](https://github.com/jolepavlovic/python-automation)
+[![Last Commit](https://img.shields.io/github/last-commit/jolepavlovic/python-automation?style=flat-square)](https://github.com/jolepavlovic/python-automation/commits/main)
 
->## ✨ Bilingual Repository / Dvojezični repozitorijum
->
+
+## ✨ Bilingual Repository / Dvojezični repozitorijum
+
 >**ENGLISH:** Python automation journey built through real-world scripts and terminal-based automation.  
 >**SRPSKI (latinica):** Put učenja automatizacije u Python-u kroz skripte iz realnog života i rad u terminalu.
-
+---
 
 
 
@@ -28,10 +29,10 @@
         <a href="./01-file-organizer"><strong>Day 01 – File Organizer</strong></a>
       </td>
       <td align="center">
-        <img src="01-file-organizer/assets/01-file-organizer -preview-3.png" width="160"/>
-        <img src="01-file-organizer/assets/01-file-organizer -preview-2.png" width="160"/>
-        <img src="01-file-organizer/assets/01-file-organizer -preview-4.png" width="160"/>
-        <img src="01-file-organizer/assets/01-file-organizer -preview-5.png" width="160"/>
+        <img src="01-file-organizer/assets/01-file-organizer-preview-3.png" width="160"/>
+        <img src="01-file-organizer/assets/01-file-organizer-preview-2.png" width="160"/>
+        <img src="01-file-organizer/assets/01-file-organizer-preview-4.png" width="160"/>
+        <img src="01-file-organizer/assets/01-file-organizer-preview-5.png" width="160"/>
       </td>
       <td>
         Sorts files into folders by extension using <code>os</code> and <code>shutil</code>.
