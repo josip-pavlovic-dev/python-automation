@@ -118,3 +118,5 @@ Projekti su građeni od nule, bez framework-a, uz potpuno razumevanje i Git pra�
 ## ✅ License
 
 This repository is licensed under the **MIT License**.
+
+---

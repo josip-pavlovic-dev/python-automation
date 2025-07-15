@@ -74,9 +74,10 @@ Takođe sadrži:
 
 **Cilj:** Vežbanje rada sa modulima `os`, `datetime`, `logging` i rad u terminalu. Projektom sam dodatno učvrstio rad sa putanjama i logovanjem grešaka.
 
+
 ---
 
-## 🧠 What I Learned / Šta sam naučio
+## 🧠 What I Learned | Šta sam naučio
 
 ### What I Learned (EN)
 
@@ -105,17 +106,17 @@ Takođe sadrži:
 
 ---
 
-## 🚀 How to Run
+## 🚀 How to Run | Kako pokrenuti
 
 ```bash
 python main.py
 ```
 
-Then enter the name of the folder you want to analyze (e.g., `test_files`).
+Then enter the name of the folder you want to analyze (e.g., `test_files`) | Zatim uneti ime foldera koji želite da analizirate (npr., `test_files`)
 
 ---
 
-## 📁 Folder Structure
+## 📁 Folder Structure | Struktura Projekta
 
 ```
 day02_file_info/
@@ -132,7 +133,7 @@ day02_file_info/
 
 ---
 
-## ©️ Author
+## ©️ Author | Autor
 
 **Josip Pavlović**  
 **Repository:** [python-automation](https://github.com/Jole85/python-automation)
