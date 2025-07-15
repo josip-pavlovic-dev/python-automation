@@ -73,31 +73,31 @@ SR:
 
 **EN:** Visual steps of script execution  
 **SR:** Vizuelni koraci izvršavanja skripte
+<div align="center">
+  <table>
+    <tr>
+      <td align="center">
+        <img src="assets/01-file-organizer-preview-2.png" width="300"/>
+        <p><strong>EN:</strong> Initial folder with mixed files<br/><strong>SR:</strong> Početni folder sa izmešanim fajlovima</p>
+      </td>
+      <td align="center">
+        <img src="assets/01-file-organizer-preview-4.png" width="300"/>
+        <p><strong>EN:</strong> Organized files after script execution<br/><strong>SR:</strong> Organizovani fajlovi nakon pokretanja skripte</p>
+      </td>
+    </tr>
+    <tr>
+      <td align="center">
+        <img src="assets/01-file-organizer-preview-3.png" width="300"/>
+        <p><strong>EN:</strong> Script execution in terminal<br/><strong>SR:</strong> Izvršavanje skripte u terminalu</p>
+      </td>
+      <td align="center">
+        <img src="assets/01-file-organizer-preview-1.png" width="150"/>
+        <p><strong>EN:</strong> Final folder structure<br/><strong>SR:</strong> Konačna struktura foldera</p>
+      </td>
+    </tr>
+  </table>
+</div>
 
-<table>
-  <tr>
-    <td align="center">
-      <img src="assets/01-file-organizer-preview-2.png" width="300"/>
-      <p><strong>EN:</strong> Initial folder with mixed files<br/><strong>SR:</strong> Početni folder sa izmešanim fajlovima</p>
-    </td>
-    <td align="center">
-      <img src="assets/01-file-organizer-preview-4.png" width="300"/>
-      <p><strong>EN:</strong> Organized files after script execution<br/><strong>SR:</strong> Organizovani fajlovi nakon pokretanja skripte</p>
-    </td>
-  </tr>
-  <tr>
-    <td align="center">
-      <img src="assets/01-file-organizer-preview-3.png" width="300"/>
-      <p><strong>EN:</strong> Script execution in terminal<br/><strong>SR:</strong> Izvršavanje skripte u terminalu</p>
-    </td>
-    <td align="center">
-      <img src="assets/01-file-organizer-preview-1.png" width="100"/>
-      <p><strong>EN:</strong> Final folder structure<br/><strong>SR:</strong> Konačna struktura foldera</p>
-    </td>
-  </tr>
-</table>
-
----
 
 ## 🧑‍💻 Author & Learning Goal | Autor i ciljevi učenja
 

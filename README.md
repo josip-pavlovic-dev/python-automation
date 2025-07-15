@@ -15,60 +15,61 @@
 
 
 ## 📂 Projects Overview / Pregled projekata
-
-<table>
-  <thead>
-    <tr>
-      <th align="left">Project</th>
-      <th align="center">Preview</th>
-      <th align="left">Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>
-        <a href="./01-file-organizer"><strong>Day 01 – File Organizer</strong></a>
-      </td>
-      <td align="center">
-        <img src="01-file-organizer/assets/01-file-organizer-preview-3.png" width="160"/>
-        <img src="01-file-organizer/assets/01-file-organizer-preview-2.png" width="160"/>
-        <img src="01-file-organizer/assets/01-file-organizer-preview-4.png" width="160"/>
-        <img src="01-file-organizer/assets/01-file-organizer-preview-5.png" width="160"/>
-      </td>
-      <td>
-        Sorts files into folders by extension using <code>os</code> and <code>shutil</code>.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <a href="./day02_file_info"><strong>Day 02 – File Info Extractor</strong></a>
-      </td>
-      <td align="center">
-        <img src="day02_file_info/assets/day02_file_info-preview-4.png" width="160"/>
-        <img src="day02_file_info/assets/day02_file_info-preview-1.png" width="160"/>
-        <img src="day02_file_info/assets/day02_file_info-preview-2.png" width="160"/>
-        <img src="day02_file_info/assets/day02_file_info-preview-3.png" width="160"/>
-      </td>
-      <td>
-        Extracts file metadata (name, size, type, creation date...) from target folders.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <a href="./day03_file_management"><strong>Day 03 – File Management Suite</strong></a>
-      </td>
-      <td align="center">
-        <img src="day03_file_management/assets/day03-preview-4.png" width="160"/>
-        <img src="day03_file_management/assets/day03-preview-2.png" width="160"/>
-        <img src="day03_file_management/assets/day03-preview-1.png" width="160"/>
-        <img src="day03_file_management/assets/day03-preview-3.png" width="160"/>
-      </td>
-      <td>
-        Modular tools for creating, cleaning, scanning and testing file structures.
-      </td>
-    </tr>
-  </tbody>
-</table>
+<div align="center">
+  <table>
+    <thead>
+      <tr>
+        <th align="left">Project</th>
+        <th align="center">Preview</th>
+        <th align="left">Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          <a href="./01-file-organizer"><strong>Day 01 – File Organizer</strong></a>
+        </td>
+        <td align="center">
+          <img src="01-file-organizer/assets/01-file-organizer-preview-3.png" width="160"/>
+          <img src="01-file-organizer/assets/01-file-organizer-preview-2.png" width="160"/>
+          <img src="01-file-organizer/assets/01-file-organizer-preview-4.png" width="160"/>
+          <img src="01-file-organizer/assets/01-file-organizer-preview-5.png" width="160"/>
+        </td>
+        <td>
+          Sorts files into folders by extension using <code>os</code> and <code>shutil</code>.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="./day02_file_info"><strong>Day 02 – File Info Extractor</strong></a>
+        </td>
+        <td align="center">
+          <img src="day02_file_info/assets/day02_file_info-preview-4.png" width="160"/>
+          <img src="day02_file_info/assets/day02_file_info-preview-1.png" width="160"/>
+          <img src="day02_file_info/assets/day02_file_info-preview-2.png" width="160"/>
+          <img src="day02_file_info/assets/day02_file_info-preview-3.png" width="160"/>
+        </td>
+        <td>
+          Extracts file metadata (name, size, type, creation date...) from target folders.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="./day03_file_management"><strong>Day 03 – File Management Suite</strong></a>
+        </td>
+        <td align="center">
+          <img src="day03_file_management/assets/day03-preview-4.png" width="160"/>
+          <img src="day03_file_management/assets/day03-preview-2.png" width="160"/>
+          <img src="day03_file_management/assets/day03-preview-1.png" width="160"/>
+          <img src="day03_file_management/assets/day03-preview-3.png" width="160"/>
+        </td>
+        <td>
+          Modular tools for creating, cleaning, scanning and testing file structures.
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
 ---
 
