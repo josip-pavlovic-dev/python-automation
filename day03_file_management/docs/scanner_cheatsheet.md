@@ -5,9 +5,8 @@
 
 ## 📌 Purpose | Svrha
 
-### 🇬🇧: The `scanner.py` script recursively traverses a target directory and lists all files and subdirectories, capturing key attributes.
-
-### 🇷🇸: Skripta `scanner.py` rekurzivno prolazi kroz ciljni direktorijum i prikazuje sve fajlove i poddirektorijume sa ključnim informacijama.
+##### 🇬🇧: The `scanner.py` script recursively traverses a target directory and lists all files and subdirectories, capturing key attributes.
+##### 🇷🇸: Skripta `scanner.py` rekurzivno prolazi kroz ciljni direktorijum i prikazuje sve fajlove i poddirektorijume sa ključnim informacijama.
 
 ---
 
