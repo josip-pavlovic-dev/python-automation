@@ -35,24 +35,24 @@ folder_structure = {
 #### 🇷🇸: Rečnik definiše nazive foldera kao ključeve i listu fajlova koji se kreiraju unutar njih kao vrednosti.
 
 ```python
-base_dir = "test_folder"
+base_folder = os.path.join(os.path.dirname(__file__), "test_folder")
 ```
 #### 🇬🇧: The root folder under which all test folders and files will be created.  
 #### 🇷🇸: Root folder u kojem će biti kreirani svi test folderi i fajlovi.
 
 ```python
-os.makedirs(base_dir, exist_ok=True)
+os.makedirs(base_folder, exist_ok=True)
 ```
 #### 🇬🇧: Creates the base directory. If it exists, no error is raised.  
 #### 🇷🇸: Kreira osnovni direktorijum. Ako već postoji, greška se ne prijavljuje.
 
 ```python
 for folder, files in folder_structure.items():
-    path = os.path.join(base_dir, folder)
+    path = os.path.join(base_folder, folder)
     os.makedirs(path, exist_ok=True)
 ```
-#### 🇬🇧: Iterates through each folder, joins its path with `base_dir` and creates it.  
-#### 🇷🇸: Prolazi kroz svaki folder, spaja njegovu putanju sa `base_dir` i kreira ga.
+#### 🇬🇧: Iterates through each folder, joins its path with `base_folder` and creates it.  
+#### 🇷🇸: Prolazi kroz svaki folder, spaja njegovu putanju sa `base_folder` i kreira ga.
 
 ```python
 for file in files:
