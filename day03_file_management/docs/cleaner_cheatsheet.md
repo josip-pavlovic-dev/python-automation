@@ -27,7 +27,7 @@ def clean_folder(folder_path, extension=".tmp"):
     ...
 ```
 
-| Parametar/ Parameter      | Tip / Type   |Podrazumevano / By default | Description (EN)                    | Opis (SR)                                  |
+| Parametar/ Parameter      | Tip / Type   |Podrazumevano / By default | Description (🇬🇧)                    | Opis (🇷🇸)                                  |
 |----------------|--------|---------|-------------------------------------|---------------------------------------------|
 | `folder_path`  | str    | —       | Path to target directory            | Putanja do ciljnog direktorijuma            |
 | `extension`    | str    | `.tmp`  | File extension to delete            | Ekstenzija fajlova za brisanje              |
@@ -40,6 +40,12 @@ def clean_folder(folder_path, extension=".tmp"):
 - Log levels used: `INFO`, `ERROR`  
 - Example log output:
 
+```
+INFO: Starting to clean folder: test_folder
+INFO: Deleted file: test_folder/temp1.tmp
+INFO: Cleanup complete. Total 2 files deleted.
+```
+
 #### 🇷🇸:  
 - Sve poruke se beleže pomoću `log()` iz `logger.py`  
 - Korišćeni nivoi logovanja: `INFO`, `ERROR`  
@@ -47,7 +53,7 @@ def clean_folder(folder_path, extension=".tmp"):
 
 ```
 INFO: Započinjem čišćenje foldera: test_folder
-INFO: Obrisan fajl: test_folder|temp1.tmp
+INFO: Obrisan fajl: test_folder/temp1.tmp
 INFO: Čišćenje završeno. Obrisano ukupno 2 fajlova.
 ```
 
