@@ -1,8 +1,7 @@
 import os
 
-# Kreiranje osnovnog foldera
-
-base_folder = "test_folder"
+# Kreiranje osnovnog foldera u folderu gde se nalazi skripta.
+base_folder = os.path.join(os.path.dirname(__file__), "test_folder")
 
 # Lista podfoldera
 subfolders = ["docs", "images", "scripts"]

@@ -73,6 +73,45 @@ for file in files:
 - `f.write(...)`: writes content into a file | zapisuje sadržaj u fajl
 
 ---
+<h2>🖼️ Script in Action / Izvršavanje skripte</h2>
+
+<table align="center">
+  <tr>
+    <td align="center">
+      <img src="../assets/file_structure_creator-step1.png" width="250"/><br/>
+      <p><strong>🇬🇧</strong> Explorer before script execution<br/>
+         <strong>🇷🇸</strong> Explorer pre pokretanja skripte</p>
+    </td>
+    <td align="center">
+      <img src="../assets/file_structure_creator-step6.png" width="250"/><br/>
+      <p><strong>🇬🇧</strong> Script execution – folders are being created<br/>
+         <strong>🇷🇸</strong> Pokretanje skripte – kreiraju se folderi</p>
+    </td>
+    <td align="center">
+      <img src="../assets/file_structure_creator-step2.png" width="250"/><br/>
+      <p><strong>🇬🇧</strong> New folder <code>test_folder</code> appears in explorer<br/>
+         <strong>🇷🇸</strong> Novi folder <code>test_folder</code> pojavljuje se u exploreru</p>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="../assets/file_structure_creator-step3.png" width="250"/><br/>
+      <p><strong>🇬🇧</strong> Structure of <code>test_folder</code> in VS Code<br/>
+         <strong>🇷🇸</strong> Struktura foldera <code>test_folder</code> u VS Codu</p>
+    </td>
+    <td align="center">
+      <img src="../assets/file_structure_creator-step4.png" width="250"/><br/>
+      <p><strong>🇬🇧</strong> Content of file <code>info.txt</code><br/>
+         <strong>🇷🇸</strong> Sadržaj fajla <code>info.txt</code></p>
+    </td>
+    <td align="center">
+      <img src="../assets/file_structure_creator-step5.png" width="250"/><br/>
+      <p><strong>🇬🇧</strong> Script output log in terminal<br/>
+         <strong>🇷🇸</strong> Izlazni log skripte u terminalu</p>
+    </td>
+  </tr>
+</table>
+
 
 ## 🚀 Ideas for Extension | Ideje za proširenje
 
@@ -80,3 +119,4 @@ for file in files:
 - Add logic to populate files with specific content templates | Dodajte logiku za popunjavanje fajlova određenim sadržajem
 - Generate random content using `faker` module | Generiranje slučajnog sadržaja pomoću `faker` modula
 - Include file types like `.json`, `.csv`, etc. | Uključite tipove datoteka kao što su `.json`, `.csv` itd.
+

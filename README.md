@@ -3,6 +3,7 @@
 [![License](https://img.shields.io/github/license/Jole85/python-automation?style=flat-square)](LICENSE)
 [![Repo Size](https://img.shields.io/github/repo-size/Jole85/python-automation?style=flat-square)](https://github.com/Jole85/python-automation)
 [![Last Commit](https://img.shields.io/github/last-commit/Jole85/python-automation?style=flat-square)](https://github.com/Jole85/python-automation/commits/main)
+[![Python Version](https://img.shields.io/badge/python-3.13+-blue.svg?style=flat-square)](https://www.python.org/downloads/)
 
 
 
