@@ -68,7 +68,7 @@ for file in files:
 ## 📚 Related Concepts | Povezani koncepti
 
 - `os.makedirs()`: creates directories recursively | rekurzivno kreira datoteke(foldere)
-- `os.path.join()`: safe way to join file paths |siguran način za spajanje putanja datoteka(foldera)
+- `os.path.join()`: safe way to join file paths | siguran način za spajanje putanja datoteka(foldera)
 - `with open(...)`: ensures file is properly closed | osigurava da je datoteka pravilno zatvorena
 - `f.write(...)`: writes content into a file | zapisuje sadržaj u fajl
 
