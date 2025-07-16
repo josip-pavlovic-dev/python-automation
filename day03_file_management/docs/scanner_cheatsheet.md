@@ -97,12 +97,12 @@ target_folder = os.path.join(os.path.dirname(__file__), "test_folder")
     📄 image.png
 ```
 ## ✅ Summary / Rezime
-
+#### 🇬🇧:
 - Modular file scanning logic with full path awareness  
 - Safe execution across environments using `__file__`  
 - Clear logging for each scanned file  
 - Practical use for automation and analysis
-
+#### 🇷🇸:
 - Modularna logika za skeniranje fajlova  
 - Bezbedno izvršavanje korišćenjem `__file__`  
 - Jasno logovanje svakog fajla  
