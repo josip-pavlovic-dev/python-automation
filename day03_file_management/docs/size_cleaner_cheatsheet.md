@@ -1,12 +1,11 @@
 # 🧹 Cheatsheet: size_cleaner.py
 
-## 🇷🇸 Opis skripte
+### 🇷🇸 Opis skripte
 Skripta `size_cleaner.py` prolazi kroz dati folder (i njegove podfoldere) i **briše sve fajlove koji su manji od zadate veličine** u bajtovima. Koristi `os` modul i `logger.py` za logovanje svake akcije.
 
-## 🇬🇧 Script Description
+### 🇬🇧 Script Description
 The script `size_cleaner.py` recursively scans a folder and **removes all files smaller than a defined byte size**. It uses the `os` module and `logger.py` for logging each action.
 
----
 
 ## 🧩 Funkcija | Function: `clean_by_size`
 

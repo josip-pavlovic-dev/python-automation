@@ -16,8 +16,8 @@
 python scanner.py test_folder
 ```
 
-##### 🇬🇧:`test_folder`: Path to the directory you want to scan.
-##### 🇷🇸: `test_folder`: Putanja do direktorijuma koji želite da skenirate.
+#### 🇬🇧:`test_folder`: Path to the directory you want to scan.
+#### 🇷🇸: `test_folder`: Putanja do direktorijuma koji želite da skenirate.
 
 ---
 
@@ -39,7 +39,6 @@ python scanner.py test_folder
 | Path Manipulation          | `os.path.join()`              | Spaja putanje bez grešaka / Joins paths safely |
 | Basic Validation           | `if not os.path.isdir()`      | Proverava da li je putanja validan direktorijum / Validates input path |
 
----
 
 ## 🧩 Sample Output | Primer izlaza
 
@@ -51,11 +50,8 @@ python scanner.py test_folder
     📄 image.png
 ```
 
----
-
 ## ✍️ Author Note | Napomena autora
 
 #### 🇬🇧: This script was created as a practice in recursive directory exploration and argument validation, aiming to understand how directory trees can be visualized in terminal.
-
 #### 🇷🇸: Skripta je nastala kao vežba u rekurzivnom pretraživanju direktorijuma i validaciji argumenata. Cilj je bio vizualizovati strukturu direktorijuma u terminalu.
 

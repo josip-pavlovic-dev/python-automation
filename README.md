@@ -6,22 +6,22 @@
 
 
 
-## ✨ Bilingual Repository / Dvojezični repozitorijum
+## ✨ Bilingual Repository | Dvojezični repozitorijum
 
->**ENGLISH:** Python automation journey built through real-world scripts and terminal-based automation.  
->**SRPSKI (latinica):** Put učenja automatizacije u Python-u kroz skripte iz realnog života i rad u terminalu.
+#### 🇬🇧: Python automation journey built through real-world scripts and terminal-based automation.  
+#### 🇷🇸: Put učenja automatizacije u Python-u kroz skripte iz realnog života i rad u terminalu.
 ---
 
 
 
-## 📂 Projects Overview / Pregled projekata
+## 📂 Projects Overview | Pregled projekata
 <div align="center">
   <table>
     <thead>
       <tr>
-        <th align="left">Project</th>
-        <th align="center">Preview</th>
-        <th align="left">Description</th>
+        <th align="left">Project | Projekat</th>
+        <th align="center">Preview | Pregled</th>
+        <th align="left">Description | Opis</th>
       </tr>
     </thead>
     <tbody>
@@ -36,7 +36,7 @@
           <img src="01-file-organizer/assets/01-file-organizer-preview-5.png" width="160"/>
         </td>
         <td>
-          Sorts files into folders by extension using <code>os</code> and <code>shutil</code>.
+          🇬🇧: Sorts files into folders by extension using <code>os</code> and <code>shutil</code>.<br>🇷🇸: Sortira fajlove u foldere prema ekstenziji koristeći <code>os</code> and <code>shutil</code>.
         </td>
       </tr>
       <tr>
@@ -50,7 +50,7 @@
           <img src="day02_file_info/assets/day02_file_info-preview-3.png" width="160"/>
         </td>
         <td>
-          Extracts file metadata (name, size, type, creation date...) from target folders.
+          🇬🇧: Extracts file metadata (name, size, type, creation date...) from target folders.<br>🇷🇸: Izdvaja metapodatke fajlova (naziv, veličinu, tip, datum kreiranja...) iz ciljnih foldera. 
         </td>
       </tr>
       <tr>
@@ -64,7 +64,7 @@
           <img src="day03_file_management/assets/day03-preview-3.png" width="160"/>
         </td>
         <td>
-          Modular tools for creating, cleaning, scanning and testing file structures.
+          🇬🇧: Modular tools for creating, cleaning, scanning and testing folder and file structures.<br>🇷🇸: Modularni alati za kreiranje, čišćenje, skeniranje i testiranje strukture foldera i fajlova.
         </td>
       </tr>
     </tbody>
@@ -73,10 +73,10 @@
 
 ---
 
-## 📁 Project Folder Structure / Struktura foldera
+## 🇬🇧: 📁 Project Folder Structure | Struktura foldera
 
-Each project contains:
-- `main.py` — core logic or CLI entry point
+#### Each project contains:
+- `main.py` — core logic or **CLI** entry point
 - `logger.py` — reusable logging module with timestamps
 - `README.md` — bilingual project documentation
 - `test_files/` or `test_folder/` — input data for testing
@@ -84,10 +84,19 @@ Each project contains:
 - Screenshots stored in `assets/` folder for each project
 
 ---
+## 🇷🇸: 📁 Project Folder Structure | Struktura foldera
 
-## 🧠 Learning Goals / Ciljevi učenja
+#### Svaki projekta sadrži:
+- `main.py` — osnovna logika ili ulazna tačka **CLI**-ja
+- `logger.py` — modul za višekratnu upotrebu sa vremenskim oznakama
+- `README.md` — dvojezična projektna dokumentacija
+- `test_files/` or `test_folder/` — ulazni podaci za testiranje
+- Opcionalna `.sh` scripta — automatizovano test podešavanje za Git Bash
+- Slike projekata se nalaze u folderu `assets/` u samom projektu
+ 
+## 🧠 Learning Goals | Ciljevi učenja
 
-**ENGLISH**
+#### 🇬🇧:
 - ✅ Master core Python syntax and file operations  
 - ✅ Practice through realistic CLI-based projects  
 - ✅ Build habit of writing clean code and structured README files  
@@ -95,7 +104,7 @@ Each project contains:
 - ⏳ Expand into automation with scheduling, GUIs and web scraping  
 - 🎯 Goal: job-ready Python portfolio by end of 2025
 
-**SRPSKI**
+#### 🇷🇸
 - ✅ Učvrstiti osnove Python sintakse i rada sa fajlovima  
 - ✅ Vežba kroz realne, komandno orijentisane projekte  
 - ✅ Razvijanje navike dokumentacije i čistog koda  
@@ -105,18 +114,15 @@ Each project contains:
 
 ---
 
-## 📌 About This Repository / O repozitorijumu
+## 📌 About This Repository | O repozitorijumu
 
-This is a long-term learning archive created during my transition from civil engineering to software development.  
-Each project is built from scratch using only core Python and CLI tools, with full Git versioning and markdown documentation.
+#### 🇬🇧: This is a long-term learning archive created during my transition from civil engineering to software development. Each project is built from scratch using only core Python and CLI tools, with full Git versioning and markdown documentation.
 
-Ovaj repozitorijum predstavlja arhivu mog prelaska iz građevine u IT.  
-Projekti su građeni od nule, bez framework-a, uz potpuno razumevanje i Git praćenje napretka.
+#### 🇷🇸: Ovaj repozitorijum predstavlja arhivu mog prelaska iz građevine u IT. Projekti su građeni od nule, bez framework-a, uz potpuno razumevanje i Git praćenje napretka.
 
 ---
 
 ## ✅ License
 
-This repository is licensed under the **MIT License**.
-
----
+#### 🇬🇧: This repo is licensed under the **MIT License**.
+#### 🇷🇸: Ovaj repo je licenciran pod **MIT licencom**.
