@@ -1,0 +1,22 @@
+version: 1
+
+settings:
+  language: "en"
+  targets:
+    - "**/*.py"
+    - "**/*.md"
+    - "**/*.sh"
+  default_behavior:
+    comment_style: "full"
+    tone: "professional"
+    response_length: "medium"
+    format: "markdown"
+    language_support: ["en", "sr"]
+  instructions:
+    - Prefer writing bilingual documentation in Markdown files (English + Serbian Latin)
+    - Use docstrings in Python scripts to explain modules and functions
+    - Use descriptive variable and function names
+    - Avoid using external libraries unless explicitly specified
+    - Use Bash scripts only when necessary and name them descriptively (e.g., `setup_test_files.sh`)
+    - Prefer UTC timestamps when working with datetime
+    - Use Python's built-in libraries for common tasks (e.g., `os`, `sys`, `json`, `csv`)
