@@ -4,6 +4,7 @@
 [![Repo Size](https://img.shields.io/github/repo-size/Jole85/python-automation?style=flat-square)](https://github.com/Jole85/python-automation)
 [![Last Commit](https://img.shields.io/github/last-commit/Jole85/python-automation?style=flat-square)](https://github.com/Jole85/python-automation/commits/main)
 [![Python Version](https://img.shields.io/badge/python-3.13+-blue.svg?style=flat-square)](https://www.python.org/downloads/)
+![copilot.yaml configured](./assets/copilot_badge.svg)
 
 
 
@@ -12,8 +13,6 @@
 #### 🇬🇧: Python automation journey built through real-world scripts and terminal-based automation.  
 #### 🇷🇸: Put učenja automatizacije u Python-u kroz skripte iz realnog života i rad u terminalu.
 ---
-
-
 
 ## 📂 Projects Overview | Pregled projekata
 <div align="center">
@@ -122,8 +121,37 @@
 #### 🇷🇸: Ovaj repozitorijum predstavlja arhivu mog prelaska iz građevine u IT. Projekti su građeni od nule, bez framework-a, uz potpuno razumevanje i Git praćenje napretka.
 
 ---
+## 🤖 GitHub Copilot Configuration | GitHub Copilot konfiguracija
 
+![Copilot Enabled](https://img.shields.io/badge/GitHub_Copilot-configured-blue?logo=github&logoColor=white)
+
+
+#### 🇬🇧: This repository uses a [`.github/copilot.yaml`](./.github/copilot.yaml) configuration file to guide GitHub Copilot's behavior.
+#### 🇷🇸: Ovaj repozitorijum koristi fajl [`.github/copilot.yaml`](./.github/copilot.yaml) za konfiguraciju ponašanja GitHub Copilot-a.
+
+#### 🇬🇧: Key configurations include:
+- Bilingual Markdown documentation (English + Serbian Latin)
+- Professional tone and full comment style
+- Python-first automation workflows
+- No external dependencies unless explicitly stated
+- UTC timestamps and descriptive variable naming
+#### 🇷🇸: Ključna podešavanja uključuju:
+- Dvojezična dokumentacija u Markdown fajlovima (engleski + srpska latinica)
+- Profesionalan ton i stil komentara
+- Automatizacija zasnovana na Python skriptama
+- Nema spoljašnjih zavisnosti osim ako nije eksplicitno navedeno
+- Upotreba UTC vremena i deskriptivno imenovanje promenljivih
 ## ✅ License
 
 #### 🇬🇧: This repo is licensed under the **MIT License**.
 #### 🇷🇸: Ovaj repo je licenciran pod **MIT licencom**.
+
+
+
+
+
+
+
+
+
+
