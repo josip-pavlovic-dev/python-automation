@@ -53,10 +53,10 @@ python image_report.py
 day03_file_management/
 │
 ├── test_folder/
-│   ├── images/                 # slike za analizu
-│   └── image_report.csv        # rezultat
+│   ├── images/                 # slike za analizu | images for analysis
+│   └── image_report.csv        # rezultat | final result
 │
-├── image_report.py            # glavna skripta
+├── image_report.py            # glavna skripta | main script
 ```
 
 ## 🧠 Useful Tips | Korisni saveti
@@ -84,3 +84,31 @@ day03_file_management/
 
 #### 🇷🇸: Kreirano kao deo projekta `day03_file_management` u okviru `python-automation` repozitorijuma.
 #### 🇬🇧: Created as part of the `day03_file_management` project within the `python-automation` repository.
+
+---
+### 🖼️ Visual Walkthrough | Vizuelni vodič
+
+<table>
+  <tr>
+    <td align="center">
+      <img src="../assets/image_report-step1.png" width="400"/><br/>
+      <strong>🇬🇧: Opening <code>image_report.py</code> script in VS Code<br/>🇷🇸: Otvaranje skripte ,<code>image_report.py</code> u VS Code-u</strong>
+    </td>
+    <td align="center">
+      <img src="../assets/image_report-step2.png" width="280"/><br/>
+      <strong>🇬🇧: Terminal output while processing images<br/>🇷🇸: Prikaz izlaza u terminalu tokom obrade slika</strong>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="../assets/image_report-step3.png" width="380"/><br/>
+      <strong>🇬🇧: Preview of generated <code>CSV file</code><br/>🇷🇸: Pregled generisanog <code>CSV fajla</code> sa podacima o slikama</strong>
+    </td>
+    <td align="center">
+      <img src="../assets/image_report-step4.png" width="280"/><br/>
+      <strong>🇬🇧: Folder structure with <code>image_report.csv</code><br/>🇷🇸: Struktura foldera sa <code>image_report.csv</code> fajlom</strong>
+    </td>
+  </tr>
+</table>
+
+

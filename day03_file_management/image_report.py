@@ -2,11 +2,14 @@ import os
 from PIL import Image
 import csv
 
+# 📌 Bazna putanja (folder u kome se nalazi ovaj fajl) / Base path (folder containing this script)
+BASE_DIR = os.path.dirname(__file__)
+
 # 📂 Putanja do foldera sa slikama / Path to the image folder
-IMAGE_FOLDER = os.path.join("test_folder", "images")
+IMAGE_FOLDER = os.path.join(BASE_DIR, "test_folder", "images")
 
 # 📝 Putanja do CSV fajla izveštaja / Path to the output CSV report file
-REPORT_FILE = os.path.join("test_folder", "image_report.csv")
+REPORT_FILE = os.path.join(BASE_DIR, "test_folder", "image_report.csv")
 
 
 # 🔍 Ekstrahuje informacije iz jedne slike / Extracts metadata from a single image
@@ -43,6 +46,9 @@ def scan_images(folder_path):
 
 # 💾 Upisuje podatke u CSV fajl / Writes metadata to a CSV file
 def write_csv(report_data, output_path):
+    # ✅ Kreira nadređeni folder ako ne postoji / Creates parent folder if it doesn't exist
+    os.makedirs(os.path.dirname(output_path), exist_ok=True)
+
     with open(output_path, mode="w", newline="") as file:
         writer = csv.DictWriter(file, fieldnames=["filename", "format", "size", "dimensions"])
         writer.writeheader()
@@ -55,4 +61,6 @@ if __name__ == "__main__":
     images = scan_images(IMAGE_FOLDER)
     write_csv(images, REPORT_FILE)
     print(f"[INFO] Izveštaj sačuvan u / Report saved to: {REPORT_FILE}")
+    # 📊 Izveštaj o slikama uspešno generisan! / Image report successfully generated!
+
 # 📊 Izveštaj o slikama uspešno generisan! / Image report successfully generated!
