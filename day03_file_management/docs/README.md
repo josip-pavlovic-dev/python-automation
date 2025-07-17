@@ -3,7 +3,7 @@
 [![Scripts](https://img.shields.io/badge/scripts-6-green?style=flat-square)](../scripts)
 [![Docs](https://img.shields.io/badge/docs-cheatsheets-blue?style=flat-square)](docs/)
 [![License](https://img.shields.io/github/license/Jole85/python-automation?style=flat-square)](../../LICENSE)
-![copilot.yaml configured](./assets/copilot_badge.svg)
+![copilot.yaml configured](../../assets/copilot_badge.svg)
 ---
 
 ## 🧭 🇬🇧: Purpose | 🇷🇸: Svrha
