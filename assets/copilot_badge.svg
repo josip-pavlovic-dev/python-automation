@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="170" height="28">
+  <linearGradient id="g" x2="0" y2="100%">
+    <stop offset="0" stop-color="#444" stop-opacity=".1"/>
+    <stop offset="1" stop-opacity=".1"/>
+  </linearGradient>
+  <g shape-rendering="crispEdges">
+    <rect width="170" height="28" fill="#555"/>
+    <rect x="80" width="90" height="28" fill="#1abc9c"/>
+    <rect width="170" height="28" fill="url(#g)"/>
+  </g>
+  <g fill="#fff" text-anchor="middle"
+     font-family="Verdana,Geneva,DejaVu Sans,sans-serif" font-size="13">
+    <text x="40" y="19">copilot.yaml</text>
+    <text x="125" y="19">configured</text>
+  </g>
+</svg>
