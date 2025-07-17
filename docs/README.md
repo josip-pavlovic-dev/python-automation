@@ -1,32 +1,56 @@
-# 🗂️ Documentation Index | Indeks dokumentacije
+# 📚 Documentation Overview / Pregled dokumentacije
 
-#### 🇬🇧 This folder contains general documentation related to the entire `python-automation` repository.It includes multilingual cheatsheets, CLI tools, usage instructions, and references for various utilities used in file automation scripts.
+[![Repo Size](https://img.shields.io/github/repo-size/Jole85/python-automation?style=flat-square)](https://github.com/Jole85/python-automation)
+[![Last Commit](https://img.shields.io/github/last-commit/Jole85/python-automation?style=flat-square)](https://github.com/Jole85/python-automation/commits/main)
+[![License](https://img.shields.io/github/license/Jole85/python-automation?style=flat-square)](../LICENSE)
 
-#### 🇷🇸: Ova fascikla sadrži opštu dokumentaciju vezanu za ceo `python-automation` repozitorijum. Uključuje dvojezične uputstva, rad u terminalu, objašnjenja alata i referentne materijale za skripte koje služe za automatizaciju rada sa fajlovima.
+🔗 [← Back to Main README](../README.md)
+
+
+## 🧭 Purpose | Svrha
+
+#### 🇬🇧: This folder contains general documentation for the `python-automation` repository: multilingual cheatsheets, CLI usage instructions, and reusable components used across multiple script-based automation projects.
+
+#### 🇷🇸: Ova fascikla sadrži opštu dokumentaciju za repozitorijum `python-automation`: dvojezične „cheatsheet”-ove, uputstva za rad u terminalu i komponente koje se koriste u više skripti za automatizaciju.
 
 ---
 
-## 📚 Cheatsheets
+## 🧾 Cheatsheets
 
-| File | Description (🇬🇧) | Opis (🇷🇸) |
-|------|------------------|-----------|
-| [`./learning_roadmap.md`](learning_roadmap.md) | Learning structure for Python automation, CLI tools and project flow. | Plan učenja Python automatizacije, terminalskih alata i toka rada na projektima. |
-| [`./magick_commands_cheatsheet.md`](magick_commands_cheatsheet.md) | Terminal commands using ImageMagick to generate test images. | Terminal komande pomoću ImageMagick-a za pravljenje test slika. |
-| [`./html_in_md_cheatsheet.md`](html_in_md_cheatsheet.md) | Embedding HTML elements inside Markdown (tables, images). | Umetanje HTML elemenata u Markdown fajlove (tabele, slike). |
+| 📄 Script / Topic | 🇬🇧 Description | 🇷🇸 Opis |
+|------------------|----------------|---------|
+| [`learning_roadmap.md`](learning_roadmap.md) | Learning structure for Python + CLI automation | Plan učenja Python + CLI automatizacije |
+| [`magick_commands_cheatsheet.md`](magick_commands_cheatsheet.md) | ImageMagick terminal commands for image generation | ImageMagick komande za generisanje test slika |
+| [`html_in_md_cheatsheet.md`](html_in_md_cheatsheet.md) | Embedding HTML in Markdown (for layout, screenshots) | HTML elementi u Markdown-u (tabele, slike) |
+
+---
+
+## 📁 Subproject Index
+
+| 📂 Project Folder | 📑 Documentation |
+|------------------|------------------|
+| `day03_file_management` | [📁 Cheatsheets](../day03_file_management/docs/) |
 
 ---
 
 ## 🧭 Navigation | Navigacija
 
-#### 🇬🇧:
-- Each `dayXX_project_name/` folder contains its own `docs/` folder with specific cheatsheets.
-- This folder (`docs/` in root) is for global documentation used across multiple scripts or days.
-#### 🇷🇸:
-- Svaki folder `dayXX_project_name/` sadrži sopstveni podfolder `docs/` sa specifičnim cheatsheetovima.
-- Ovaj folder (`docs/` u root-u) je namenjen za globalnu dokumentaciju koja se koristi u više skripti u toku više dana.
+#### 🇬🇧: Each `dayXX_project_name` folder contains its own `docs/` subfolder with project-specific documentation.
+#### 🇷🇸: Svaka fascikla `dayXX_project_name` sadrži svoj `docs/` folder sa specifičnim projektnim beleškama.
+
 ---
 
-#### 🇬🇧: 📌 All files are bilingual (🇬🇧/🇷🇸) and aim to improve clarity, reusability, and onboarding for future collaboration.
+## 👤 Author | Autor
 
-#### 🇷🇸: 📌 Svi fajlovi su dvojezični (🇬🇧/🇷🇸) i imaju za cilj da unaprede jasnoću, ponovnu upotrebu i lakše uključivanje saradnika u rad.
+**Josip Pavlović**  
+📧 [jolepavlovic@outlook.com](mailto:jolepavlovic@outlook.com)  
+🌍 Novi Sad, Serbia  
+💼 [github.com/Jole85](https://github.com/Jole85)  
+🔁 Career Switch: Civil Engineer → Fullstack Developer  
+
+---
+
+
+
+
 
