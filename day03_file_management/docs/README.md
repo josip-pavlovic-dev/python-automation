@@ -1,9 +1,14 @@
 # 🗃️ Project: day03_file_management
 
-[![Scripts](https://img.shields.io/badge/scripts-6-green?style=flat-square)](../scripts)
-[![Docs](https://img.shields.io/badge/docs-cheatsheets-blue?style=flat-square)](docs/)
-[![License](https://img.shields.io/github/license/Jole85/python-automation?style=flat-square)](../../LICENSE)
+[![Status](../assets/day03_status.svg)](./README.md)
+[![📘 Career Notes](../../assets/career_notes_badge.svg)](../../docs/career_notes.md)
+[![👤 Developer Profile](../../assets/dev_profile_badge.svg)](../../docs/developer_profile.md)
 ![copilot.yaml configured](../../assets/copilot_badge.svg)
+[![Scripts](https://img.shields.io/badge/scripts-6-green?style=flat-square)](../scripts)
+[![Docs](https://img.shields.io/badge/docs-cheatsheets-blue?style=flat-square)](../docs/)
+[![License](https://img.shields.io/github/license/Jole85/python-automation?style=flat-square)](../../LICENSE)
+
+
 ---
 
 ## 🧭 🇬🇧: Purpose | 🇷🇸: Svrha
@@ -82,5 +87,10 @@ day03_file_management/
 #### 📧 [jolepavlovic@outlook.com](mailto:jolepavlovic@outlook.com)
 #### 🌍 Novi Sad, Serbia
 #### 💼 [github.com/Jole85](https://github.com/Jole85)
+
+
+
+
+
 ---
 

@@ -1,5 +1,9 @@
 # Day 04 – Working with `datetime` in Automation / Rad sa `datetime` modulom
 
+[![Status](./assets/day04_status.svg)](./README.md)
+[![👤 Developer Profile](../assets/dev_profile_badge.svg)](../docs/developer_profile.md)
+[![📘 Career Notes](../assets/career_notes_badge.svg)](../docs/career_notes.md)
+
 ## 🧠 Summary / Rezime
 
 ### 🇬🇧: This day focuses on learning and applying the `datetime` and `timedelta` modules in Python to automate tasks involving time and date operations. You will also use previously learned modules like `os` to interact with the filesystem.

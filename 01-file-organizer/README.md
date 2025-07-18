@@ -1,5 +1,8 @@
 # 📁 File Organizer Automation | Automatizacija Organizacije Fajlova
 
+[![Status](./assets/day01_status.svg)](./README.md)
+[![👤 Developer Profile](../assets/dev_profile_badge.svg)](../docs/developer_profile.md)
+[![📘 Career Notes](../assets/career_notes_badge.svg)](../docs/career_notes.md)
 ## 📌 Description | Opis
 
 #### 🇬🇧: This project automatically organizes files in a selected folder by moving them into subfolders based on file extensions. It simulates a real-life use case where a user downloads or collects various types of files and wants to keep their workspace clean.
@@ -101,3 +104,5 @@
 #### 🇬🇧: Josip Pavlović — This project is part of my 6-month plan to transition into a professional software development career. The main objective was to practice file operations, modular coding, and working with real-world directory structures in Python.
 
 #### 🇷🇸: Josip Pavlović — Ovaj projekat je deo mog šestomesečnog plana prelaska u programersku karijeru. Cilj projekta bio je da se kroz praktičan rad savladaju operacije nad fajlovima, modularno programiranje i rad sa realnim strukturom foldera u Pythonu.
+
+

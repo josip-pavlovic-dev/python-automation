@@ -9,20 +9,20 @@
 
 ## 🎯 Summary | Kratka biografija
 
-### 🇬🇧: I'm a civil engineer by profession transitioning into the IT industry since late 2024. With a strong background in logic and mathematics, I'm currently focused on Python automation, web development, and foundational data engineering.
+#### 🇬🇧: I'm a civil engineer by profession transitioning into the IT industry since late 2024. With a strong background in logic and mathematics, I'm currently focused on Python automation, web development, and foundational data engineering.
 
-### 🇷🇸: Po struci sam građevinski inženjer, a od kraja 2024. godine ozbiljno prelazim u IT industriju. Zahvaljujući izraženoj logici i matematičkom razumevanju, trenutno se fokusiram na Python automatizaciju, web development i osnove data engineering-a.
-
----
-
-## 📜 Courses & Certifications | Kursevi i sertifikati 
-
-- ✅ **Programming Basics with C#** – SoftUni  
-  #### *Certificate: 75% (September 2024)*  
-  #### 🇬🇧: *Introduction to programming, conditional statements, loops, basic logic*
-  #### 🇷🇸: *Uvod u programiranje, uslovne naredbe, petlje, osnovna logika*
+#### 🇷🇸: Po struci sam građevinski inženjer, a od kraja 2024. godine ozbiljno prelazim u IT industriju. Zahvaljujući izraženoj logici i matematičkom razumevanju, trenutno se fokusiram na Python automatizaciju, web development i osnove data engineering-a.
 
 ---
+
+## 📜 Certifications | Sertifikati 
+
+### ✅ **Programming Basics with C#** – SoftUni  
+###### *Certificate: 75% (September 2024)*  
+###### 🇬🇧: *Introduction to programming, conditional statements, loops, basic logic*
+###### 🇷🇸: *Uvod u programiranje, uslovne naredbe, petlje, osnovna logika*
+
+## 📖 Courses | Kursevi
 - 🐍 **Python – 100 Days of Code** – Angela Yu (Udemy)  
 - 🤖 **Automate the Boring Stuff with Python** – Al Sweigart (Udemy)  
 - 🌐 **The Complete Web Development Bootcamp** – Angela Yu (Udemy)  
@@ -86,10 +86,11 @@
 #### 🇷🇸: Do kraja 2025. planiram da apliciram za poziciju **Junior Python Developera** ili **Automation inženjera** u timu koji ceni temeljnost, dokumentaciju i kvalitet koda.
 
 ---
-## 📌 Attachments
+## 📌 Attachments | Prilog
 
-- 📄 [CV / Resume](./docs/CV_Josip_Pavlovic.pdf)  
-- 🧾 [Portfolio Projects](./README.md#projects)
+#### 🇬🇧: 📄 [CV / Resume](../docs/cv_en.pdf)
+#### 🇷🇸: 📄 [CV / Rezime](../docs/cv_sr.pdf)  
+#### 🧾 [Portfolio Projects](./README.md#projects)
 
 > 🇬🇧: 📝 *This markdown file is part of my live documentation and personal developer profile.*  
 > 🇷🇸: 📝 *Ovaj markdown fajl je deo moje žive dokumentacije i ličnog profila kao programera.*

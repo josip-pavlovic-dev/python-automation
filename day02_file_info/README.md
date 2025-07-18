@@ -1,5 +1,9 @@
 # 📂 day02_file_info
 
+[![Status](./assets/day02_status.svg)](./README.md)
+[![👤 Developer Profile](../assets/dev_profile_badge.svg)](../docs/developer_profile.md)
+[![📘 Career Notes](../assets/career_notes_badge.svg)](../docs/career_notes.md)
+
 **Project type:** Python Automation  
 **Date:** 2025-07-14  
 **Status:** ✅ Completed  
@@ -130,6 +134,7 @@ day02_file_info/
 ```
 
 ## ©️ Author | Autor
-
 #### Josip Pavlović  
 #### Repository: [python-automation](https://github.com/Jole85/python-automation)
+
+

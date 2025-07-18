@@ -1,10 +1,24 @@
 # 🐍 Python Automation Projects
 
+<!-- Tehnički bedževi -->
 [![License](https://img.shields.io/github/license/Jole85/python-automation?style=flat-square)](LICENSE)
 [![Repo Size](https://img.shields.io/github/repo-size/Jole85/python-automation?style=flat-square)](https://github.com/Jole85/python-automation)
 [![Last Commit](https://img.shields.io/github/last-commit/Jole85/python-automation?style=flat-square)](https://github.com/Jole85/python-automation/commits/main)
 [![Python Version](https://img.shields.io/badge/python-3.13+-blue.svg?style=flat-square)](https://www.python.org/downloads/)
-![copilot.yaml configured](./assets/copilot_badge.svg)
+
+<!-- Personalni i statusni bedževi -->
+![Copilot Configured](./assets/copilot_badge.svg)
+[![👤 Developer Profile](./assets/dev_profile_badge.svg)](./docs/developer_profile.md)
+[![📘 Career Notes](./assets/career_notes_badge.svg)](./docs/career_notes.md)
+
+<!-- Status bedževi po danima -->
+[![Day01](./01-file-organizer/assets/day01_status.svg)](./01-file-organizer/README.md)
+[![Day02](./day02_file_info/assets/day02_status.svg)](./day02_file_info/README.md)
+[![Day03](./day03_file_management/assets/day03_status.svg)](./day03_file_management/docs/README.md)
+[![Day04](./day04_datetime/assets/day04_status.svg)](./day04_datetime/README.md)
+
+
+
 
 
 
@@ -73,9 +87,9 @@
 
 ---
 
-## 🇬🇧: 📁 Project Folder Structure | Struktura foldera
+##  📁 Project Folder Structure | Struktura foldera
 
-#### Each project contains:
+#### 🇬🇧: Each project contains:
 - `main.py` — core logic or **CLI** entry point
 - `logger.py` — reusable logging module with timestamps
 - `README.md` — bilingual project documentation
@@ -83,17 +97,16 @@
 - Optional `.sh` scripts — automated test setup for Git Bash
 - Screenshots stored in `assets/` folder for each project
 
----
-## 🇷🇸: 📁 Project Folder Structure | Struktura foldera
 
-#### Svaki projekta sadrži:
+#### 🇷🇸: Svaki projekta sadrži:
 - `main.py` — osnovna logika ili ulazna tačka **CLI**-ja
 - `logger.py` — modul za višekratnu upotrebu sa vremenskim oznakama
 - `README.md` — dvojezična projektna dokumentacija
 - `test_files/` or `test_folder/` — ulazni podaci za testiranje
 - Opcionalna `.sh` scripta — automatizovano test podešavanje za Git Bash
 - Slike projekata se nalaze u folderu `assets/` u samom projektu
- 
+
+--- 
 ## 🧠 Learning Goals | Ciljevi učenja
 
 #### 🇬🇧:
@@ -122,10 +135,7 @@
 
 ---
 ## 🤖 GitHub Copilot Configuration | GitHub Copilot konfiguracija
-
 ![Copilot Enabled](https://img.shields.io/badge/GitHub_Copilot-configured-blue?logo=github&logoColor=white)
-
-
 #### 🇬🇧: This repository uses a [`.github/copilot.yaml`](./.github/copilot.yaml) configuration file to guide GitHub Copilot's behavior.
 #### 🇷🇸: Ovaj repozitorijum koristi fajl [`.github/copilot.yaml`](./.github/copilot.yaml) za konfiguraciju ponašanja GitHub Copilot-a.
 
@@ -142,9 +152,10 @@
 - Nema spoljašnjih zavisnosti osim ako nije eksplicitno navedeno
 - Upotreba UTC vremena i deskriptivno imenovanje promenljivih
 ## ✅ License
-
 #### 🇬🇧: This repo is licensed under the **MIT License**.
 #### 🇷🇸: Ovaj repo je licenciran pod **MIT licencom**.
+
+
 
 
 
