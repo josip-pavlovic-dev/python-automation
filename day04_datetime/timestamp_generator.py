@@ -2,7 +2,7 @@ import os
 from datetime import datetime, timedelta
 def generate_timestamps(start_date, end_date, interval_minutes):
     """
-    Generates a list of timestamps from start_date to end_date at specified intervals.
+    Generates a list of timestamps from start_date to end_date at specified intervals!
 
     :param start_date: The starting date as a string in 'YYYY-MM-DD' format.
     :param end_date: The ending date as a string in 'YYYY-MM-DD' format.
