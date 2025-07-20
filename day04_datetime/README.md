@@ -7,6 +7,7 @@
 ## 🧠 Summary / Rezime
 
 ### 🇬🇧: This day focuses on learning and applying the `datetime` and `timedelta` modules in Python to automate tasks involving time and date operations. You will also use previously learned modules like `os` to interact with the filesystem.
+
 ### 🇷🇸: Ovaj dan je posvećen učenju i primeni `datetime` i `timedelta` modula u Pythonu za automatizaciju zadataka koji uključuju operacije sa datumima i vremenima. Takođe koristiš prethodno naučene module kao što je `os` za rad sa fajl sistemom.
 
 ---
@@ -18,7 +19,15 @@ day04_datetime/
 ├── timestamp_generator.py         # Task 1
 ├── dated_folder_creator.py        # Task 2
 ├── old_file_checker.py            # Task 3
-└── README.md                      # Documentation
+├── README.md                      # Documentation
+├── docs/                          # Theoretical notes
+│   ├── python_testing_basics.md
+│   ├── import_and_module_structure.md
+│   ├── pylance_explained.md
+│   └── mocking_and_fixtures.md
+└── tests/                         # Unit tests
+    └── test_day04_datetime/
+        └── test_timestamp_generator.py
 ```
 
 ---
@@ -28,21 +37,44 @@ day04_datetime/
 ### 1. `timestamp_generator.py`
 
 #### 🇬🇧: Write a function that generates filenames with the current timestamp (e.g., `log_2025-07-17_19-00-00.txt`).
+
 #### 🇷🇸: Napiši funkciju koja generiše ime fajla sa trenutnim vremenom (npr. `log_2025-07-17_19-00-00.txt`).
 
 ---
 
 ### 2. `dated_folder_creator.py`
 
-### 🇬🇧: Create a folder named with today's date inside an `output/` folder (e.g., `output/2025-07-17`).
-### 🇷🇸: Kreiraj folder sa današnjim datumom unutar `output/` foldera (npr. `output/2025-07-17`).
+#### 🇬🇧: Create a folder named with today's date inside an `output/` folder (e.g., `output/2025-07-17`).
+
+#### 🇷🇸: Kreiraj folder sa današnjim datumom unutar `output/` foldera (npr. `output/2025-07-17`).
 
 ---
 
 ### 3. `old_file_checker.py`
 
-### 🇬🇧: Write a script that lists all files older than X days in a given directory.
-### 🇷🇸: Napiši skriptu koja izlistava sve fajlove starije od X dana u određenom folderu.
+#### 🇬🇧: Write a script that lists all files older than X days in a given directory.
+
+#### 🇷🇸: Napiši skriptu koja izlistava sve fajlove starije od X dana u određenom folderu.
+
+---
+
+## 📘 Theory Docs / Teorijske Beleške
+
+- `python_testing_basics.md` → osnove unit testiranja
+- `import_and_module_structure.md` → moduli i importi
+- `pylance_explained.md` → IntelliSense i Pylance podešavanja
+- `mocking_and_fixtures.md` → mock, patch, setUp/tearDown u testiranju
+
+---
+
+## 🧪 Tests / Testovi
+
+- Testovi se nalaze u `tests/test_day04_datetime/`
+- Pokreću se komandom:
+
+```bash
+python -m unittest discover -s tests
+```
 
 ---
 
@@ -59,14 +91,13 @@ day04_datetime/
 ---
 
 ## 💬 Notes / Beleške
+
 #### 🇷🇸:
-* Koristi `datetime.now()`, `timedelta`, `os.path.getmtime()` i `os.makedirs()`
-* Fokus je na **pisanju funkcija i testiranju u terminalu**, bez tutorijala
-* Ako zapneš, koristi `help(datetime)` i `dir(datetime)` u Python-u za dodatno razumevanje
+
+- Koristi `datetime.now()`, `timedelta`, `os.path.getmtime()` i `os.makedirs()`
+- Fokus je na **pisanju funkcija i testiranju u terminalu**, bez tutorijala
+- Ako zapneš, koristi `help(datetime)` i `dir(datetime)` u Python-u za dodatno razumevanje
 
 ---
 
-🟢 *Project created on: 2025-07-17*
-📍 *Author: Jole – Python Automation Journey*
-
-
+🟢 _Project created on: 2025-07-17_ 📍 _Author: Jole – Python Automation Journey_
