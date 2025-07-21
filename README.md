@@ -42,24 +42,29 @@
   <tbody>
 <tr>
   <td>
-    <a href="./day01_portfolio_landing_page"><strong>Day 01 – Portfolio Landing Page</strong></a>
+    <a href="./01-file-organizer/README.md"><strong>Day 01 – File Organizer</strong></a>
   </td>
   <td align="center">
-    <img src="day01_portfolio_landing_page/assets/day01-preview-1.png" width="160"/>
+    <img src="./01-file-organizer/assets/01-file-organizer-preview-3.png" width="160"/>
+    <img src="./01-file-organizer/assets/01-file-organizer-preview-2.png" width="160"/>
+    <img src="./01-file-organizer/assets/01-file-organizer-preview-5.png" width="160"/>
+    <img src="./01-file-organizer/assets/01-file-organizer-preview-4.png" width="160"/>
   </td>
   <td>
-    🇬🇧: HTML & CSS responsive landing page with mobile-first approach.<br>
-    🇷🇸: HTML i CSS responzivna landing stranica sa pristupom koji favorizuje mobilne uređaje.
+    🇬🇧: CLI project that organizes mixed files by extension into subfolders. Includes reusable logger and test generator.<br>
+    🇷🇸: CLI projekat koji organizuje izmešane fajlove prema ekstenziji u podfoldere. Uključuje višekratno upotrebljiv logger i generator test fajlova.
   </td>
 </tr>
 
 <tr>
   <td>
-    <a href="./day02_file_info"><strong>Day 02 – File Info</strong></a>
+    <a href="./day02_file_info/README.md"><strong>Day 02 – File Info</strong></a>
   </td>
   <td align="center">
-    <img src="day02_file_info/assets/day02-preview-1.png" width="160"/>
-    <img src="day02_file_info/assets/day02-preview-2.png" width="160"/>
+    <img src="./day02_file_info/assets/day02_file_info-preview-4.png" width="160"/>
+    <img src="./day02_file_info/assets/day02_file_info-preview-3.png" width="160"/>
+    <img src="./day02_file_info/assets/day02_file_info-preview-1.png" width="160"/>
+    <img src="./day02_file_info/assets/day02_file_info-preview-2.png" width="160"/>
   </td>
   <td>
     🇬🇧: Basic CLI tool for file path manipulation using `os` module.<br>
@@ -69,15 +74,15 @@
 
 <tr>
   <td>
-    <a href="./day03_file_management"><strong>Day 03 – File Management Suite</strong></a>
+    <a href="./day03_file_management/README.md"><strong>Day 03 – File Management Suite</strong></a>
   </td>
   <td align="center">
-    <img src="day03_file_management/assets/day03-preview-1.png" width="160"/>
-    <img src="day03_file_management/assets/day03-preview-2.png" width="160"/>
-    <img src="day03_file_management/assets/day03-preview-3.png" width="160"/>
-    <img src="day03_file_management/assets/day03-preview-4.png" width="160"/>
-    <img src="day03_file_management/assets/day03-preview-5.png" width="160"/>
-    <img src="day03_file_management/assets/day03-preview-6.png" width="160"/>
+    <img src="./day03_file_management/assets/file_structure_creator-step5.png" width="160"/>
+    <img src="./day03_file_management/assets/scanner-step4.png" width="160"/>
+    <img src="./day03_file_management/assets/cleaner_step4.png" width="160"/>
+    <img src="./day03_file_management/assets/image_report-step2.png" width="160"/>
+    <img src="./day03_file_management/assets/image_report-step3.png" width="160"/>
+    <img src="./day03_file_management/assets/cleaner_step3.png" width="160"/>
   </td>
   <td>
     🇬🇧: Modular tools for creating, cleaning, scanning and documenting folder/file structures.<br>
