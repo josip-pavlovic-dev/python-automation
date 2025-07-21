@@ -1,103 +1,86 @@
-# Day 04 – Working with `datetime` in Automation / Rad sa `datetime` modulom
+# 🕓 day04_datetime – Date & Time Automation Project
 
-[![Status](./assets/day04_status.svg)](./README.md)
-[![👤 Developer Profile](../assets/dev_profile_badge.svg)](../docs/developer_profile.md)
-[![📘 Career Notes](../assets/career_notes_badge.svg)](../docs/career_notes.md)
+📁 `python-automation/projects/day04_datetime`
 
-## 🧠 Summary / Rezime
-
-### 🇬🇧: This day focuses on learning and applying the `datetime` and `timedelta` modules in Python to automate tasks involving time and date operations. You will also use previously learned modules like `os` to interact with the filesystem.
-
-### 🇷🇸: Ovaj dan je posvećen učenju i primeni `datetime` i `timedelta` modula u Pythonu za automatizaciju zadataka koji uključuju operacije sa datumima i vremenima. Takođe koristiš prethodno naučene module kao što je `os` za rad sa fajl sistemom.
+[![Python](https://img.shields.io/badge/Python-3.10+-blue?logo=python)](https://www.python.org/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Author](https://img.shields.io/badge/Author-Josip_Pavlović-lightgrey)](https://github.com/josip-pavlovic)
+[![Status](https://img.shields.io/badge/Status-In_Progress-important)]()
 
 ---
 
-## 📂 Project Structure / Struktura projekta
+## 🇬🇧 Project Overview
+
+This project demonstrates automation using Python’s built-in `datetime` module. It covers:
+
+- Creating folders named with current date
+- Generating timestamped strings for filenames
+- Detecting files older than a specified number of days
+- Organizing cheatsheets and test scripts
+
+---
+
+## 🇷🇸 Pregled Projekta
+
+Ovaj projekat prikazuje automatizaciju pomoću Python `datetime` modula. Obuhvata:
+
+- Kreiranje foldera sa današnjim datumom
+- Generisanje vremenskih oznaka za imena fajlova
+- Pronalaženje fajlova starijih od zadatog broja dana
+- Organizaciju dokumentacije i testova
+
+---
+
+## 📁 Folder Structure
 
 ```
+
 day04_datetime/
-├── timestamp_generator.py         # Task 1
-├── dated_folder_creator.py        # Task 2
-├── old_file_checker.py            # Task 3
-├── README.md                      # Documentation
-├── docs/                          # Theoretical notes
-│   ├── python_testing_basics.md
-│   ├── import_and_module_structure.md
-│   ├── pylance_explained.md
-│   └── mocking_and_fixtures.md
-└── tests/                         # Unit tests
-    └── test_day04_datetime/
-        └── test_timestamp_generator.py
+│
+├── dated_folder_creator.py
+├── old_file_checker.py
+├── timestamp_generator.py
+├── logger.py
+│
+├── docs/
+│ ├── dated_folder_creator_cheatsheet.md
+│ ├── old_file_checker_cheatsheet.md
+│ ├── timestamp_generator_cheatsheet.md
+│ ├── datetime_module_cheatsheet.md
+│ └── README.md
+│
+└── README.md ← This file
+
 ```
 
 ---
 
-## ✅ Tasks / Zadaci
+## 🧪 Testing
 
-### 1. `timestamp_generator.py`
+Test scripts are located in the root `tests/` directory under:
 
-#### 🇬🇧: Write a function that generates filenames with the current timestamp (e.g., `log_2025-07-17_19-00-00.txt`).
+```
 
-#### 🇷🇸: Napiši funkciju koja generiše ime fajla sa trenutnim vremenom (npr. `log_2025-07-17_19-00-00.txt`).
+tests/test_day04_datetime/
 
----
+```
 
-### 2. `dated_folder_creator.py`
-
-#### 🇬🇧: Create a folder named with today's date inside an `output/` folder (e.g., `output/2025-07-17`).
-
-#### 🇷🇸: Kreiraj folder sa današnjim datumom unutar `output/` foldera (npr. `output/2025-07-17`).
-
----
-
-### 3. `old_file_checker.py`
-
-#### 🇬🇧: Write a script that lists all files older than X days in a given directory.
-
-#### 🇷🇸: Napiši skriptu koja izlistava sve fajlove starije od X dana u određenom folderu.
-
----
-
-## 📘 Theory Docs / Teorijske Beleške
-
-- `python_testing_basics.md` → osnove unit testiranja
-- `import_and_module_structure.md` → moduli i importi
-- `pylance_explained.md` → IntelliSense i Pylance podešavanja
-- `mocking_and_fixtures.md` → mock, patch, setUp/tearDown u testiranju
-
----
-
-## 🧪 Tests / Testovi
-
-- Testovi se nalaze u `tests/test_day04_datetime/`
-- Pokreću se komandom:
+You can run tests using:
 
 ```bash
-python -m unittest discover -s tests
+python -m unittest discover tests/test_day04_datetime
 ```
 
 ---
 
-## 🖼️ Screenshots / Sekcija za slike
+## 🧠 Learn More
 
-### 🇷🇸: Dodaj sledeće screenshot-ove kada završiš kodiranje:
-
-1. 📸 `VSCode Terminal` – prikaz komandi `touch`, `mkdir`, `ls` koje si koristio
-2. 📸 `Explorer View` – struktura foldera u VSCode-u
-3. 📸 `Running Script` – pokretanje jedne od skripti i ispis u terminalu
-4. 📸 `output/ folder` – prikaz automatski kreiranog foldera sa današnjim datumom
-5. 📸 `log filename preview` – prikaz generisanog imena fajla u kodu
+Refer to the [📘 Documentation Index](docs/README.md) to explore individual components and cheatsheets.
 
 ---
 
-## 💬 Notes / Beleške
+## 🖼️ Screenshot Suggestion
 
-#### 🇷🇸:
-
-- Koristi `datetime.now()`, `timedelta`, `os.path.getmtime()` i `os.makedirs()`
-- Fokus je na **pisanju funkcija i testiranju u terminalu**, bez tutorijala
-- Ako zapneš, koristi `help(datetime)` i `dir(datetime)` u Python-u za dodatno razumevanje
+📌 Screenshot terminala koji prikazuje izvršavanje svake od skripti sa ispisom datuma, vremena i detekcijom starih fajlova.
 
 ---
-
-🟢 _Project created on: 2025-07-17_ 📍 _Author: Jole – Python Automation Journey_
