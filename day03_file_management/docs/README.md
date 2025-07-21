@@ -1,146 +1,59 @@
-# 🗃️ Project: day03_file_management
+## 📁 Folder Structure | Struktira Projekta
 
-[![Status](../assets/day03_status.svg)](./README.md)
-[![📘 Career Notes](../../assets/career_notes_badge.svg)](../../docs/career_notes.md)
-[![👤 Developer Profile](../../assets/dev_profile_badge.svg)](../../docs/developer_profile.md)
-![copilot.yaml configured](../../assets/copilot_badge.svg)
-[![Scripts](https://img.shields.io/badge/scripts-6-green?style=flat-square)](../scripts)
-[![Docs](https://img.shields.io/badge/docs-cheatsheets-blue?style=flat-square)](../docs/)
-[![License](https://img.shields.io/github/license/Jole85/python-automation?style=flat-square)](../../LICENSE)
-
----
-
-## 🧭 🇬🇧: Purpose | 🇷🇸: Svrha
-
-#### 🇬🇧: This project focuses on automating file and folder management using Python CLI tools. It includes scripts for cleanup, scanning, structure generation, and image metadata extraction.
-
-#### 🇷🇸: Projekat se fokusira na automatizaciju upravljanja fajlovima i folderima koristeći Python skripte u komandnoj liniji. Obuhvata čišćenje, skeniranje, generisanje strukture i izdvajanje metapodataka iz slika.
-
----
-
-## 📜 🇬🇧: Script Overview | 🇷🇸: Pregled skripti
-
-| Script / Skripta            | Description / Opis                                                               |
-| --------------------------- | -------------------------------------------------------------------------------- |
-| `cleaner.py`                | Delete files by size or age / Briše fajlove po veličini ili starosti             |
-| `scanner.py`                | Generate directory tree / Generiše strukturu foldera                             |
-| `size_cleaner.py`           | Delete files larger than threshold / Briše fajlove preko određene veličine       |
-| `file_structure_creator.py` | Create test folder structure / Kreira test strukturu foldera                     |
-| `logger.py`                 | Logging utility / Modul za logovanje                                             |
-| `image_report.py`           | Extract image metadata using Pillow / Izvlači metapodatke iz slika pomoću Pillow |
-| `setup_test_folder.sh`      | Bash script for test folder creation / Bash skripta za kreiranje foldera         |
-
----
-
-## 📄 🇬🇧: Cheatsheets (Docs) | 🇷🇸: Objašnjenja (Dokumentacija)
-
-```bash
-day03_file_management/docs/
-├── cleaner_cheatsheet.md
-├── file_structure_creator_cheatsheet.md
-├── image_report_cheatsheet.md
-├── logger_cheatsheet.md
-├── scanner_cheatsheet.md
-├── setup_test_folder_cheatsheet.md
-├── size_cleaner_cheatsheet.md
-└── README.md
-```
-
----
-
-## 🧪 🇬🇧: Test Scripts | 🇷🇸: Test Skripte
-
-```bash
-tests/test_day03_file_management/
-├── test_cleaner.py
-├── test_file_structure_creator.py
-├── test_image_report.py
-├── test_logger.py
-├── test_scanner.py
-├── test_size_cleaner.py
-└── test_main.py
-```
-
----
-
-## 🧪 🧰 🇬🇧: Setup & Run | 🇷🇸: Pokretanje i Podešavanje
-
-```bash
-cd day03_file_management
-python ../../tests/test_day03_file_management/test_main.py
-```
-
-> 🧪 **Note:** Activate your virtual environment before running.
->
-> 🧪 **Napomena:** Aktiviraj virtualno okruženje pre pokretanja.
-
-Install Pillow (if not installed):
-
-```bash
-pip install Pillow
-```
-
----
-
-## 📁 🇬🇧: Folder Structure | 🇷🇸: Struktura Projekta
+🇬🇧 **Project layout with clearly defined roles for each folder and script.**
+🇷🇸 **Struktura projekta sa jasno definisanim ulogama za svaki folder i skriptu.**
 
 ```bash
 day03_file_management/
-├── assets/
-│   ├── [screenshots, diagrams...]
+├── assets/                       # 📂 Screenshots, diagrams, visual content
+│   └── [screenshots, diagrams...] # 📂 Screenshot-ovi, dijagrami, vizuelni sadrzaj
 │
-├── docs/
-│   ├── cleaner_cheatsheet.md
+├── docs/                         # 📑 Documentation for each Python script
+│   ├── cleaner_cheatsheet.md     # 📑 Dokumentacija za svaku Python skriptu
 │   ├── file_structure_creator_cheatsheet.md
 │   ├── image_report_cheatsheet.md
-│   ├── logger_cheatsheet.md
 │   ├── scanner_cheatsheet.md
 │   ├── setup_test_folder_cheatsheet.md
 │   ├── size_cleaner_cheatsheet.md
-│   └── README.md
+│   └── README.md                 # 📘 Indeks dokumentacije
 │
-├── test_folder/
+├── test_folder/                 # 📂 Primer test sadrzaja koji koriste skripte
 │   ├── docs/
 │   └── images/
 │
-├── cleaner.py
-├── scanner.py
-├── size_cleaner.py
-├── file_structure_creator.py
-├── logger.py
-├── image_report.py
-├── setup_test_folder.sh
-├── log.txt
-└── README.md
+├── cleaner.py                   # 🧹 Briše stare ili nepotrebne fajlove
+├── scanner.py                   # 🔍 Analizira strukturu foldera
+├── size_cleaner.py              # 🧼 Briše fajlove koji prelaze zadatu veličinu
+├── file_structure_creator.py    # 🏗️ Kreira primer strukture foldera i fajlova
+├── logger.py                    # 📝 Modul za logovanje koji se ponovo koristi
+├── image_report.py              # 🖼️ Generiše izveštaj o slikama i metapodacima
+├── setup_test_folder.sh         # ⚙️ Bash skripta za kreiranje test okruženja
+├── log.txt                      # 📄 Izlazni fajl logger-a
+└── README.md                    # 📘 Glavna dokumentacija za projekat
 
 tests/
-└── test_day03_file_management/
+└── test_day03_file_management/  # 🧪 Unit testovi za sve skripte
     ├── test_cleaner.py
     ├── test_file_structure_creator.py
     ├── test_image_report.py
     ├── test_logger.py
     ├── test_scanner.py
-    ├── test_size_cleaner.py
-    └── test_main.py
+    └── test_size_cleaner.py
+
 ```
 
 ---
 
-## 🧠 🇬🇧: Notes | 🇷🇸: Napomene
+## 📘 docs/README.md — 🧭 Documentation Index | Indeks Dokumentacije
 
-- ✅ Scripts are organized by use case and logically grouped
-- ✅ Test coverage is complete and centralized in one test suite
-- ✅ Markdown cheatsheets and visual assets (screenshots) included for documentation
-- ✅ Log file `log.txt` is dynamically generated during script execution
+| File                                                                         | 🇬🇧 Description                | 🇷🇸 Opis                                       |
+| ---------------------------------------------------------------------------- | ----------------------------- | --------------------------------------------- |
+| [cleaner_cheatsheet.md](cleaner_cheatsheet.md)                               | Delete files by age           | Brisanje starih fajlova po kriterijumu datuma |
+| [file_structure_creator_cheatsheet.md](file_structure_creator_cheatsheet.md) | Create test file structure    | Kreiranje strukture za testiranje             |
+| [image_report_cheatsheet.md](image_report_cheatsheet.md)                     | Extract metadata from images  | Izdvajanje metapodataka iz slika              |
+| [scanner_cheatsheet.md](scanner_cheatsheet.md)                               | Analyze folders/files         | Skeniranje strukture foldera                  |
+| [setup_test_folder_cheatsheet.md](setup_test_folder_cheatsheet.md)           | Bash script to setup test env | Shell skripta za kreiranje test okruženja     |
+| [size_cleaner_cheatsheet.md](size_cleaner_cheatsheet.md)                     | Delete large files            | Brisanje fajlova po veličini                  |
 
----
-
-## 👤 🇬🇧: Author | 🇷🇸: Autor
-
-### Josip Pavlović
-
-📧 [jolepavlovic@outlook.com](mailto:jolepavlovic@outlook.com)
-🌍 Novi Sad, Serbia
-💼 [github.com/Jole85](https://github.com/Jole85)
-
----
+📌 **🇬🇧 Note:** The `logger.py` module is shared across multiple projects. More info in [logger_cheatsheet.md](../../docs/logger_cheatsheet.md)
+📌 **🇷🇸 Napomena:** `logger.py` je zajednički modul za logovanje i koristi se u više projekata. Pogledaj [logger_cheatsheet.md](../../docs/logger_cheatsheet.md)
