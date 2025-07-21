@@ -1,0 +1,11 @@
+import os
+
+def create_file(file_path):
+    """Create a file at the specified path with some sample content."""
+    # Ensure the directory exists
+    with open(file_path, 'w') as file:
+        file.write("Ovo je prva linija.\n")
+        file.write("Ovo je druga linija.\n")
+        file.write("Ovo je treća linija.\n")
+
+

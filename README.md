@@ -1,168 +1,164 @@
 # 🐍 Python Automation Projects
 
 <!-- Tehnički bedževi -->
+
+[![Python Version](https://img.shields.io/badge/python-3.13+-blue.svg?style=flat-square)](https://www.python.org/downloads/)
+![Platform](https://img.shields.io/badge/Platform-Windows%2011-lightgrey?style=flat-square)
 [![License](https://img.shields.io/github/license/Jole85/python-automation?style=flat-square)](LICENSE)
 [![Repo Size](https://img.shields.io/github/repo-size/Jole85/python-automation?style=flat-square)](https://github.com/Jole85/python-automation)
 [![Last Commit](https://img.shields.io/github/last-commit/Jole85/python-automation?style=flat-square)](https://github.com/Jole85/python-automation/commits/main)
-[![Python Version](https://img.shields.io/badge/python-3.13+-blue.svg?style=flat-square)](https://www.python.org/downloads/)
 
 <!-- Personalni i statusni bedževi -->
+
 ![Copilot Configured](./assets/copilot_badge.svg)
 [![👤 Developer Profile](./assets/dev_profile_badge.svg)](./docs/developer_profile.md)
 [![📘 Career Notes](./assets/career_notes_badge.svg)](./docs/career_notes.md)
 
 <!-- Status bedževi po danima -->
+
 [![Day01](./01-file-organizer/assets/day01_status.svg)](./01-file-organizer/README.md)
 [![Day02](./day02_file_info/assets/day02_status.svg)](./day02_file_info/README.md)
 [![Day03](./day03_file_management/assets/day03_status.svg)](./day03_file_management/docs/README.md)
 [![Day04](./day04_datetime/assets/day04_status.svg)](./day04_datetime/README.md)
 
-
-
-
-
-
 ## ✨ Bilingual Repository | Dvojezični repozitorijum
 
-#### 🇬🇧: Python automation journey built through real-world scripts and terminal-based automation.  
-#### 🇷🇸: Put učenja automatizacije u Python-u kroz skripte iz realnog života i rad u terminalu.
+#### 🇷🇸 Projekat sistematizovanog učenja kroz automatizaciju zadataka u Pythonu – kreiran sa ciljem da postanem profesionalni Python programer. Svaki dan je zaseban modul sa dokumentacijom, skriptama i testovima.
+
+#### 🇬🇧 Structured learning-through-projects repository focused on task automation using Python. Built with the goal of becoming a professional Python developer. Each day is a separate, self-contained module.
+
 ---
 
 ## 📂 Projects Overview | Pregled projekata
-<div align="center">
-  <table>
-    <thead>
-      <tr>
-        <th align="left">Project | Projekat</th>
-        <th align="center">Preview | Pregled</th>
-        <th align="left">Description | Opis</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>
-          <a href="./01-file-organizer"><strong>Day 01 – File Organizer</strong></a>
-        </td>
-        <td align="center">
-          <img src="01-file-organizer/assets/01-file-organizer-preview-3.png" width="160"/>
-          <img src="01-file-organizer/assets/01-file-organizer-preview-2.png" width="160"/>
-          <img src="01-file-organizer/assets/01-file-organizer-preview-4.png" width="160"/>
-          <img src="01-file-organizer/assets/01-file-organizer-preview-5.png" width="160"/>
-        </td>
-        <td>
-          🇬🇧: Sorts files into folders by extension using <code>os</code> and <code>shutil</code>.<br>🇷🇸: Sortira fajlove u foldere prema ekstenziji koristeći <code>os</code> and <code>shutil</code>.
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <a href="./day02_file_info"><strong>Day 02 – File Info Extractor</strong></a>
-        </td>
-        <td align="center">
-          <img src="day02_file_info/assets/day02_file_info-preview-4.png" width="160"/>
-          <img src="day02_file_info/assets/day02_file_info-preview-1.png" width="160"/>
-          <img src="day02_file_info/assets/day02_file_info-preview-2.png" width="160"/>
-          <img src="day02_file_info/assets/day02_file_info-preview-3.png" width="160"/>
-        </td>
-        <td>
-          🇬🇧: Extracts file metadata (name, size, type, creation date...) from target folders.<br>🇷🇸: Izdvaja metapodatke fajlova (naziv, veličinu, tip, datum kreiranja...) iz ciljnih foldera. 
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <a href="./day03_file_management"><strong>Day 03 – File Management Suite</strong></a>
-        </td>
-        <td align="center">
-          <img src="day03_file_management/assets/day03-preview-4.png" width="160"/>
-          <img src="day03_file_management/assets/day03-preview-2.png" width="160"/>
-          <img src="day03_file_management/assets/day03-preview-1.png" width="160"/>
-          <img src="day03_file_management/assets/day03-preview-3.png" width="160"/>
-        </td>
-        <td>
-          🇬🇧: Modular tools for creating, cleaning, scanning and testing folder and file structures.<br>🇷🇸: Modularni alati za kreiranje, čišćenje, skeniranje i testiranje strukture foldera i fajlova.
-        </td>
-      </tr>
-    </tbody>
-  </table>
-</div>
+
+<table>
+  <thead>
+    <tr>
+      <th>📁 Folder</th>
+      <th>🖼️ Preview</th>
+      <th>📝 Description</th>
+    </tr>
+  </thead>
+  <tbody>
+<tr>
+  <td>
+    <a href="./day01_portfolio_landing_page"><strong>Day 01 – Portfolio Landing Page</strong></a>
+  </td>
+  <td align="center">
+    <img src="day01_portfolio_landing_page/assets/day01-preview-1.png" width="160"/>
+  </td>
+  <td>
+    🇬🇧: HTML & CSS responsive landing page with mobile-first approach.<br>
+    🇷🇸: HTML i CSS responzivna landing stranica sa pristupom koji favorizuje mobilne uređaje.
+  </td>
+</tr>
+
+<tr>
+  <td>
+    <a href="./day02_file_info"><strong>Day 02 – File Info</strong></a>
+  </td>
+  <td align="center">
+    <img src="day02_file_info/assets/day02-preview-1.png" width="160"/>
+    <img src="day02_file_info/assets/day02-preview-2.png" width="160"/>
+  </td>
+  <td>
+    🇬🇧: Basic CLI tool for file path manipulation using `os` module.<br>
+    🇷🇸: Osnovni CLI alat za rad sa putanjama koristeći `os` modul.
+  </td>
+</tr>
+
+<tr>
+  <td>
+    <a href="./day03_file_management"><strong>Day 03 – File Management Suite</strong></a>
+  </td>
+  <td align="center">
+    <img src="day03_file_management/assets/day03-preview-1.png" width="160"/>
+    <img src="day03_file_management/assets/day03-preview-2.png" width="160"/>
+    <img src="day03_file_management/assets/day03-preview-3.png" width="160"/>
+    <img src="day03_file_management/assets/day03-preview-4.png" width="160"/>
+    <img src="day03_file_management/assets/day03-preview-5.png" width="160"/>
+    <img src="day03_file_management/assets/day03-preview-6.png" width="160"/>
+  </td>
+  <td>
+    🇬🇧: Modular tools for creating, cleaning, scanning and documenting folder/file structures.<br>
+    🇷🇸: Modularni alati za kreiranje, čišćenje, skeniranje i dokumentovanje struktura fajlova i foldera.<br><br>
+    📜 Scripts: `scanner.py`, `cleaner.py`, `size_cleaner.py`, `file_structure_creator.py`, `image_report.py`, `logger.py`, `setup_test_folder.sh`
+  </td>
+</tr>
+
+<tr>
+  <td>
+    <a href="./day04_datetime"><strong>Day 04 – Timestamp Toolkit</strong></a>
+  </td>
+  <td align="center">
+    <img src="day04_datetime/assets/day04-preview-1.png" width="160"/>
+    <img src="day04_datetime/assets/day04-preview-2.png" width="160"/>
+    <img src="day04_datetime/assets/day04-preview-3.png" width="160"/>
+    <img src="day04_datetime/assets/day04-preview-4.png" width="160"/>
+  </td>
+  <td>
+    🇬🇧: Tools for generating timestamped folders, checking file age, and working with datetime objects.<br>
+    🇷🇸: Alati za kreiranje foldera sa vremenskom oznakom, proveru starosti fajlova i rad sa datumima/vremenima.<br><br>
+    📜 Scripts: `timestamp_generator.py`, `dated_folder_creator.py`, `old_file_checker.py`, `logger.py`, `main.py`
+  </td>
+</tr>
+  </tbody>
+</table>
+
+## 📘 Documentation
+
+#### 📁 All cheatsheets and guides can be found in [`/docs`](./docs) folder:
+
+- [Learning Roadmap](docs/learning_roadmap.md)
+- [AI Workflow & Copilot Setup](docs/ai_integration_guide.md)
+- [Logger Cheatsheet](docs/logger_cheatsheet.md)
+- [CLI Tools (Bash, Magick, ffmpeg)](docs/cli_toolkit_cheatsheet.md)
+- [Python Imports & Builtins](docs/python_imports_and_modules.md)
+- [Python Testing Guide](docs/python_testing_guide.md)
+- [Pylance & VS Code Tips](docs/ide_and_linting/pylance_explained.md)
+- [HTML in Markdown](docs/ide_and_linting/html_markdown_guide.md)
 
 ---
 
-##  📁 Project Folder Structure | Struktura foldera
-
-#### 🇬🇧: Each project contains:
-- `main.py` — core logic or **CLI** entry point
-- `logger.py` — reusable logging module with timestamps
-- `README.md` — bilingual project documentation
-- `test_files/` or `test_folder/` — input data for testing
-- Optional `.sh` scripts — automated test setup for Git Bash
-- Screenshots stored in `assets/` folder for each project
-
-
-#### 🇷🇸: Svaki projekta sadrži:
-- `main.py` — osnovna logika ili ulazna tačka **CLI**-ja
-- `logger.py` — modul za višekratnu upotrebu sa vremenskim oznakama
-- `README.md` — dvojezična projektna dokumentacija
-- `test_files/` or `test_folder/` — ulazni podaci za testiranje
-- Opcionalna `.sh` scripta — automatizovano test podešavanje za Git Bash
-- Slike projekata se nalaze u folderu `assets/` u samom projektu
-
---- 
-## 🧠 Learning Goals | Ciljevi učenja
-
-#### 🇬🇧:
-- ✅ Master core Python syntax and file operations  
-- ✅ Practice through realistic CLI-based projects  
-- ✅ Build habit of writing clean code and structured README files  
-- ✅ Learn modular programming and code reuse  
-- ⏳ Expand into automation with scheduling, GUIs and web scraping  
-- 🎯 Goal: job-ready Python portfolio by end of 2025
-
-#### 🇷🇸
-- ✅ Učvrstiti osnove Python sintakse i rada sa fajlovima  
-- ✅ Vežba kroz realne, komandno orijentisane projekte  
-- ✅ Razvijanje navike dokumentacije i čistog koda  
-- ✅ Učenje modularnog programiranja i ponovne upotrebe koda  
-- ⏳ Proširenje na automatizaciju (GUI, scrape, cron...)  
-- 🎯 Cilj: Python portfolio spreman za posao do kraja 2025.
-
----
-
-## 📌 About This Repository | O repozitorijumu
-
-#### 🇬🇧: This is a long-term learning archive created during my transition from civil engineering to software development. Each project is built from scratch using only core Python and CLI tools, with full Git versioning and markdown documentation.
-
-#### 🇷🇸: Ovaj repozitorijum predstavlja arhivu mog prelaska iz građevine u IT. Projekti su građeni od nule, bez framework-a, uz potpuno razumevanje i Git praćenje napretka.
-
----
 ## 🤖 GitHub Copilot Configuration | GitHub Copilot konfiguracija
+
 ![Copilot Enabled](https://img.shields.io/badge/GitHub_Copilot-configured-blue?logo=github&logoColor=white)
+
 #### 🇬🇧: This repository uses a [`.github/copilot.yaml`](./.github/copilot.yaml) configuration file to guide GitHub Copilot's behavior.
+
 #### 🇷🇸: Ovaj repozitorijum koristi fajl [`.github/copilot.yaml`](./.github/copilot.yaml) za konfiguraciju ponašanja GitHub Copilot-a.
 
 #### 🇬🇧: Key configurations include:
+
 - Bilingual Markdown documentation (English + Serbian Latin)
 - Professional tone and full comment style
 - Python-first automation workflows
 - No external dependencies unless explicitly stated
 - UTC timestamps and descriptive variable naming
+
 #### 🇷🇸: Ključna podešavanja uključuju:
+
 - Dvojezična dokumentacija u Markdown fajlovima (engleski + srpska latinica)
 - Profesionalan ton i stil komentara
 - Automatizacija zasnovana na Python skriptama
 - Nema spoljašnjih zavisnosti osim ako nije eksplicitno navedeno
 - Upotreba UTC vremena i deskriptivno imenovanje promenljivih
+
+---
+
+## 🧠 Author
+
+**Josip Pavlović**
+🛠️ Civil Engineer ➝ Python Developer
+📍 Novi Sad, Serbia
+🔗 [github.com/Jole85](https://github.com/Jole85)
+
+---
+
 ## ✅ License
+
 #### 🇬🇧: This repo is licensed under the **MIT License**.
+
 #### 🇷🇸: Ovaj repo je licenciran pod **MIT licencom**.
 
-
-
-
-
-
-
-
-
-
-
-
+📌 _Last updated: 2025-07-21_

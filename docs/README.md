@@ -1,4 +1,4 @@
-# 📚 Documentation Overview / Pregled dokumentacije
+# 🗂️ Documentation Overview / Pregled dokumentacije
 
 [![Repo Size](https://img.shields.io/github/repo-size/Jole85/python-automation?style=flat-square)](https://github.com/Jole85/python-automation)
 [![Last Commit](https://img.shields.io/github/last-commit/Jole85/python-automation?style=flat-square)](https://github.com/Jole85/python-automation/commits/main)
@@ -6,51 +6,67 @@
 
 🔗 [← Back to Main README](../README.md)
 
+---
 
-## 🧭 Purpose | Svrha
+## 🎯 Purpose | Svrha
 
-#### 🇬🇧: This folder contains general documentation for the `python-automation` repository: multilingual cheatsheets, CLI usage instructions, and reusable components used across multiple script-based automation projects.
+🇬🇧: This folder contains multilingual cheatsheets, reusable automation patterns, and technical documentation for CLI tools, Python modules, and VS Code configuration.
 
-#### 🇷🇸: Ova fascikla sadrži opštu dokumentaciju za repozitorijum `python-automation`: dvojezične „cheatsheet”-ove, uputstva za rad u terminalu i komponente koje se koriste u više skripti za automatizaciju.
+🇷🇸: Ova fascikla sadrži dvojezične vodiče, ponovo iskoristive skripte i tehničku dokumentaciju za CLI alate, Python module i konfiguraciju razvojne okoline.
 
 ---
 
-## 🧾 Cheatsheets
+## 📚 Cheatsheet Categories / Kategorije
 
-| 📄 Script / Topic | 🇬🇧 Description | 🇷🇸 Opis |
-|------------------|----------------|---------|
-| [`learning_roadmap.md`](learning_roadmap.md) | Learning structure for Python + CLI automation | Plan učenja Python + CLI automatizacije |
-| [`magick_commands_cheatsheet.md`](magick_commands_cheatsheet.md) | ImageMagick terminal commands for image generation | ImageMagick komande za generisanje test slika |
-| [`html_in_md_cheatsheet.md`](html_in_md_cheatsheet.md) | Embedding HTML in Markdown (for layout, screenshots) | HTML elementi u Markdown-u (tabele, slike) |
+### 🧠 Runtime Promenljive i Moduli
+
+- [`builtin_runtime_vars_cheatsheet.md`](builtin_runtime_vars_cheatsheet.md) – 🇬🇧 `__name__`, `__main__`, `__file__` explained / 🇷🇸 Ključne promenljive tokom izvršavanja
+- [`python_imports_and_modules.md`](python_imports_and_modules.md) – 🇬🇧 Import paths and module packaging / 🇷🇸 Import putanje i struktura modula
+- [`logger_cheatsheet.md`](logger_cheatsheet.md) – 🇬🇧 Custom logging setup / 🇷🇸 Kreiranje i formatiranje logova
+
+### 🧪 Testiranje i Mocking
+
+- [`python_testing_guide.md`](python_testing_guide.md) – 🇬🇧 Unit testing tips / 🇷🇸 Unittest osnove
+- [`mocking_and_fixtures.md`](python_testing_guide.md#mocking-fixtures) – 🇬🇧 Mock & patch / 🇷🇸 Testiranje sa zamenskim objektima
+
+### 💻 IDE i Lintovanje
+
+- [`ide_and_linting/pylance_explained.md`](ide_and_linting/pylance_explained.md) – 🇬🇧 Pylance config and tips / 🇷🇸 Objašnjenje Pylance podešavanja
+- [`ide_and_linting/html_markdown_guide.md`](ide_and_linting/html_markdown_guide.md) – 🇬🇧 Embed HTML in Markdown / 🇷🇸 Korišćenje HTML-a u `.md` fajlovima
+
+### 🧰 Komandna Linija (CLI)
+
+- [`cli_toolkit_cheatsheet.md`](cli_toolkit_cheatsheet.md) – 🇬🇧 ImageMagick, Bash, ffmpeg / 🇷🇸 Rad u komandnoj liniji
+
+### 🤖 AI i Automatizacija
+
+- [`ai_integration_guide.md`](ai_integration_guide.md) – 🇬🇧 Copilot & ChatGPT AI workflow / 🇷🇸 Integracija sa AI alatima
+
+### 🧭 Učenje i Profil
+
+- [`learning_roadmap.md`](learning_roadmap.md) – 🇬🇧 Monthly roadmap / 🇷🇸 Plan učenja
+- [`developer_profile.md`](developer_profile.md) – 🇬🇧 About the author / 🇷🇸 Lični profil
+- [`career_notes.md`](career_notes.md) – 🇬🇧 Career transition notes / 🇷🇸 Beleške o promeni karijere
 
 ---
 
-## 📁 Subproject Index
+## 📁 Subproject Docs
 
-| 📂 Project Folder | 📑 Documentation |
-|------------------|------------------|
-| `day03_file_management` | [📁 Cheatsheets](../day03_file_management/docs/) |
-
----
-
-## 🧭 Navigation | Navigacija
-
-#### 🇬🇧: Each `dayXX_project_name` folder contains its own `docs/` subfolder with project-specific documentation.
-#### 🇷🇸: Svaka fascikla `dayXX_project_name` sadrži svoj `docs/` folder sa specifičnim projektnim beleškama.
+| 📂 Folder               | 📑 Lokalna dokumentacija                   |
+| ----------------------- | ------------------------------------------ |
+| `day03_file_management` | [`/docs/`](../day03_file_management/docs/) |
+| `day04_datetime`        | [`/docs/`](../day04_datetime/docs/)        |
 
 ---
 
 ## 👤 Author | Autor
 
-**Josip Pavlović**  
-📧 [jolepavlovic@outlook.com](mailto:jolepavlovic@outlook.com)  
-🌍 Novi Sad, Serbia  
-💼 [github.com/Jole85](https://github.com/Jole85)  
-🔁 Career Switch: Civil Engineer → Fullstack Developer  
+**Josip Pavlović**
+📧 [jolepavlovic@outlook.com](mailto:jolepavlovic@outlook.com)
+🌍 Novi Sad, Serbia
+💼 [github.com/Jole85](https://github.com/Jole85)
+🔁 Career Switch: Civil Engineer → Python Developer
 
 ---
 
-
-
-
-
+📌 _Last updated: 2025-07-21_
