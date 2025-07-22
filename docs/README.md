@@ -10,8 +10,7 @@
 
 ## 🎯 Purpose | Svrha
 
-🇬🇧: This folder contains multilingual cheatsheets, reusable automation patterns, and technical documentation for CLI tools, Python modules, and VS Code configuration.
-
+🇬🇧: This folder contains multilingual cheatsheets, reusable automation patterns, and technical documentation for CLI tools, Python modules, and VS Code configuration.  
 🇷🇸: Ova fascikla sadrži dvojezične vodiče, ponovo iskoristive skripte i tehničku dokumentaciju za CLI alate, Python module i konfiguraciju razvojne okoline.
 
 ---
@@ -33,6 +32,7 @@
 
 - [`ide_and_linting/pylance_explained.md`](ide_and_linting/pylance_explained.md) – 🇬🇧 Pylance config and tips / 🇷🇸 Objašnjenje Pylance podešavanja
 - [`ide_and_linting/html_markdown_guide.md`](ide_and_linting/html_markdown_guide.md) – 🇬🇧 Embed HTML in Markdown / 🇷🇸 Korišćenje HTML-a u `.md` fajlovima
+- [`ide_and_linting/sync_snippets.md`](ide_and_linting/sync_snippets.md) – 🇬🇧 Auto-sync snippets per project / 🇷🇸 Sinhronizacija snippet-a za svaki projekat
 
 ### 🧰 Komandna Linija (CLI)
 
@@ -47,6 +47,7 @@
 - [`learning_roadmap.md`](learning_roadmap.md) – 🇬🇧 Monthly roadmap / 🇷🇸 Plan učenja
 - [`developer_profile.md`](developer_profile.md) – 🇬🇧 About the author / 🇷🇸 Lični profil
 - [`career_notes.md`](career_notes.md) – 🇬🇧 Career transition notes / 🇷🇸 Beleške o promeni karijere
+- [`terminology_cheatsheet.md`](terminology_cheatsheet.md) – 🇬🇧 Language for precise prompts / 🇷🇸 Terminologija za precizne upite
 
 ---
 
@@ -54,6 +55,8 @@
 
 | 📂 Folder               | 📑 Lokalna dokumentacija                   |
 | ----------------------- | ------------------------------------------ |
+| `01-file-organizer`     | [`/docs/`](../01-file-organizer/docs/)     |
+| `day02_file_info`       | [`/docs/`](../day02_file_info/docs/)       |
 | `day03_file_management` | [`/docs/`](../day03_file_management/docs/) |
 | `day04_datetime`        | [`/docs/`](../day04_datetime/docs/)        |
 
@@ -61,12 +64,12 @@
 
 ## 👤 Author | Autor
 
-**Josip Pavlović**
-📧 [jolepavlovic@outlook.com](mailto:jolepavlovic@outlook.com)
-🌍 Novi Sad, Serbia
-💼 [github.com/Jole85](https://github.com/Jole85)
+**Josip Pavlović**  
+📧 [jolepavlovic@outlook.com](mailto:jolepavlovic@outlook.com)  
+🌍 Novi Sad, Serbia  
+💼 [github.com/Jole85](https://github.com/Jole85)  
 🔁 Career Switch: Civil Engineer → Python Developer
 
 ---
 
-📌 _Last updated: 2025-07-21_
+📌 _Last updated: 2025-07-22_
