@@ -1,0 +1,50 @@
+{
+    "Delete Old Files": {
+        "prefix": "delold",
+        "body": [
+            "# Brisanje fajlova starijih od N dana",
+            "import os, time",
+            "sada = time.time()",
+            "dani = ${1:30}",
+            "granica = sada - (dani * 86400)",
+            "",
+            "for root, dirs, files in os.walk('${2:putanja}'):",
+            "    for f in files:",
+            "        puna_putanja = os.path.join(root, f)",
+            "        if os.path.getmtime(puna_putanja) < granica:",
+            "            os.remove(puna_putanja)",
+            "            print(f\"Obrisano: {puna_putanja}\")"
+        ],
+        "description": "Brisanje starih fajlova"
+    },
+    "Scan Directory Recursively": {
+        "prefix": "scanrec",
+        "body": [
+            "# Rekurzivno skeniranje foldera",
+            "import os",
+            "",
+            "def skeniraj_folder(putanja):",
+            "    for root, dirs, files in os.walk(putanja):",
+            "        print(f\"U folderu: {root}\")",
+            "        for file in files:",
+            "            print(f\"  Fajl: {file}\")"
+        ],
+        "description": "Ispis sadr\u017eaja foldera"
+    },
+    "Generate Image Report": {
+        "prefix": "imgreport",
+        "body": [
+            "# Izve\u0161taj o dimenzijama slika",
+            "from PIL import Image",
+            "import os",
+            "",
+            "for root, dirs, files in os.walk('${1:putanja}'):",
+            "    for file in files:",
+            "        if file.lower().endswith(('.png', '.jpg', '.jpeg')):",
+            "            puna_putanja = os.path.join(root, file)",
+            "            with Image.open(puna_putanja) as img:",
+            "                print(f\"{file}: {img.size[0]}x{img.size[1]}\")"
+        ],
+        "description": "Dimenzije slika u folderu"
+    }
+}

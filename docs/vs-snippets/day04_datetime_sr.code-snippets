@@ -1,0 +1,42 @@
+{
+    "Generate Timestamp": {
+        "prefix": "gentime",
+        "body": [
+            "# Generisanje vremenske oznake (timestamp)",
+            "from datetime import datetime",
+            "oznaka = datetime.now().strftime('%Y-%m-%d_%H-%M-%S')",
+            "print(oznaka)"
+        ],
+        "description": "Kreiraj trenutnu vremensku oznaku"
+    },
+    "Create Dated Folder": {
+        "prefix": "makedatefolder",
+        "body": [
+            "# Kreiranje foldera sa dana\u0161njim datumom",
+            "from datetime import date",
+            "import os",
+            "danas = date.today().isoformat()",
+            "putanja_foldera = os.path.join('${1:osnovna_putanja}', danas)",
+            "os.makedirs(putanja_foldera, exist_ok=True)",
+            "print(f\"Kreiran folder: {putanja_foldera}\")"
+        ],
+        "description": "Folder sa dana\u0161njim datumom"
+    },
+    "Check Old Files by Age": {
+        "prefix": "checkold",
+        "body": [
+            "# Provera fajlova starijih od N dana",
+            "import os, time",
+            "from datetime import datetime",
+            "granica_dana = ${1:30}",
+            "granica = time.time() - (granica_dana * 86400)",
+            "",
+            "for f in os.listdir('${2:folder}'):",
+            "    putanja = os.path.join('${2:folder}', f)",
+            "    if os.path.isfile(putanja):",
+            "        if os.path.getmtime(putanja) < granica:",
+            "            print(f\"Stari fajl: {f}\")"
+        ],
+        "description": "Fajlovi stariji od definisanog broja dana"
+    }
+}

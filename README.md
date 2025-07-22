@@ -151,12 +151,9 @@
 
 ---
 
-## 🧠 Author
+## 🛠 Developer Scripts
 
-**Josip Pavlović**
-🛠️ Civil Engineer ➝ Python Developer
-📍 Novi Sad, Serbia
-🔗 [github.com/Jole85](https://github.com/Jole85)
+#### See [`scripts/`](./scripts/) folder for Python, Batch, and PowerShell utilities used to sync VS Code `.code-snippets` into project folders.Useful for automation and maintaining a consistent developer environment across all projects.
 
 ---
 
@@ -165,5 +162,14 @@
 #### 🇬🇧: This repo is licensed under the **MIT License**.
 
 #### 🇷🇸: Ovaj repo je licenciran pod **MIT licencom**.
+
+---
+
+## 🧠 Author
+
+**Josip Pavlović**
+🛠️ Civil Engineer ➝ Python Developer
+📍 Novi Sad, Serbia
+🔗 [github.com/Jole85](https://github.com/Jole85)
 
 📌 _Last updated: 2025-07-21_

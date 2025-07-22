@@ -1,0 +1,45 @@
+{
+    "Get File Size": {
+        "prefix": "getsize",
+        "body": [
+            "# Dohvatanje veli\u010dine fajla u bajtovima",
+            "import os",
+            "velicina = os.path.getsize('${1:ime_fajla}')",
+            "print(f\"Veli\u010dina fajla: {velicina} bajtova\")"
+        ],
+        "description": "Veli\u010dina fajla u bajtovima"
+    },
+    "Check File Existence": {
+        "prefix": "existscheck",
+        "body": [
+            "# Provera da li fajl ili folder postoji",
+            "import os",
+            "if os.path.exists('${1:putanja}'):",
+            "    print('Putanja postoji')",
+            "else:",
+            "    print('Putanja ne postoji')"
+        ],
+        "description": "Provera postojanja fajla/foldera"
+    },
+    "Split File Path": {
+        "prefix": "pathsplit",
+        "body": [
+            "# Razdvajanje putanje na ime fajla i ekstenziju",
+            "import os",
+            "osnova = os.path.basename('${1:putanja}')",
+            "ime, ekstenzija = os.path.splitext(osnova)",
+            "print(f\"Ime: {ime}, Ekstenzija: {ekstenzija}\")"
+        ],
+        "description": "Razdvajanje imena i ekstenzije"
+    },
+    "Get Absolute Path": {
+        "prefix": "abspath",
+        "body": [
+            "# Dobijanje apsolutne putanje iz relativne",
+            "import os",
+            "aps_putanja = os.path.abspath('${1:relativna_putanja}')",
+            "print(aps_putanja)"
+        ],
+        "description": "Pretvaranje relativne u apsolutnu putanju"
+    }
+}

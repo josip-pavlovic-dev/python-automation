@@ -1,0 +1,47 @@
+{
+    "Delete Old Files": {
+        "prefix": "delold",
+        "body": [
+            "import os, time",
+            "now = time.time()",
+            "days = ${1:30}",
+            "cutoff = now - (days * 86400)",
+            "",
+            "for root, dirs, files in os.walk('${2:path}'):",
+            "    for f in files:",
+            "        full_path = os.path.join(root, f)",
+            "        if os.path.getmtime(full_path) < cutoff:",
+            "            os.remove(full_path)",
+            "            print(f\"Deleted: {full_path}\")"
+        ],
+        "description": "Delete files older than N days"
+    },
+    "Scan Directory Recursively": {
+        "prefix": "scanrec",
+        "body": [
+            "import os",
+            "",
+            "def scan_directory(path):",
+            "    for root, dirs, files in os.walk(path):",
+            "        print(f\"In folder: {root}\")",
+            "        for file in files:",
+            "            print(f\"  File: {file}\")"
+        ],
+        "description": "Scan and print all files in a directory"
+    },
+    "Generate Image Report": {
+        "prefix": "imgreport",
+        "body": [
+            "from PIL import Image",
+            "import os",
+            "",
+            "for root, dirs, files in os.walk('${1:path}'):",
+            "    for file in files:",
+            "        if file.lower().endswith(('.png', '.jpg', '.jpeg')):",
+            "            full_path = os.path.join(root, file)",
+            "            with Image.open(full_path) as img:",
+            "                print(f\"{file}: {img.size[0]}x{img.size[1]}\")"
+        ],
+        "description": "Generate dimensions report for images"
+    }
+}

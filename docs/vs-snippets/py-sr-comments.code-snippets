@@ -1,0 +1,92 @@
+{
+  // Srpsko-engleski komentari za Python kodiranje
+
+  "Komentar: Sekcija skripte": {
+    "prefix": "kom-sekcija",
+    "body": [
+      "# 🔹 $1 — opis sekcije (SR) — opis section (EN)"
+    ],
+    "description": "Dodaj sekcioni komentar na srpskom i engleskom jeziku"
+  },
+
+  "Komentar: Opis bloka koda": {
+    "prefix": "kom-blok",
+    "body": [
+      "# 🧩 $1 — opis bloka (SR) — block description (EN)"
+    ],
+    "description": "Dodaj komentar iznad bloka koda"
+  },
+
+  "Komentar: TODO stavka": {
+    "prefix": "kom-todo",
+    "body": [
+      "# 🔧 TODO: $1 — (SR) — (EN)"
+    ],
+    "description": "Dodaj TODO komentar"
+  },
+
+  "Komentar: Napomena / Opaska": {
+    "prefix": "kom-note",
+    "body": [
+      "# 📝 Napomena: $1 — Note: $2"
+    ],
+    "description": "Dodaj napomenu ili opasku"
+  },
+
+  "Komentar: Greška / Izuzetak": {
+    "prefix": "kom-error",
+    "body": [
+      "# ⚠️ Potencijalna greška: $1 — Possible issue: $2"
+    ],
+    "description": "Dodaj upozorenje za grešku"
+  },
+
+  "Klasa sa docstringom i metodom": {
+    "prefix": "klasa-doc",
+    "body": [
+      "class ${1:ClassName}:",
+      "    \"\"\"",
+      "    ${2:Opis klase (SR)} — ${3:Class description (EN)}",
+      "    \"\"\"",
+      "\n    def __init__(self, ${4:args}):",
+      "        \"\"\"",
+      "        ${5:Opis konstruktora (SR)} — ${6:Constructor description (EN)}",
+      "        \"\"\"",
+      "        $0"
+    ],
+    "description": "Kreira Python klasu sa početnim docstringom i __init__ metodom"
+  },
+
+  "Metoda sa docstringom": {
+    "prefix": "metoda-doc",
+    "body": [
+      "def ${1:method_name}(self, ${2:args}):",
+      "    \"\"\"",
+      "    ${3:Opis metode (SR)} — ${4:Method description (EN)}",
+      "\n    Args:",
+      "        ${2:param1} — ${5:Opis parametra (SR)} — ${6:Parameter description (EN)}",
+      "\n    Returns:",
+      "        ${7:Opis povratne vrednosti (SR)} — ${8:Return description (EN)}",
+      "    \"\"\"",
+      "    $0"
+    ],
+    "description": "Definiše metodu sa srpsko-engleskim docstringom"
+  },
+
+  "Funkcija sa docstringom": {
+    "prefix": "func-doc",
+    "body": [
+      "def ${1:function_name}(${2:args}):",
+      "    \"\"\"",
+      "    ${3:Opis funkcije (SR)} — ${4:Function description (EN)}",
+      "\n    Args:",
+      "        ${2:param1} — ${5:Opis parametra (SR)} — ${6:Parameter description (EN)}",
+      "\n    Returns:",
+      "        ${7:Opis povratne vrednosti (SR)} — ${8:Return description (EN)}",
+      "    \"\"\"",
+      "    $0"
+    ],
+    "description": "Funkcija sa dvojezičnim docstringom i argumentima"
+  }
+}
+
