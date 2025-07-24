@@ -1,41 +1,30 @@
 {
-    "Get File Size": {
-        "prefix": "getsize",
-        "body": [
-            "import os",
-            "size = os.path.getsize('${1:filename}')",
-            "print(f\"File size: {size} bytes\")"
-        ],
-        "description": "Get file size in bytes"
-    },
-    "Check File Existence": {
-        "prefix": "existscheck",
-        "body": [
-            "import os",
-            "if os.path.exists('${1:path}'):",
-            "    print('Path exists')",
-            "else:",
-            "    print('Path does not exist')"
-        ],
-        "description": "Check if file or folder exists"
-    },
-    "Split File Path": {
-        "prefix": "pathsplit",
-        "body": [
-            "import os",
-            "base = os.path.basename('${1:path}')",
-            "name, ext = os.path.splitext(base)",
-            "print(f\"Name: {name}, Extension: {ext}\")"
-        ],
-        "description": "Split path into filename and extension"
-    },
-    "Get Absolute Path": {
-        "prefix": "abspath",
-        "body": [
-            "import os",
-            "abs_path = os.path.abspath('${1:relative_path}')",
-            "print(abs_path)"
-        ],
-        "description": "Convert relative path to absolute path"
-    }
+  "Get File Info (EN)": {
+    "prefix": "file-info",
+    "body": [
+      "import os",
+      "",
+      "def get_file_info(path):",
+      "    return {",
+      "        'size': os.path.getsize(path),",
+      "        'modified': os.path.getmtime(path)",
+      "    }"
+    ],
+    "description": "Returns size and last modified time of file",
+    "scope": "python"
+  },
+  "Info o Fajlu (SR)": {
+    "prefix": "info-fajl",
+    "body": [
+      "import os",
+      "",
+      "def info_o_fajlu(putanja):",
+      "    return {",
+      "        'velicina': os.path.getsize(putanja),",
+      "        'modifikovan': os.path.getmtime(putanja)",
+      "    }"
+    ],
+    "description": "Vraća veličinu i datum izmene fajla",
+    "scope": "python"
+  }
 }

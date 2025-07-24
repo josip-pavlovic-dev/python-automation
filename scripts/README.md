@@ -17,45 +17,10 @@ _Ovaj folder sadrži razvojne skripte koje automatizuju ponavljajuće zadatke u 
 
 ---
 
-## 🧰 Usage Instructions / Uputstvo za korišćenje
+## ▶️ Usage Instructions / Uputstvo za korišćenje
 
-### ▶️ Python
+### 🔁 Python (manual sync)
 
 ```bash
 python scripts/sync_snippets.py
 ```
-
-### ▶️ Batch (Snippets & Git Push)
-
-```cmd
-scripts\sync_snippets.bat
-scripts\git\git_push.bat
-```
-
-### ▶️ PowerShell
-
-```powershell
-.\scripts\sync_snippets.ps1
-```
-
----
-
-## 🔄 Purpose / Svrha
-
-These scripts automate routine workflows and support consistent maintenance of project structure and productivity.
-_Skripte automatizuju rutinske tokove rada i omogućavaju konzistentno održavanje projektne strukture i produktivnosti._
-
----
-
-## 🧠 Notes / Napomene
-
-- `sync_snippets.py` requires updating if new projects are added
-  _`sync_snippets.py` treba ažurirati ako se dodaju novi projekti_
-
-- Use `git_push.bat` when working in Windows Git Bash/Command Prompt
-  _Koristi `git_push.bat` u Windows Git Bash/Command Prompt okruženju_
-
-- Use `git_push.sh` in Linux or WSL
-  _Koristi `git_push.sh` u Linux ili WSL okruženju_
-
----

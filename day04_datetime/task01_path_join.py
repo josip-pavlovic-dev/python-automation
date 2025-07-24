@@ -1,5 +1,4 @@
 import os
-# from webbrowser import get (# Ova linija je nepotrebna i može se ukloniti)
 
 def get_full_path(filename: str) -> str:
     """

@@ -1,39 +1,66 @@
 {
-    "Generate Timestamp": {
-        "prefix": "gentime",
-        "body": [
-            "from datetime import datetime",
-            "timestamp = datetime.now().strftime('%Y-%m-%d_%H-%M-%S')",
-            "print(timestamp)"
-        ],
-        "description": "Generate current timestamp string"
-    },
-    "Create Dated Folder": {
-        "prefix": "makedatefolder",
-        "body": [
-            "from datetime import date",
-            "import os",
-            "today = date.today().isoformat()",
-            "folder_path = os.path.join('${1:base_dir}', today)",
-            "os.makedirs(folder_path, exist_ok=True)",
-            "print(f\"Created folder: {folder_path}\")"
-        ],
-        "description": "Create folder named with today's date"
-    },
-    "Check Old Files by Age": {
-        "prefix": "checkold",
-        "body": [
-            "import os, time",
-            "from datetime import datetime",
-            "cutoff_days = ${1:30}",
-            "cutoff = time.time() - (cutoff_days * 86400)",
-            "",
-            "for f in os.listdir('${2:folder}'):",
-            "    path = os.path.join('${2:folder}', f)",
-            "    if os.path.isfile(path):",
-            "        if os.path.getmtime(path) < cutoff:",
-            "            print(f\"Old file: {f}\")"
-        ],
-        "description": "List files older than N days"
-    }
+  "Generate Timestamp (EN)": {
+    "prefix": "gen-timestamp",
+    "body": [
+      "from datetime import datetime",
+      "",
+      "timestamp = datetime.now().strftime(\"%Y-%m-%d_%H-%M-%S\")"
+    ],
+    "description": "Generate a formatted timestamp for filenames",
+    "scope": "python"
+  },
+  "Generiši Vremensku Oznaku (SR)": {
+    "prefix": "gen-vreme",
+    "body": [
+      "from datetime import datetime",
+      "",
+      "vremenska_oznaka = datetime.now().strftime(\"%Y-%m-%d_%H-%M-%S\")"
+    ],
+    "description": "Generiše timestamp formatiran za imena fajlova",
+    "scope": "python"
+  },
+  "Create Dated Folder (EN)": {
+    "prefix": "gen-folder-date",
+    "body": [
+      "import os",
+      "from datetime import datetime",
+      "",
+      "folder_name = datetime.now().strftime(\"%Y-%m-%d\")",
+      "os.makedirs(folder_name, exist_ok=True)"
+    ],
+    "description": "Create a folder with current date as name",
+    "scope": "python"
+  },
+  "Kreiraj Folder sa Datumom (SR)": {
+    "prefix": "kreiraj-folder-datum",
+    "body": [
+      "import os",
+      "from datetime import datetime",
+      "",
+      "ime_foldera = datetime.now().strftime(\"%Y-%m-%d\")",
+      "os.makedirs(ime_foldera, exist_ok=True)"
+    ],
+    "description": "Kreira folder sa današnjim datumom kao imenom",
+    "scope": "python"
+  },
+  "Read File (EN)": {
+    "prefix": "read-file",
+    "body": [
+      "def read_file(file_path):",
+      "    with open(file_path, 'r') as file:",
+      "        return file.readlines()"
+    ],
+    "description": "Reads content of file and returns list of lines",
+    "scope": "python"
+  },
+  "Pročitaj Fajl (SR)": {
+    "prefix": "procitaj-fajl",
+    "body": [
+      "def procitaj_fajl(putanja):",
+      "    with open(putanja, 'r') as f:",
+      "        return f.readlines()"
+    ],
+    "description": "Čita fajl i vraća linije",
+    "scope": "python"
+  }
 }

@@ -1,48 +1,26 @@
 {
-    "With Open Context Manager": {
-        "prefix": "withopen",
-        "body": [
-            "with open('${1:filename}.txt', '${2:w}') as f:",
-            "    ${3:# write your logic here}"
-        ],
-        "description": "Basic with open block"
-    },
-    "Create Folder If Not Exists": {
-        "prefix": "mkdirs",
-        "body": [
-            "import os",
-            "os.makedirs('${1:folder_name}', exist_ok=True)"
-        ],
-        "description": "Create folder if it doesn't exist"
-    },
-    "Check File Extension": {
-        "prefix": "extcheck",
-        "body": [
-            "import os",
-            "ext = os.path.splitext('${1:file_name}')[1]",
-            "if ext.lower() in ${2:['.txt', '.jpg']}:",
-            "    ${3:# do something}"
-        ],
-        "description": "Check file extension before action"
-    },
-    "Simple Logger": {
-        "prefix": "logmsg",
-        "body": [
-            "from datetime import datetime",
-            "",
-            "def log(msg):",
-            "    ts = datetime.now().strftime('%Y-%m-%d %H:%M:%S')",
-            "    with open('log.txt', 'a') as f:",
-            "        f.write(f\"[{ts}] {msg}\\n\")"
-        ],
-        "description": "Simple timestamped logger"
-    },
-    "Main Block": {
-        "prefix": "mainblock",
-        "body": [
-            "if __name__ == '__main__':",
-            "    ${1:main()}"
-        ],
-        "description": "Main execution block"
-    }
+  "Create Organized Folder (EN)": {
+    "prefix": "org-folder",
+    "body": [
+      "import os",
+      "",
+      "def create_folder(folder_name):",
+      "    if not os.path.exists(folder_name):",
+      "        os.makedirs(folder_name)"
+    ],
+    "description": "Create folder if it does not exist",
+    "scope": "python"
+  },
+  "Kreiraj Organizovani Folder (SR)": {
+    "prefix": "kreiraj-folder",
+    "body": [
+      "import os",
+      "",
+      "def kreiraj_folder(ime_foldera):",
+      "    if not os.path.exists(ime_foldera):",
+      "        os.makedirs(ime_foldera)"
+    ],
+    "description": "Kreira folder ako ne postoji",
+    "scope": "python"
+  }
 }

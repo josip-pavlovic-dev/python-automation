@@ -1,12 +1,20 @@
 @echo off
-REM ------------------------------
-REM Run sync_snippets.py from current folder
-REM ------------------------------
+:: 🔄 Sync & Push Snippets – Full Automation (Windows)
 
-echo Running sync_snippets.py...
-python sync_snippets.py
+echo -------------------------------------
+echo 🔁 STEP 1: Syncing VS Code snippets...
+echo -------------------------------------
+
+python scripts\sync_snippets.py
 
 echo.
+echo -------------------------------------
+echo 🚀 STEP 2: Committing snippet updates via Git...
+echo -------------------------------------
+
+call scripts\git\git_push.bat
+
+echo.
+echo ✅ Snippet sync + Git push completed.
 pause
-REM End of script
-exit /b 0
+.
