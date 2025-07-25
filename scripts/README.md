@@ -1,9 +1,8 @@
 # 🛠 Scripts – Developer Utilities / Razvojne skripte
 
-This folder contains developer utilities used to automate repetitive tasks across the `python-automation` project.  
-_Ovaj folder sadrži razvojne skripte koje automatizuju ponavljajuće zadatke u okviru `python-automation` projekta._
+#### This folder contains developer utilities used to automate repetitive tasks across the `python-automation` project.
 
----
+#### _Ovaj folder sadrži razvojne skripte koje automatizuju ponavljajuće zadatke u okviru `python-automation` projekta._
 
 ## 📄 Included Scripts / Uključene skripte
 
@@ -24,3 +23,49 @@ _Ovaj folder sadrži razvojne skripte koje automatizuju ponavljajuće zadatke u 
 ```bash
 python scripts/sync_snippets.py
 ```
+
+### 🪟 Windows Batch
+
+```bash
+scripts\sync_snippets.bat
+```
+
+### 💠 PowerShell
+
+```powershell
+.\scripts\sync_snippets.ps1
+```
+
+---
+
+## 🧹 Auto-clean Logic / Logika automatskog brisanja
+
+#### Before copying `.code-snippets` files, the script **removes any old snippet files** from the target `.vscode` folder. This guarantees a clean and consistent environment.
+
+#### _Pre kopiranja novih fajlova, skripta automatski briše sve stare `.code-snippets` fajlove iz ciljanog `.vscode` foldera. Ovo osigurava čisto i konzistentno okruženje._
+
+---
+
+## 📂 Snippet Source Folder / Izvorni folder snippeta
+
+All snippets are stored in:
+
+```
+docs/vs-snippets/
+```
+
+#### Each `.code-snippets` file must follow naming convention based on the project folder or be mapped explicitly inside `sync_snippets.py`.
+
+---
+
+## 📌 Notes / Napomene
+
+#### `pylance_basics.code-snippets` is treated as a global snippet and copied into the root `.vscode/`
+
+#### Manual mappings are defined in `FOLDER_MAP` inside `sync_snippets.py`
+
+---
+
+###### Keep your snippets in sync. Code with consistency.
+
+###### Održi snippete sinhronizovanim. Kôdiraj dosledno. 🔁

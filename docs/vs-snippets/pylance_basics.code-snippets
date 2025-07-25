@@ -1,0 +1,37 @@
+{
+  "Function with Type Hints and Docstring": {
+    "prefix": "pyfuncdoc",
+    "body": [
+      "def ${1:func_name}(${2:param1}: ${3:type}) -> ${4:return_type}:",
+      "    \"\"\"",
+      "    ${5:Kratak opis funkcije.}",
+      "",
+      "    Args:",
+      "        ${2:param1} (${3:type}): ${6:Opis argumenta.}",
+      "",
+      "    Returns:",
+      "        ${4:return_type}: ${7:Opis povratne vrednosti.}",
+      "    \"\"\"",
+      "    $0"
+    ],
+    "description": "Funkcija sa type hintovima i docstringom u Google stilu"
+  },
+
+  "Print current file absolute path": {
+    "prefix": "osabspath",
+    "body": [
+      "import os",
+      "print(os.path.abspath(__file__))"
+    ],
+    "description": "Prikazuje apsolutnu putanju trenutnog fajla"
+  },
+
+  "List directory content": {
+    "prefix": "oslistdir",
+    "body": [
+      "import os",
+      "print(os.listdir(${1:'.'}))"
+    ],
+    "description": "Listaj fajlove i foldere u datom direktorijumu"
+  }
+}
