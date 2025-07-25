@@ -1,0 +1,51 @@
+{
+  "Toggle Line Comment": {
+    "prefix": "comment-line",
+    "body": ["Ctrl + / - Toggle single line comment"],
+    "description": "Toggle single-line comment (Ctrl + /)"
+  },
+  "Toggle Block Comment": {
+    "prefix": "comment-block",
+    "body": ["Shift + Alt + A - Toggle block comment"],
+    "description": "Toggle block comment (Shift + Alt + A)"
+  },
+  "New File Shortcut": {
+    "prefix": "shortcut-new-file",
+    "body": [
+      "Alt + N - Create new file (from Explorer)"
+    ],
+    "description": "Create new file (Alt + N)"
+  },
+  "New Folder Shortcut": {
+    "prefix": "shortcut-new-folder",
+    "body": [
+      "Alt + Shift + N - Create new folder (from Explorer)"
+    ],
+    "description": "Create new folder (Alt + Shift + N)"
+  },
+  "Find in Explorer": {
+    "prefix": "explorer-search",
+    "body": ["Ctrl + F - Find/search in Explorer view"],
+    "description": "Find/Search in Explorer"
+  },
+  "Navigate to Explorer": {
+    "prefix": "explorer-nav",
+    "body": ["Ctrl + Shift + E - Focus Explorer sidebar"],
+    "description": "Focus Explorer"
+  },
+  "Toggle Terminal": {
+    "prefix": "toggle-terminal",
+    "body": ["Ctrl + ` - Toggle integrated terminal"],
+    "description": "Toggle terminal"
+  },
+  "Navigate Tabs": {
+    "prefix": "navigate-tabs",
+    "body": ["Ctrl + Tab - Switch between open editor tabs"],
+    "description": "Tab switch (Ctrl + Tab)"
+  },
+  "Close All Tabs": {
+    "prefix": "close-all-tabs",
+    "body": ["Ctrl + K, Ctrl + W - Close all open editor tabs"],
+    "description": "Close all tabs"
+  }
+}

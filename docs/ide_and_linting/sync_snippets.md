@@ -71,5 +71,5 @@ Each project will receive its matching `.code-snippets` files in its `.vscode/` 
 
 ## 🧠 Author’s Note
 
-This script is tailored for the personal setup of [JoleDev](https://github.com/JoleDev), but it’s a solid baseline for any structured Python learning environment.  
+This script is tailored for the personal setup of [JoleDev](https://github.com/Jole85), but it’s a solid baseline for any structured Python learning environment.  
 Ideal if you're maintaining multiple projects and want to keep `.code-snippets` clean and in sync.

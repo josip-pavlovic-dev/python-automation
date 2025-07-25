@@ -1,4 +1,4 @@
-import os
+# import os
 import shutil
 from pathlib import Path
 
@@ -9,6 +9,7 @@ SOURCE_DIR = Path("docs/vs-snippets")
 GLOBAL_SNIPPETS = [
     "pylance_basics.code-snippets",
     "commenting_basics.code-snippets",
+    "vscode_shortcuts_basics.code-snippets",
 ]
 
 # Mapa: naziv fajla → ime foldera u koji treba da ide
