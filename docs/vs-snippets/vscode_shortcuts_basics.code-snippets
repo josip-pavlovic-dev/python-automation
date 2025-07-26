@@ -1,51 +1,68 @@
 {
-  "Toggle Line Comment": {
-    "prefix": "comment-line",
-    "body": ["Ctrl + / - Toggle single line comment"],
-    "description": "Toggle single-line comment (Ctrl + /)"
+  "Comment line (Ctrl + /)": {
+    "prefix": "vscode-comment-line",
+    "body": [],
+    "description": "📝 Ctrl+/ → Comment/uncomment selected line"
   },
-  "Toggle Block Comment": {
-    "prefix": "comment-block",
-    "body": ["Shift + Alt + A - Toggle block comment"],
-    "description": "Toggle block comment (Shift + Alt + A)"
+  "Comment block (Shift + Alt + A)": {
+    "prefix": "vscode-comment-block",
+    "body": [],
+    "description": "📝 Shift+Alt+A → Comment/uncomment block"
   },
-  "New File Shortcut": {
-    "prefix": "shortcut-new-file",
-    "body": [
-      "Alt + N - Create new file (from Explorer)"
-    ],
-    "description": "Create new file (Alt + N)"
+  "Explorer focus (Ctrl + Shift + E)": {
+    "prefix": "vscode-focus-explorer",
+    "body": [],
+    "description": "📁 Ctrl+Shift+E → Focus Explorer panel"
   },
-  "New Folder Shortcut": {
-    "prefix": "shortcut-new-folder",
-    "body": [
-      "Alt + Shift + N - Create new folder (from Explorer)"
-    ],
-    "description": "Create new folder (Alt + Shift + N)"
+  "Toggle Terminal (Ctrl + `)": {
+    "prefix": "vscode-toggle-terminal",
+    "body": [],
+    "description": "💻 Ctrl+` → Toggle Terminal"
   },
-  "Find in Explorer": {
-    "prefix": "explorer-search",
-    "body": ["Ctrl + F - Find/search in Explorer view"],
-    "description": "Find/Search in Explorer"
+  "Switch tabs (Ctrl + Tab)": {
+    "prefix": "vscode-switch-tab",
+    "body": [],
+    "description": "🧭 Ctrl+Tab → Next open editor tab"
   },
-  "Navigate to Explorer": {
-    "prefix": "explorer-nav",
-    "body": ["Ctrl + Shift + E - Focus Explorer sidebar"],
-    "description": "Focus Explorer"
+  "Close tab (Ctrl + W)": {
+    "prefix": "vscode-close-tab",
+    "body": [],
+    "description": "❌ Ctrl+W → Close current editor tab"
   },
-  "Toggle Terminal": {
-    "prefix": "toggle-terminal",
-    "body": ["Ctrl + ` - Toggle integrated terminal"],
-    "description": "Toggle terminal"
+  "Close all tabs (Ctrl + K, then W)": {
+    "prefix": "vscode-close-all-tabs",
+    "body": [],
+    "description": "❌ Ctrl+K W → Close all open tabs"
   },
-  "Navigate Tabs": {
-    "prefix": "navigate-tabs",
-    "body": ["Ctrl + Tab - Switch between open editor tabs"],
-    "description": "Tab switch (Ctrl + Tab)"
+  "Find (Ctrl + F)": {
+    "prefix": "vscode-find",
+    "body": [],
+    "description": "🔍 Ctrl+F → Find in file"
   },
-  "Close All Tabs": {
-    "prefix": "close-all-tabs",
-    "body": ["Ctrl + K, Ctrl + W - Close all open editor tabs"],
-    "description": "Close all tabs"
+  "Find in Explorer (Ctrl + Shift + F)": {
+    "prefix": "vscode-find-explorer",
+    "body": [],
+    "description": "🔍 Ctrl+Shift+F → Find in all files (Explorer)"
+  },
+  "Create file (A)": {
+    "prefix": "vscode-new-file",
+    "body": [],
+    "description": "📄 A (in Explorer) → Create new file"
+  },
+  "Create folder (Shift + A)": {
+    "prefix": "vscode-new-folder",
+    "body": [],
+    "description": "📂 Shift+A (in Explorer) → Create new folder"
+  },
+  "Format Document (Ctrl + Alt + F)": {
+    "prefix": "vscode-format-document",
+    "body": [],
+    "description": "🎨 Ctrl+Alt+F → Format active file"
+  },
+  "Assign keyboard shortcut (Ctrl + K, Ctrl + K)": {
+    "prefix": "vscode-assign-shortcut",
+    "body": [],
+    "description": "⚙️ Ctrl+K Ctrl+K → Open keyboard shortcut input"
   }
 }
+
