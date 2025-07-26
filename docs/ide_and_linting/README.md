@@ -1,38 +1,43 @@
-# 🧠 IDE & Linting
+# 🧠 IDE & Linting Configuration / Podešavanje okruženja i lintovanja
 
-![Repo](https://img.shields.io/badge/Repo-python--automation-blue?logo=github)
-![VSCode Version](https://img.shields.io/badge/VS%20Code-1.89+-blue?logo=visualstudiocode)
-![Status](https://img.shields.io/badge/Status-Active-brightgreen)
-![Language](https://img.shields.io/badge/Language-English%20%2B%20Serbian-lightgrey)
-
-## 📂 Folder: `docs/ide_and_linting/`
-
-> 🎯 This folder contains guides and snippets for improving your productivity inside Visual Studio Code.  
-> 🎯 Ovaj folder sadrži vodiče i snippete za poboljšanje tvoje produktivnosti unutar Visual Studio Code okruženja.
+![IDE](https://img.shields.io/badge/IDE-VSCode-blue?logo=visualstudiocode)
+![Status](https://img.shields.io/badge/Status-Active-success)
+![Snippets](https://img.shields.io/badge/Snippets-Included-important)
+![Language](https://img.shields.io/badge/Language-Serbian_&_English-lightgrey)
 
 ---
 
-## 📄 Files
+## 📁 Folder purpose / Svrha foldera
 
-| Filename                           | Description (EN)                         | Opis (SR)                                   |
-| ---------------------------------- | ---------------------------------------- | ------------------------------------------- |
-| `vscode_shortcuts_guide.md`        | Guide with most useful VS Code shortcuts | Vodič sa najkorisnijim prečicama za VS Code |
-| `pylance_explained.md`             | How to use Pylance effectively           | Kako efikasno koristiti Pylance             |
-| `sync_snippets.md`                 | Automation for syncing code snippets     | Automatizacija za sinhronizaciju snippet-a  |
-| `tv_monitor_optimization_guide.md` | Guide to using a TV as dev monitor       | Optimizacija TV-a kao monitora za razvoj    |
+**ENGLISH:**  
+This folder contains resources related to IDE configuration (especially VS Code), linting setup, useful keyboard shortcuts, and extensions for better productivity and code quality.
 
----
-
-## 📌 Notes
-
-- Snippeti vezani za ovu sekciju su deo fajla: `vscode_shortcuts_basics.code-snippets`
-- Ako koristiš .vscode folder u root repozitorijumu, svi snippet-i se mogu automatski koristiti
-- Pylance postavke i optimizacije VS Code-a objašnjene su posebno radi boljeg razumevanja i brže navigacije
+**SRPSKI:**  
+Ovaj folder sadrži resurse vezane za podešavanje programerskog okruženja (posebno VS Code), lintovanje koda, korisne prečice na tastaturi i proširenja koja poboljšavaju produktivnost i kvalitet koda.
 
 ---
 
-## 🧑‍💻 Author
+## 📄 Contents / Sadržaj
 
-**Josip Pavlović (Jole85)**  
-_Road to Fullstack Developer / Python Automation Engineer_  
-📅 Last update: **July 25, 2025**
+| File                                    | Description (EN)                                               | Opis (SR)                                           |
+| --------------------------------------- | -------------------------------------------------------------- | --------------------------------------------------- |
+| `vscode_shortcuts_guide.md`             | Overview of essential VS Code keyboard shortcuts               | Vodič kroz osnovne VS Code prečice                  |
+| `pylance_explained.md`                  | Guide to understanding and using Pylance efficiently           | Objašnjenje Pylance dodatka i kako ga koristiti     |
+| `vscode_shortcuts_basics.code-snippets` | Custom VS Code snippets for navigation, editing and commenting | Snippeti za navigaciju, uređivanje i komentarisanje |
+
+---
+
+## 💡 Notes / Napomene
+
+- Folder `ide_and_linting/` je edukativnog karaktera i koristi se za efikasniji rad tokom projekata.
+- Svi `.md` fajlovi imaju dvojezičnu strukturu (SR/EN).
+- Snippeti se sinhronizuju kroz `sync_snippets.py`, u zavisnosti od prefiksa u imenu fajla.
+
+---
+
+## 🔗 Related folders / Povezani folderi
+
+- `scripts/sync_snippets/` – Automatsko prebacivanje `.code-snippets` fajlova u `.vscode` folder.
+- `.vscode/` – Folder u koji se aktivni snippeti kopiraju i primenjuju.
+
+---

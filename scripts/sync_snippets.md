@@ -1,9 +1,6 @@
 # 🛠️ sync_snippets.py
 
-> A utility script that automates the synchronization of `.code-snippets` files across all active Python automation project folders.  
-> Ideal for structured development environments like `python-automation/`.
-
----
+#### A utility script that automates the synchronization of `.code-snippets` files across all active Python automation project folders. Ideal for structured development environments like `python-automation/`.
 
 ## 📌 Purpose
 

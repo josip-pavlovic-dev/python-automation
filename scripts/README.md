@@ -1,71 +1,53 @@
-# 🛠 Scripts – Developer Utilities / Razvojne skripte
+# 🛠️ scripts – Automation and Configuration Tools / Alati za automatizaciju i konfiguraciju
 
-#### This folder contains developer utilities used to automate repetitive tasks across the `python-automation` project.
+![Status](https://img.shields.io/badge/status-maintained-brightgreen)![Scope](https://img.shields.io/badge/scope-internal--tools-blue)![Language](https://img.shields.io/badge/python-3.12%2B-blue)
 
-#### _Ovaj folder sadrži razvojne skripte koje automatizuju ponavljajuće zadatke u okviru `python-automation` projekta._
+## 📁 Structure / Struktura
 
-## 📄 Included Scripts / Uključene skripte
-
-| Script              | Description (EN)                                              | Opis (SR)                                                               |
-| ------------------- | ------------------------------------------------------------- | ----------------------------------------------------------------------- |
-| `sync_snippets.py`  | Python script to copy `.code-snippets` into `.vscode` folders | Python skripta koja kopira `.code-snippets` fajlove u `.vscode` foldere |
-| `sync_snippets.bat` | Batch wrapper to run the Python sync script on Windows        | Batch fajl za pokretanje Python skripte na Windows-u                    |
-| `sync_snippets.ps1` | PowerShell wrapper for the same purpose                       | PowerShell verzija za istu svrhu                                        |
-| `git_push.bat`      | Batch script for Git add/commit/push with custom message      | Batch skripta za `git add/commit/push` sa porukom                       |
-| `git_push.sh`       | Bash script for Git push operations (Linux/Mac)               | Bash skripta za Git push (Linux/Mac okruženja)                          |
-
----
-
-## ▶️ Usage Instructions / Uputstvo za korišćenje
-
-### 🔁 Python (manual sync)
-
-```bash
-python scripts/sync_snippets.py
 ```
 
-### 🪟 Windows Batch
+scripts/
+│
+├── sync\_snippets/
+│   ├── sync\_snippets.md         ← Dokumentacija za rad skripti
+│   ├── sync\_snippets.py         ← Python skripta za sinhronizaciju snippeta
+│   ├── sync\_snippets.bat        ← Windows batch fajl
+│   └── sync\_snippets.ps1        ← PowerShell verzija
 
-```bash
-scripts\sync_snippets.bat
-```
-
-### 💠 PowerShell
-
-```powershell
-.\scripts\sync_snippets.ps1
 ```
 
 ---
 
-## 🧹 Auto-clean Logic / Logika automatskog brisanja
+## 🔍 Description / Opis
 
-#### Before copying `.code-snippets` files, the script **removes any old snippet files** from the target `.vscode` folder. This guarantees a clean and consistent environment.
+This folder contains internal automation tools that enhance productivity and help maintain consistent workflows across the `python-automation` repository.  
+Ova fascikla sadrži interne alate za automatizaciju koji poboljšavaju produktivnost i olakšavaju održavanje doslednog toka rada u okviru `python-automation` repozitorijuma.
 
-#### _Pre kopiranja novih fajlova, skripta automatski briše sve stare `.code-snippets` fajlove iz ciljanog `.vscode` foldera. Ovo osigurava čisto i konzistentno okruženje._
+### 🔄 `sync_snippets/` – Snippet Synchronization / Sinhronizacija snippeta
 
----
-
-## 📂 Snippet Source Folder / Izvorni folder snippeta
-
-All snippets are stored in:
-
-```
-docs/vs-snippets/
-```
-
-#### Each `.code-snippets` file must follow naming convention based on the project folder or be mapped explicitly inside `sync_snippets.py`.
+- Synchronizes `.code-snippets` files from `docs/vs-snippets/` to project-specific `.vscode/` folders.
+- Maintains exceptions (e.g. `pylance_basics`, `commenting_basics`) for global `.vscode/`.
+- Čisti stari sadržaj i prepisuje samo relevantne fajlove.
 
 ---
 
-## 📌 Notes / Napomene
+## 📄 Documentation / Dokumentacija
 
-#### `pylance_basics.code-snippets` is treated as a global snippet and copied into the root `.vscode/`
-
-#### Manual mappings are defined in `FOLDER_MAP` inside `sync_snippets.py`
+- [sync_snippets.md](./sync_snippets.md) – Usage instructions and logic overview  
+  – Uputstvo za upotrebu i opis logike
 
 ---
 
-###### Keep your snippets in sync. Code with consistency.
+## ✅ Usage Tips / Saveti za korišćenje
 
-###### Održi snippete sinhronizovanim. Kôdiraj dosledno. 🔁
+- Run the script via terminal or double-click `.bat`/`.ps1` if on Windows.
+- Pokreni skriptu iz terminala ili dvostrukim klikom na `.bat`/`.ps1` fajl na Windows sistemu.
+
+---
+
+## 📌 Note / Napomena
+
+These scripts are internal utilities and not intended for standalone deployment.  
+Ove skripte su interne pomoćne alatke i nisu namenjene za samostalno pokretanje van projekta.
+
+---
