@@ -32,8 +32,6 @@ Generates a complete list of all folders and files and saves it to a `structure.
 tree /f /a > structure.txt
 ```
 
-```
-
 - Displays folder and file hierarchy | _Prikazuje hijerarhiju foldera i fajlova_
 - Uses ASCII format for compatibility | _Koristi ASCII prikaz za kompatibilnost_
 - Saves the result in `structure.txt` | _Čuva rezultat u `structure.txt` fajl_
@@ -59,4 +57,7 @@ Josip Pavlović – aspiring Python developer from Novi Sad.
 _LinkedIn profile:_ [https://www.linkedin.com/in/josip-pavlovic85](https://www.linkedin.com/in/josip-p-151951338/)
 
 ---
+
+```
+
 ```
