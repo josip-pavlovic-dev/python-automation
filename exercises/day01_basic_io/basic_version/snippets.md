@@ -1,4 +1,4 @@
-# Snippeti – day01_basic_io
+# 📌 Snippets – main.py
 
 ## 📥 Reading a file line by line | Čitanje fajla red po red
 

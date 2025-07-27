@@ -1,90 +1,61 @@
-# 📘 DAY01_BASIC_IO
+# 📘 DAY01*BASIC_IO – Extended Version | \_DAY01_BASIC_IO – Proširena verzija*
 
-![Status](https://img.shields.io/badge/status-completed-brightgreen)
-![Level](https://img.shields.io/badge/level-beginner-blue)
-![Category](https://img.shields.io/badge/topic-basic--io-lightgrey)
-![Python](https://img.shields.io/badge/python-3.11+-blueviolet)
+![Status](https://img.shields.io/badge/status-completed-brightgreen) | _![Status](https://img.shields.io/badge/status-završeno-brightgreen)_
+![Level](https://img.shields.io/badge/level-beginner-blue) | _![Nivo](https://img.shields.io/badge/nivo-početni-blue)_
+![Category](https://img.shields.io/badge/topic-basic--io-lightgrey) | _![Kategorija](https://img.shields.io/badge/tema-osnovni--io-lightgrey)_
+![Python](https://img.shields.io/badge/python-3.11+-blueviolet) | _![Python](https://img.shields.io/badge/python-3.11+-blueviolet)_
 
-## 📝 Task (English)
+## 📝 Task | _Zadatak_
 
-**Basic I/O – Reading and writing text files**
+Create a Python script that supports two modes: | _Napravi Python skriptu koja podržava dva režima:_
 
-📌 Description:  
-Write a Python script that performs the following:
+1. Read from `input.txt` and write to `output.txt` with line numbers | _Čita iz `input.txt` i piše u `output.txt` sa rednim brojevima_
+2. Use interactive mode: user types input manually, which is also saved with line numbers | _Interaktivni režim: korisnik unosi tekst ručno, koji se čuva sa rednim brojevima_
 
-1. Reads the file `input.txt` line by line.
-2. Prints each line to the terminal.
-3. Creates a file `output.txt` with each line prefixed by its line number.
+The script uses absolute paths so it can be run from any directory | _Skripta koristi apsolutne putanje, pa može biti pokrenuta iz bilo kog direktorijuma_
 
-📦 Bonus (interactive):  
-Ask the user to input multiple lines. Save them into `output.txt`, with line numbers.
-
-> Example:
+### Example Output | _Primer izlaza_
 
 ```
-
 1: Hello
 2: This is a test
 3: End of message
-
 ```
+
+| _1: Zdravo_  
+| _2: Ovo je test_  
+| _3: Kraj poruke_
 
 ---
 
-## 📝 Zadatak (Srpski)
-
-**Basic I/O – Čitanje i pisanje tekstualnih fajlova**
-
-📌 Opis:  
-Napiši Python skriptu koja:
-
-1. Čita fajl `input.txt` red po red.
-2. Ispisuje sadržaj u terminal.
-3. Kreira fajl `output.txt` sa rednim brojevima ispred svake linije.
-
-📦 Bonus (interaktivno):  
-Korisnik unosi više linija iz terminala. Program ih snima u `output.txt` i numeriše ih.
-
-> Primer:
+## 📂 File Structure | _Struktura fajlova_
 
 ```
-
-1: Zdravo
-2: Ovo je test
-3: Kraj poruke
-
-```
-
----
-
-## 📂 Folder Structure
-
-```
-
-day01\_basic\_io/
+day01_basic_io/
 ├── input.txt
 ├── output.txt
 ├── main.py
 ├── README.md
 ├── snippets.md
-├── docs/
-│   └── context_managers_cheatsheet.md
+├── cheatsheet.md
 ├── assets/
+├── docs/
 └── .vscode/
-
 ```
+
+| _Hijerarhijska struktura fajlova u projektu_
 
 ---
 
-## 🚀 Run Examples
+## 🚀 Run Instructions | _Uputstvo za pokretanje_
 
-Standard file input:
+### 🔹 Standard mode (read from file) | _Standardni režim (čitanje iz fajla)_
 
 ```bash
 python main.py
 ```
 
-Bonus (user input mode – interactive):
+### 🔸 Interactive mode (user input) | _Interaktivni režim (unos korisnika)_
 
 ```bash
 python main.py --interactive
@@ -92,12 +63,13 @@ python main.py --interactive
 
 ---
 
-## 🧠 Concepts Used
+## 🧠 Concepts Used | _Korišćeni pojmovi_
 
-- File I/O
-- Context managers (`with`)
-- `enumerate()` function
-- `f-string` formatting
-- Encoding (UTF-8)
+- `sys.argv` for argument parsing | _`sys.argv` za parsiranje argumenata_
+- `pathlib.Path` for file path management | _`pathlib.Path` za rad sa putanjama_
+- `enumerate()` for line numbering | _`enumerate()` za numerisanje linija_
+- `context manager` using `with` blocks | _kontekst menadžer sa `with` blokovima_
+- `f-strings` for formatting strings | _`f-string` za formatiranje teksta_
+- `UTF-8` encoding for file I/O | _UTF-8 enkodiranje za čitanje i pisanje fajlova_
 
 ---

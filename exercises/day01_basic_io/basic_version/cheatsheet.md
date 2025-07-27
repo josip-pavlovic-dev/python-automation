@@ -1,4 +1,4 @@
-# 🧠 Cheatsheet – basic_main.py
+# 🧠 Cheatsheet – main.py
 
 ## 🔍 Line-by-line explanation (English + Serbian)
 
