@@ -1,4 +1,4 @@
-# 📘 basic_main.py – Basic I/O
+# 📘 basic_version – Basic I/O
 
 ![Status](https://img.shields.io/badge/status-done-brightgreen)
 ![Level](https://img.shields.io/badge/level-beginner-blue)
