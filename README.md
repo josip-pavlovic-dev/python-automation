@@ -58,6 +58,22 @@
 
 <tr>
   <td>
+    <a href="./exercises/day01_basic_io/basic_version/README.md"><strong>Day 01 (Exercise) – Basic VERSION I/O</strong></a>
+  </td>
+  <td align="center">
+    <img src="./exercises/day01_basic_io/assets/basic_version-preview4.png" width="160"/>
+    <img src="./exercises/day01_basic_io/assets/basic_version-preview1.png" width="160"/>
+    <img src="./exercises/day01_basic_io/assets/basic_version-preview2.png" width="160"/>
+    <img src="./exercises/day01_basic_io/assets/basic_version-preview3.png" width="160"/>
+  </td>
+  <td>
+    🇬🇧: Basic script to read from `input.txt` and write numbered lines to `output.txt`.<br>
+    🇷🇸: Osnovna skripta koja čita iz `input.txt` i ispisuje redove sa brojevima u `output.txt`.
+  </td>
+</tr>
+
+<tr>
+  <td>
     <a href="./day02_file_info/README.md"><strong>Day 02 – File Info</strong></a>
   </td>
   <td align="center">
@@ -107,6 +123,7 @@
     📜 Scripts: `timestamp_generator.py`, `dated_folder_creator.py`, `old_file_checker.py`, `logger.py`, `main.py`
   </td>
 </tr>
+
   </tbody>
 </table>
 
