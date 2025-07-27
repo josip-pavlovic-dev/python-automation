@@ -1,98 +1,79 @@
 # 🧠 Cheatsheet – main.py
 
-## 🔍 Line-by-line explanation (English + Serbian)
+### 🔍 Line-by-line explanation | _Objašnjenje po linijama_
 
 ---
 
 ### 🔹 Line 1
 
 ```python
-with open("input.txt", "r", encoding="utf-8") as input_file, \
+import os
 ```
 
-📌 Explanation:
-
-- `with` is a **context manager** – it ensures the file is automatically closed.
-- `"r"` means we open the file in **read mode**.
-- `as input_file` binds the file object to a variable.
-- `\` is a **line continuation symbol**, allows splitting long statements.
-
-📌 Objašnjenje:
-
-- `with` je **kontekst menadžer** – fajl se automatski zatvara.
-- `"r"` označava režim **čitanja**.
-- `as input_file` dodeljuje fajl promenljivoj.
-- `\` omogućava da se linija koda nastavi u sledećem redu.
+📌 **Explanation: | _Objašnjenje:_**
+Imports the `os` module to work with paths. | _Uvozi `os` modul za rad sa putanjama._
 
 ---
 
 ### 🔹 Line 2
 
 ```python
-     open("output.txt", "w", encoding="utf-8") as output_file:
+script_dir = os.path.dirname(os.path.abspath(__file__))
 ```
 
-📌 Explanation:
-
-- Opens a new file in **write mode** (`"w"`).
-- If the file exists, it is **overwritten**.
-- If not, it's **created**.
-
-📌 Objašnjenje:
-
-- Otvara novi fajl u **režimu pisanja**.
-- Ako fajl postoji → **biće prepisan**.
-- Ako ne postoji → **biće kreiran**.
+📌 **Explanation: | _Objašnjenje:_**
+Gets the absolute path of the script’s folder. | _Dobija apsolutnu putanju foldera u kom se nalazi skripta._
 
 ---
 
-### 🔹 Line 3
+### 🔹 Line 3–4
+
+```python
+input_path = os.path.join(script_dir, "input.txt")
+output_path = os.path.join(script_dir, "output.txt")
+```
+
+📌 **Explanation: | _Objašnjenje:_**
+Combines the script folder with file names to create absolute paths. | _Kombinuje folder skripte sa nazivima fajlova da bi dobio apsolutne putanje._
+
+---
+
+### 🔹 Line 5–6
+
+```python
+with open(input_path, "r", encoding="utf-8") as input_file, \
+     open(output_path, "w", encoding="utf-8") as output_file:
+```
+
+📌 **Explanation: | _Objašnjenje:_**
+Opens both files using a context manager (`with`). The backslash `\` splits the line for readability. | _Otvara oba fajla pomoću `with` kontekst menadžera. Simbol `\` omogućava podelu linije radi preglednosti._
+
+---
+
+### 🔹 Line 7
 
 ```python
     for index, line in enumerate(input_file, start=1):
 ```
 
-📌 Explanation:
-
-- `enumerate()` returns `(index, line)` pairs.
-- Starts indexing from `1`.
-
-📌 Objašnjenje:
-
-- `enumerate()` daje parove `(index, line)`.
-- Indeksiranje počinje od `1`.
+📌 **Explanation: | _Objašnjenje:_**
+Loops through each line in the input file and assigns line numbers starting from 1. | _Prolazi kroz svaku liniju u `input.txt` i dodeljuje joj redni broj počevši od 1._
 
 ---
 
-### 🔹 Line 4
+### 🔹 Line 8
 
 ```python
         output_file.write(f"{index}: {line}")
 ```
 
-📌 Explanation:
-
-- Formats and writes each line with its number.
-- Uses **f-string** syntax: `f"{index}: {line}"`.
-
-📌 Objašnjenje:
-
-- Formatira i upisuje svaku liniju sa rednim brojem.
-- Koristi **f-string**: `f"{index}: {line}"`.
+📌 **Explanation: | _Objašnjenje:_**
+Writes each line to the output file prefixed by its line number. | _Upisuje svaku liniju u `output.txt`, ispred dodaje njen redni broj._
 
 ---
 
-## ✅ Why use a context manager with multiple files? | Šta `with` blok sa više fajlova postiže?
+## ✅ Why use absolute paths? | _Zašto koristiti apsolutne putanje?_
 
-- Clean and compact code | Čist i kompaktan kod
-- Automatically closes all files | Automatski `close()` za oba fajla – čak i ako se desi greška unutar petlje
-- Handles errors safely | Sigurno rukovanje fajlovima
-- Follows professional practices | Profesionalna praksa
-
----
-
-## ⚠️ Tip: Newline handling | Savet: Rukovanje novim redom
-
-##### `line` already includes `\n`, so you usually **don't need to add it manually** when writing.
-
-##### `line` već uključuje `\n`, tako da ga obično **ne morate ručno dodavati** prilikom pisanja.
+- Prevents file not found errors when script is run from another directory. | _Sprečava greške kada se skripta pokrene iz drugog foldera._
+- Makes the script portable and robust. | _Omogućava prenosivost i pouzdanost._
+- Aids debugging and improves reliability. | _Olakšava debagovanje i povećava stabilnost._

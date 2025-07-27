@@ -30,7 +30,7 @@ This script performs the following:
 
 📌 Important:
 
-- Must be executed from the same directory where `basic_main.py` and `input.txt` reside.
+- Must be executed from the same directory where `main.py` and `input.txt` reside.
 - If `input.txt` is missing, the script will throw a `FileNotFoundError`.
 
 ---
@@ -58,36 +58,52 @@ Ova skripta:
 
 📌 Napomena:
 
-- Skripta mora biti pokrenuta iz foldera u kojem se nalaze `basic_main.py` i `input.txt`.
+- Skripta mora biti pokrenuta iz foldera u kojem se nalaze `main.py` i `input.txt`.
 - Ako `input.txt` ne postoji, dolazi do greške.
 
-## 📂 File Structure
+---
+
+## 📂 File Structure | _Struktura fajlova_
 
 ```
+
 exercises/
-└── day01_basic_io/
-    └── basic_version/
-        ├── main.py # Glavna skripta za zadatak
-        ├── input.txt # Ulazni fajl sa tekstom
-        ├── output.txt # Izlazni fajl sa numerisanim redovima
-        ├── README.md # Dokumentacija zadatka
-        ├── snippets.md # Brzi kod snippeti
-        └── cheatsheet.md # Objašnjenje koda liniju po liniju
+└── day01\_basic\_io/
+└── basic\_version/
+├── main.py
+├── input.txt
+├── output.txt
+├── README.md
+├── snippets.md
+└── cheatsheet.md
+
 ```
 
-## 🚀 Run Instructions
+---
 
-### From terminal:
+## 🚀 Run Instructions | _Instrukcije za pokretanje_
 
 ```bash
-python basic_main.py
+python main.py
 ```
 
-## 🧠 Concepts Used | Korišteni pojmovi
+---
 
-- `with open(...)` → context manager for working with files | context manager za rad sa fajlovima
-- `enumerate(..., start=1)` → line numbering | numerisanje linija
-- `print(...), write(...)` → print and write content | ispis i upis sadržaja
-- `strip()` → removing extra characters (`\n`) | uklanjanje suvišnih karaktera (`\n`)
+## 🧠 Concepts Used | _Korišćeni pojmovi_
+
+- `with open(...)` → context manager for working with files | _kontekst menadžer za rad sa fajlovima_
+- `enumerate(..., start=1)` → line numbering | _numerisanje linija_
+- `print(...), write(...)` → print and write content | _ispis i upis sadržaja_
+- `strip()` → removing extra characters (`\n`) | _uklanjanje suvišnih karaktera (`\n`)_
+
+---
+
+### 👤 Author | _Autor_
+
+![GitHub](https://img.shields.io/badge/GitHub-Jole85-black)
+![Learning](https://img.shields.io/badge/Path-Career%20Transition-informational)
+
+**_Josip Pavlović_** – aspiring Python developer from Novi Sad
+🔗 [LinkedIn Profile](https://www.linkedin.com/in/josip-p-151951338)
 
 ---
