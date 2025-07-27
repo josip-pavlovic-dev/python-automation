@@ -1,55 +1,62 @@
 # 🗣️ chat_commands_guide.md
 
-## 💡 Practical Guide for Communicating with ChatGPT
+## 💡 Efficient ChatGPT Commands | _Efikasne komande za ChatGPT_
 
-_🇬🇧 English version above — 🇷🇸 Verzija na srpskom ispod_
-
----
-
-## 🇬🇧 Efficient Commands for Communication
-
-Use these command patterns to make communication faster and clearer during coding sessions:
-
-| Command                                | Meaning                                             |
-| -------------------------------------- | --------------------------------------------------- |
-| `Show X for copying`                   | Show the `.md` or code file ready to be copied      |
-| `Generate README for X`                | Generate documentation for a tool or folder         |
-| `Confirm location: root or subfolder?` | Ask where to save a file                            |
-| `Start task N` or `Move to task N`     | Start working on a new task (e.g. task03)           |
-| `Explain this script line-by-line`     | Ask for full breakdown of code                      |
-| `Summarize changes`                    | Ask for a summary before commit                     |
-| `Generate commit message`              | Ask for a professional Git commit message           |
-| `Continue from where we left off`      | Resume after a pause                                |
-| `Update roadmap with X`                | Add a goal or skill to the existing roadmap         |
-| `Suggest shortcuts for my workflow`    | Ask for tips to boost efficiency                    |
-| `Evaluate my structure`                | Ask for feedback on current organization            |
-| `Push-ready?`                          | Ask if the current state is ready for commit & push |
+| English Command                      | _Srpska komanda_                        |
+| ------------------------------------ | --------------------------------------- |
+| Show X for copying                   | Prikaži X za kopiranje                  |
+| Generate README for X                | Generiši README za X                    |
+| Confirm location: root or subfolder? | Lokacija fajla: root ili podfolder?     |
+| Start task N / Move to task N        | Počni zadatak N / Prelazak na zadatak N |
+| Explain this script line-by-line     | Objasni ovaj kod red po red             |
+| Summarize changes                    | Sažmi izmene                            |
+| Generate commit message              | Generiši commit poruku                  |
+| Continue from where we left off      | Nastavi gde smo stali                   |
+| Update roadmap with X                | Ažuriraj roadmap sa X                   |
+| Suggest shortcuts for my workflow    | Predloži prečice za moj workflow        |
+| Evaluate my structure                | Proceni moju strukturu                  |
+| Push-ready?                          | Spremno za push?                        |
+| Export structure.txt                 | Eksportuj structure.txt                 |
 
 ---
 
-## 🇷🇸 Efikasne komande za komunikaciju
+## ✅ How to export folder structure | _Kako eksportovati strukturu foldera_
 
-Koristi sledeće obrasce da brže i jasnije komuniciraš tokom rada:
+### 📌 Explanation: | _Objašnjenje:_
 
-| Komanda                                    | Značenje                                   |
-| ------------------------------------------ | ------------------------------------------ |
-| `Prikaži X za kopiranje`                   | Prikaži `.md` ili kod spreman za kopiranje |
-| `Generiši README za X`                     | Kreiraj dokumentaciju za alat ili folder   |
-| `Lokacija fajla: root ili podfolder?`      | Pitaj gde da se sačuva fajl                |
-| `Kreći sa taskom N` ili `Prelaz na task N` | Pokretanje novog zadatka (npr. task03)     |
-| `Objasni skriptu red po red`               | Tražiš detaljnu analizu koda               |
-| `Sažmi izmene`                             | Tražiš rezime pre commita                  |
-| `Generiši commit poruku`                   | Profesionalna poruka za Git commit         |
-| `Nastavi gde smo stali`                    | Obnavljaš rad nakon pauze                  |
-| `Dodaj X u roadmap`                        | Dodavanje cilja ili veštine u plan         |
-| `Predloži prečice za workflow`             | Tražiš savete za veću efikasnost           |
-| `Proceni strukturu`                        | Tražiš feedback na trenutni raspored       |
-| `Spremno za push?`                         | Da li je sve spremno za commit i push      |
+Generates a complete list of all folders and files and saves it to a `structure.txt` file. | _Generiše kompletnu listu foldera i fajlova i čuva je u fajl `structure.txt`._
+
+### 🧪 Command for CMD terminal:
+
+```cmd
+tree /f /a > structure.txt
+```
+
+```
+
+- Displays folder and file hierarchy | _Prikazuje hijerarhiju foldera i fajlova_
+- Uses ASCII format for compatibility | _Koristi ASCII prikaz za kompatibilnost_
+- Saves the result in `structure.txt` | _Čuva rezultat u `structure.txt` fajl_
+
+---
+
+## 🚀 Purpose of this Guide | _Svrha ovog vodiča_
+
+- Helps keep communication efficient and fast | _Omogućava efikasnu i brzu komunikaciju_
+- Maintains clarity during long sessions | _Održava jasnoću tokom dugih sesija_
+- Ensures all tasks are documented well | _Obezbeđuje da su svi zadaci dokumentovani_
 
 ---
 
-## ✅ Purpose of this Guide
+## 👨‍💻 Author | _Autor_
 
-This guide helps us work **faster** and **clearer** by relying on **standard phrases**. You’ll avoid repetition and stay focused on coding.
+[![GitHub](https://img.shields.io/badge/GitHub-Jole85-blue?logo=github)](https://github.com/Jole85)
+[![Career Path](https://img.shields.io/badge/Learning%20Path-Python%20Automation-orange)](https://github.com/Jole85/python-automation)
+[![Open for Work](https://img.shields.io/badge/Open%20to-Work-brightgreen)](https://www.linkedin.com/in/josip-pavlovic85)
+
+Josip Pavlović – aspiring Python developer from Novi Sad.
+
+_LinkedIn profile:_ [https://www.linkedin.com/in/josip-pavlovic85](https://www.linkedin.com/in/josip-p-151951338/)
 
 ---
+```
