@@ -1,0 +1,4 @@
+Ovo je test fajl za vežbu čitanja.
+Svaka linija biće numerisana.
+Cilj je da se proveri kako output.txt izgleda.
+Fajl ima ukupno četiri linije.
