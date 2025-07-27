@@ -1,0 +1,3 @@
+1: Zdravo svete.
+2: Ovo je test.
+3: Kraj fajla.
