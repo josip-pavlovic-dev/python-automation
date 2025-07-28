@@ -6,26 +6,24 @@
 ![License](https://img.shields.io/badge/License-MIT-green)
 ![Last Update](https://img.shields.io/badge/Last_Update-July_2025-orange)
 
----
-
 ## 📂 File Structure | _Struktura fajlova_
 
 ```bash
-python-automation/
-└── day02_path_ops/
-    ├── docs/
-    │   ├── cheatsheet.md
-    │   └── snippets.md
-    ├── main.py
-    └── README.md
+day02_path_ops/
+├── docs/
+│   ├── cheatsheet.md
+│   └── snippets.md
+├── extra_task/
+│   ├── path_inspector.py
+│   └── README.md
+├── main.py
+└── README.md
 ```
-
----
 
 ## 📝 Project Goal | _Cilj projekta_
 
-- Explore how to construct absolute paths using `__file__` and `os.path`. | _Istražiti kako se konstrušu apsolutne putanje korišćenjem `__file__` i `os.path`._
-- Understand why absolute paths make scripts more reliable and portable. | _Razumeti zašto apsolutne putanje čine skripte pouzdanijim i prenosivim._
+- Explore how to construct absolute paths using `__file__`, `os.path` and `pathlib`. | _Istražiti kako se konstrušu apsolutne putanje korišćenjem `__file__`, `os.path` i `pathlib`._
+- Learn to write scripts that work regardless of working directory. | _Naučiti kako pisati skripte koje funkcionišu bez obzira na radni direktorijum._
 
 ---
 
@@ -33,30 +31,38 @@ python-automation/
 
 - `__file__` special variable | _Specijalna promenljiva `__file__`_
 - `os.path.abspath()` | _dobijanje apsolutne putanje_
-- `os.path.dirname()` | _putanja do foldera u kome se nalazi fajl_
 - `os.path.join()` | _spajanje delova putanje_
-- `os.path.exists()` | _provera da li fajl ili folder postoji_
+- `Path(__file__).resolve()` | _apsolutna putanja kroz pathlib_
+- `Path.parent` | _roditeljski direktorijum_
+- `Path / "file"` | _spajanje putanja uz `/` operator_
 
 ---
 
 ## 💡 Bonus Ideas | _Bonus ideje_
 
-- Create a reusable function that prints full paths of all files in a folder. | _Napraviti funkciju koja ispisuje apsolutne putanje svih fajlova u folderu._
-- Write tests to confirm path construction works from different working directories. | _Pisati testove koji potvrđuju da putanje funkcionišu iz različitih radnih foldera._
+- Inspect script behavior when launched from different folders. | _Ispitati ponašanje skripte kada se pokrene iz različitih foldera._
+- Explore pathlib’s advanced path manipulations. | _Istražiti napredne mogućnosti `pathlib` biblioteke._
 
 ---
 
 ## 📚 Related Files | _Povezani fajlovi_
 
-- [cheatsheet.md](docs/cheatsheet.md) → Detailed explanation of path operations. | _Detaljno objašnjenje rada sa putanjama._
-- [snippets.md](docs/snippets.md) → Useful code snippets. | _Korisni kod snippeti._
+- [cheatsheet.md](./docs/cheatsheet.md) → Explanation of path functions. | _Objašnjenja funkcija za rad sa putanjama._
+- [snippets.md](./docs/snippets.md) → Practical code examples. | _Praktični kod primeri._
+- [path_inspector.py](./extra_task/path_inspector.py) → Practice script. | _Skripta za vežbu._
+- [README - path_inspector.py](./extra_task/README.md) → Documentation for path inspector. | _Dokumentacija za skriptu path_inspector.py._
 
 ---
 
 ## 👨‍💻 Author | _Autor_
 
-[![GitHub](https://img.shields.io/badge/GitHub-Jole85-black?logo=github)](https://github.com/Jole85)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue?logo=linkedin)](https://www.linkedin.com/in/josip-p-151951338/)
-![Path](https://img.shields.io/badge/Learning_Path-Python_Automation-orange)
+[![GitHub](https://img.shields.io/badge/GitHub-Josip_Pavlović-black?logo=github)](https://github.com/Jole85)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue?logo=linkedin)](https://www.linkedin.com/in/josip-p-151951338/)![Path](https://img.shields.io/badge/Learning_Path-Python_Automation-orange)
 
-**Josip Pavlović** — aspiring Python developer from Novi Sad 🇷🇸
+**Josip Pavlović** — aspiring Python developer from Novi Sad
+
+---
+
+```
+
+```
