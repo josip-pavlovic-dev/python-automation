@@ -1,33 +1,32 @@
-# .gitignore file for Python-automation project | .gitignore fajl za Python-automation projekat
+# .gitignore file for Python-automation project
+# Defines files and folders to be excluded from version control
+# Definiše fajlove i foldere koje nećemo uključivati u Git verzionisanje
 
-# Python cache files | Keš fajlovi za Python
+# Byte-compiled / optimized / DLL files | Bajt-kompajlirani fajlovi / optimizovani / DLL
 __pycache__/
 *.py[cod]
+*$py.class
 
-# Test folder (globalno definisan test direktorijum) | Global test folder
-/test_folder/
-
-# Test folder in day03_file_management | Test folder unutar day03_file_management
-day03_file_management/test_folder/
-
-# File Organizer test files | Test fajlovi za File Organizer
-01-file-organizer/test_files/
-
-# Log files | Log fajlovi
-*.log
-log.txt
-
-# Environment variables | Varijable okruženja
-.env
-*.env
-
-# Virtual environments | Virtuelna okruženja
+# Virtual environment | Virtuelno okruženje
+.venv/
 venv/
-.env/
+ENV/
 
-# macOS system files | macOS sistemski fajlovi
-.DS_Store
-
-# VS Code settings | Podešavanja za VS Code
+# VSCode project settings | Podešavanja za VS Code projekte
 .vscode/
-desktop.ini
+
+# System files | Sistemski fajlovi
+.DS_Store
+Thumbs.db
+
+# Log and cache files | Logovi i fajlovi sa kešom
+*.log
+*.cache
+*.tmp
+
+# Environment variables | Fajlovi sa okruženjima
+.env
+.env.*
+
+# Internal folder structure overview file (used with ChatGPT only) | Interni fajl sa strukturom foldera (koristi se samo sa ChatGPT-om)
+structure.txt
