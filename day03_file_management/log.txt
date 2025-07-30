@@ -23,3 +23,24 @@
 [2025-07-24 19:26:36] [INFO]    .jpeg: 1 file(s)
 [2025-07-24 19:26:36] [INFO]    .csv: 1 file(s)
 [2025-07-24 19:26:36] [INFO] ✅ Finished scanning folder: C:\Users\JoleDev\dev-learning\python-automation\day03_file_management\test_folder
+[2025-07-30 21:14:36] [INFO] 📁 Scanning folder: C:\Users\JoleDev\dev-learning\python-automation\day03_file_management\test_folder
+[2025-07-30 21:14:36] [INFO] 📂 Folder found: C:\Users\JoleDev\dev-learning\python-automation\day03_file_management\test_folder\docs
+[2025-07-30 21:14:36] [INFO] 📁 Scanning folder: C:\Users\JoleDev\dev-learning\python-automation\day03_file_management\test_folder\docs
+[2025-07-30 21:14:36] [INFO] 📄 File found: C:\Users\JoleDev\dev-learning\python-automation\day03_file_management\test_folder\docs\info.txt
+[2025-07-30 21:14:36] [INFO] 📂 Folder found: C:\Users\JoleDev\dev-learning\python-automation\day03_file_management\test_folder\images
+[2025-07-30 21:14:36] [INFO] 📁 Scanning folder: C:\Users\JoleDev\dev-learning\python-automation\day03_file_management\test_folder\images
+[2025-07-30 21:14:36] [INFO] 📄 File found: C:\Users\JoleDev\dev-learning\python-automation\day03_file_management\test_folder\images\test1.png
+[2025-07-30 21:14:36] [INFO] 📄 File found: C:\Users\JoleDev\dev-learning\python-automation\day03_file_management\test_folder\images\test2.jpg
+[2025-07-30 21:14:36] [INFO] 📄 File found: C:\Users\JoleDev\dev-learning\python-automation\day03_file_management\test_folder\images\test3.jpeg
+[2025-07-30 21:14:36] [INFO] 📄 File found: C:\Users\JoleDev\dev-learning\python-automation\day03_file_management\test_folder\images\test4.png
+[2025-07-30 21:14:36] [INFO] 📄 File found: C:\Users\JoleDev\dev-learning\python-automation\day03_file_management\test_folder\image_report.csv
+[2025-07-30 21:14:36] [INFO] 📂 Folder found: C:\Users\JoleDev\dev-learning\python-automation\day03_file_management\test_folder\scripts
+[2025-07-30 21:14:36] [INFO] 📁 Scanning folder: C:\Users\JoleDev\dev-learning\python-automation\day03_file_management\test_folder\scripts
+[2025-07-30 21:14:36] [INFO] 📄 File found: C:\Users\JoleDev\dev-learning\python-automation\day03_file_management\test_folder\scripts\info.txt
+[2025-07-30 21:14:36] [INFO] 📊 File count by type:
+[2025-07-30 21:14:36] [INFO]    .txt: 2 file(s)
+[2025-07-30 21:14:36] [INFO]    .png: 2 file(s)
+[2025-07-30 21:14:36] [INFO]    .jpg: 1 file(s)
+[2025-07-30 21:14:36] [INFO]    .jpeg: 1 file(s)
+[2025-07-30 21:14:36] [INFO]    .csv: 1 file(s)
+[2025-07-30 21:14:36] [INFO] ✅ Finished scanning folder: C:\Users\JoleDev\dev-learning\python-automation\day03_file_management\test_folder
