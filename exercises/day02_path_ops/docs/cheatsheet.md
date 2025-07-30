@@ -28,6 +28,8 @@ Combines directory and file into a complete path. | _Spaja direktorijum i naziv 
 
 Checks if the given path exists. | _Proverava da li data putanja postoji._
 
+---
+
 ### `Path(__file__).resolve()`
 
 Returns the absolute `Path` object of the script. | _Vraća apsolutni `Path` objekat skripte._
@@ -48,16 +50,16 @@ Reads/writes file content safely. | _Sigurno čita/piše sadržaj fajla._
 
 ```python
 from pathlib import Path
-script_path = Path(__file__).resolve()                 # Absolute path to script | _Apsolutna putanja do skripte_
-script_dir = script_path.parent                        # Folder where script is located | _Folder u kome se skripta nalazi_
-input_file = script_dir / "input.txt"                 # Full path to input file | _Puna putanja do ulaznog fajla_
+script_path = Path(__file__).resolve()           # Absolute path to script | _Apsolutna putanja do skripte_
+script_dir = script_path.parent                  # Folder where script is located | _Folder u kome se skripta nalazi_
+input_file = script_dir / "input.txt"            # Full path to input file | _Puna putanja do ulaznog fajla_
 ```
 
 ```python
 import os
-script_path = os.path.abspath(__file__)                # Absolute path to script | _Apsolutna putanja do skripte_
-script_dir = os.path.dirname(script_path)              # Directory of script | _Direktorijum u kom je skripta_
-file_path = os.path.join(script_dir, "data", "file.txt")  # Joined path | _Spojena putanja_
+script_path = os.path.abspath(__file__)                  # Absolute path to script | _Apsolutna putanja do skripte_
+script_dir = os.path.dirname(script_path)                # Directory of script | _Direktorijum u kom je skripta_
+file_path = os.path.join(script_dir, "data", "file.txt") # Joined path | _Spojena putanja_
 ```
 
 ## 📁 Typical usage pattern | _Tipičan obrazac korišćenja_
@@ -72,7 +74,9 @@ file_path = os.path.join(script_dir, "data", "file.txt")  # Joined path | _Spoje
 
 [![GitHub](https://img.shields.io/badge/GitHub-Josip_Pavlović-blue?logo=github)](https://github.com/Jole85)
 [![Learning Path](https://img.shields.io/badge/Path-Python_Automation-orange)](https://github.com/Jole85/python-automation)
+
 🔗 [LinkedIn Profile](https://www.linkedin.com/in/josip-p-151951338/)
+
 **Josip Pavlović — aspiring Python developer from Novi Sad**
 
 ---

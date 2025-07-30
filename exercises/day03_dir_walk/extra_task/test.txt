@@ -1,1 +1,2 @@
 Ovo je testni fajl kreiran pomoću pathlib modula.
+Dodat red (append).
