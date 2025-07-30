@@ -1,61 +1,68 @@
-# 🌐 Browser Flags & Settings for Stable Long Chats
-
-## ✅ Chrome Setup | _Chrome podešavanja_
-
-### 1. Open Flags Menu | _Otvori Flags meni_
-
-- Type in the address bar:  
-  `chrome://flags/`  
-  | _Ukucaj u adresnu liniju: `chrome://flags/`_
-
-### 2. Search for **Occlusion** | _Pretraži pojam "Occlusion"_
-
-- Use **Ctrl + F** and search for:  
-  `Calculate window occlusion on Windows`
-  | _Koristi Ctrl + F i pretraži: `Calculate window occlusion on Windows`_
-
-### 3. Disable it | _Onemogući opciju_
-
-- Change from **Default** → **Disabled**  
-  | _Promeni sa **Default** na **Disabled**_
-
-### 4. Restart Chrome | _Restartuj Chrome_
-
-- Click **Relaunch** when prompted  
-  | _Klikni **Relaunch** kada ti bude ponuđeno_
+# 🌐 Browser Settings for Stable ChatGPT Usage
 
 ---
 
-## ✅ Edge Setup | _Edge podešavanja_
+## 🔹 Chrome (ako ga koristiš) | _Chrome (if you use it)_
 
-### 1. Open Flags Menu | _Otvori Flags meni_
+1. **Flags podešavanja**
 
-- Type in the address bar:  
-  `edge://flags/`  
-  | _Ukucaj u adresnu liniju: `edge://flags/`_
+   - Otvori: `chrome://flags`
+   - Pretraži: **Calculate Window Occlusion on Windows**
+   - Ako postoji → **Disable**
+   - Ako ga nema, Google ga je uklonio u novijoj verziji Chrome-a (nije potrebno podešavanje).
 
-### 2. Search for **Occlusion** | _Pretraži pojam "Occlusion"_
-
-- Use **Ctrl + F** and search for:  
-  `Calculate window occlusion on Windows`
-  | _Koristi Ctrl + F i pretraži: `Calculate window occlusion on Windows`_
-
-### 3. Disable it | _Onemogući opciju_
-
-- Change from **Default** → **Disabled**  
-  | _Promeni sa **Default** na **Disabled**_
-
-### 4. Turn off Sleeping Tabs | _Isključi Sleeping Tabs_
-
-- Open: `edge://settings/system`
-- Disable: **Save resources with sleeping tabs**
-  | _Isključi opciju **Save resources with sleeping tabs**_
+2. **Cache & cookies čišćenje**
+   - `Ctrl + Shift + Del` → očisti sve osim lozinki.
+   - Radi to periodično (npr. 1x nedeljno).
 
 ---
 
-## 🔹 Notes | _Napomene_
+## 🔹 Edge (preporučeno) | _Edge (recommended)_
 
-- This prevents the browser from putting inactive tabs (like long ChatGPT sessions) into sleep mode.  
-  | _Ovo sprečava browser da "uspava" neaktivne tabove (kao duge ChatGPT sesije)._
-- **Ctrl + Shift + Del** only clears cache/history; it does not delete ChatGPT conversations.  
-  | _Ctrl + Shift + Del briše cache/istoriju, ali ne briše ChatGPT konverzacije._
+### 1️⃣ Flags podešavanja
+
+- Otvori: `edge://flags`
+- Pretraži: **Calculate Window Occlusion on Windows**
+- Ako postoji → **Disable**
+- U novijim verzijama Edge-a opcija ne postoji → preskoči.
+
+### 2️⃣ System & Performance podešavanja
+
+- Otvori: `edge://settings/system`
+
+![Edge Settings Screenshot](../../assets/edge_performance_settings.png)
+
+- **Efficiency mode**:
+
+  - Isključen kada je laptop na struji (✅).
+  - Uključi ručno kada koristiš bateriju, ako želiš da štediš bateriju.
+
+- **Save resources with sleeping tabs**:
+
+  - Drži isključeno kada radiš duge sesije (✅).
+  - Ako je uključeno → dodaj `chat.openai.com` u listu "Never put these sites to sleep" (što je već urađeno).
+
+- **Enable performance detector**:
+
+  - Može da ostane uključen (✅) – obaveštava te o uskim grlima performansi.
+
+- **Enable resource controls**:
+
+  - Ostaviti isključeno za maksimalnu stabilnost.
+
+- **Startup Boost**:
+  - Možeš da ga isključiš jer nema uticaj na performanse ChatGPT-a, samo na brzinu pokretanja Edge-a.
+
+---
+
+## 🔹 Generalne preporuke | _General recommendations_
+
+- **Očisti cache & cookies**: `Ctrl + Shift + Del` → očisti sve osim lozinki.
+- **Ne otvaraj previše tabova** paralelno kada koristiš ChatGPT (smanjuje šansu za usporavanje).
+- **Koristi Edge** jer je stabilniji za duge sesije.
+
+---
+
+📌 Ove postavke minimizuju zamrzavanja tabova i problem "Page Unresponsive" tokom rada u ChatGPT-u.
+
+---
