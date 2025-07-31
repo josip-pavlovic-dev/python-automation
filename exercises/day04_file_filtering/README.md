@@ -1,36 +1,48 @@
-# DAY04_FILE_FILTERING
+# 🗂️ Day 04 – File Filtering | _Filtriranje fajlova_
 
-## ��� Задатак (srpski)
+[![GitHub](https://img.shields.io/badge/GitHub-Josip%20Pavlović-blue?logo=github)](https://github.com/Jole85)
+[![Learning](https://img.shields.io/badge/Learning-Python%20Automation-green)]()
+[![Status](https://img.shields.io/badge/Status-Completed-success)]()
 
-File Filtering – Veličine i ekstenzije
+## 📄 Description | _Opis_
 
-��� Опис:
-> Овде иде опис задатка на српском.
+This mini project demonstrates how to filter files in a directory using **pathlib**.  
+Files are filtered by **size** and **modification date**, and then grouped by type (.py, .md, others).  
+Results are written into `file_filtering_output.txt`.
 
-## ��� Task (English)
-
-File Filtering – Veličine i ekstenzije
-
-��� Description:
-> Here goes the task description in English.
+_Ovaj mini projekat demonstrira kako filtrirati fajlove u direktorijumu koristeći **pathlib**._  
+_Fajlovi se filtriraju po **veličini** i **datumu izmene**, a zatim grupišu po tipu (.py, .md, ostali)._  
+_Rezultati se upisuju u `file_filtering_output.txt`._
 
 ---
 
-## ��� Folder Structure
+## 📂 File Structure | _Struktura fajlova_
 
 ```
 day04_file_filtering/
+│
 ├── main.py
+├── file_filtering_output.txt
 ├── README.md
 ├── snippets.md
-├── docs/
-├── assets/
-└── .vscode/
+├── cheatsheet.md
+
 ```
 
-## ��� Quick Start
+---
 
-```bash
-python main.py
-```
+## ✅ Features | _Funkcionalnosti_
 
+- Filters files by **size** and **modification date** | _Filtrira fajlove po **veličini** i **datumu izmene**_
+- Separates results by **file type** (.py, .md, others) | _Razdvaja rezultate po **tipu fajla** (.py, .md, ostali)_
+- Writes output to `file_filtering_output.txt` | _Upisuje rezultate u `file_filtering_output.txt`_
+
+---
+
+## 👨‍💻 Author | _Autor_
+
+[![GitHub](https://img.shields.io/badge/GitHub-Josip%20Pavlović-blue?logo=github)](https://github.com/Jole85)
+
+**Josip Pavlović — aspiring Python developer from Novi Sad**
+
+---

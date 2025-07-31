@@ -35,19 +35,19 @@ else:
 
 # 4) Upis (overwrite) ili dopuna (append)
 # Overwrite:
-""" 
+
 test_file.write_text(
     "Ovo je testni fajl kreiran pomoću pathlib modula.\n",
     encoding="utf-8"
 )
-"""
+
 # Ako želimo append umesto overwrite, koristimo ovo umesto write_text:
 with test_file.open("a", encoding="utf-8") as f:
     f.write("Dodat red (append).\n")
 
 # 5) Čitanje sadržaja
 content = test_file.read_text(encoding="utf-8")
-print(f"Sadržaj test.txt:\n {content}")
+print(f"Sadržaj test.txt:\n{content}")
 
 
 
