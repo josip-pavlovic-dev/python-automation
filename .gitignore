@@ -30,3 +30,6 @@ Thumbs.db
 
 # Internal folder structure overview file (used with ChatGPT only) | Interni fajl sa strukturom foldera (koristi se samo sa ChatGPT-om)
 structure.txt
+
+# Slučajni folder koji ne želimo da pratimo
+kitchen_recipes/
