@@ -1,192 +1,67 @@
 # 🐍 Python Automation Projects
 
-<!-- Tehnički bedževi -->
-
-[![Python Version](https://img.shields.io/badge/python-3.13+-blue.svg?style=flat-square)](https://www.python.org/downloads/)
-![Platform](https://img.shields.io/badge/Platform-Windows%2011-lightgrey?style=flat-square)
-[![License](https://img.shields.io/github/license/Jole85/python-automation?style=flat-square)](LICENSE)
-[![Repo Size](https://img.shields.io/github/repo-size/Jole85/python-automation?style=flat-square)](https://github.com/Jole85/python-automation)
-[![Last Commit](https://img.shields.io/github/last-commit/Jole85/python-automation?style=flat-square)](https://github.com/Jole85/python-automation/commits/main)
-
-<!-- Personalni i statusni bedževi -->
-
-![Copilot Configured](./assets/copilot_badge.svg)
-[![👤 Developer Profile](./assets/dev_profile_badge.svg)](./docs/developer_profile.md)
-[![📘 Career Notes](./assets/career_notes_badge.svg)](./docs/career_notes.md)
-
-<!-- Status bedževi po danima -->
-
-[![Day01](./01-file-organizer/assets/day01_status.svg)](./01-file-organizer/README.md)
-[![Day02](./day02_file_info/assets/day02_status.svg)](./day02_file_info/README.md)
-[![Day03](./day03_file_management/assets/day03_status.svg)](./day03_file_management/docs/README.md)
-[![Day04](./day04_datetime/assets/day04_status.svg)](./day04_datetime/README.md)
-
-## ✨ Bilingual Repository | Dvojezični repozitorijum
-
-#### 🇷🇸 Projekat sistematizovanog učenja kroz automatizaciju zadataka u Pythonu – kreiran sa ciljem da postanem profesionalni Python programer. Svaki dan je zaseban modul sa dokumentacijom, skriptama i testovima.
-
-#### 🇬🇧 Structured learning-through-projects repository focused on task automation using Python. Built with the goal of becoming a professional Python developer. Each day is a separate, self-contained module.
+![Python 3.11+](https://img.shields.io/badge/Python-3.11+-blue.svg?style=flat-square)
+![Windows 11](https://img.shields.io/badge/Platform-Windows%2011-lightgrey?style=flat-square)
+![MIT License](https://img.shields.io/github/license/Jole85/python-automation?style=flat-square)
+![Last Commit](https://img.shields.io/github/last-commit/Jole85/python-automation?style=flat-square)
+![Portfolio Progress](https://img.shields.io/badge/Portfolio-In%20Progress-yellow?style=flat-square)
 
 ---
 
-## 📂 Projects Overview | Pregled projekata
+## 🎯 Purpose | _Svrha_
 
-<table>
-  <thead>
-    <tr>
-      <th>📁 Folder</th>
-      <th>🖼️ Preview</th>
-      <th>📝 Description</th>
-    </tr>
-  </thead>
-  <tbody>
-<tr>
-  <td>
-    <a href="./01-file-organizer/README.md"><strong>Day 01 – File Organizer</strong></a>
-  </td>
-  <td align="center">
-    <img src="./01-file-organizer/assets/01-file-organizer-preview-3.png" width="160"/>
-    <img src="./01-file-organizer/assets/01-file-organizer-preview-2.png" width="160"/>
-    <img src="./01-file-organizer/assets/01-file-organizer-preview-5.png" width="160"/>
-    <img src="./01-file-organizer/assets/01-file-organizer-preview-4.png" width="160"/>
-  </td>
-  <td>
-    🇬🇧: CLI project that organizes mixed files by extension into subfolders. Includes reusable logger and test generator.<br>
-    🇷🇸: CLI projekat koji organizuje izmešane fajlove prema ekstenziji u podfoldere. Uključuje višekratno upotrebljiv logger i generator test fajlova.
-  </td>
-</tr>
-
-<tr>
-  <td>
-    <a href="./exercises/day01_basic_io/basic_version/README.md"><strong>Day 01 (Exercise) – Basic VERSION I/O</strong></a>
-  </td>
-  <td align="center">
-    <img src="./exercises/day01_basic_io/assets/basic_version-preview4.png" width="160"/>
-    <img src="./exercises/day01_basic_io/assets/basic_version-preview1.png" width="160"/>
-    <img src="./exercises/day01_basic_io/assets/basic_version-preview2.png" width="160"/>
-    <img src="./exercises/day01_basic_io/assets/basic_version-preview3.png" width="160"/>
-  </td>
-  <td>
-    🇬🇧: Basic script to read from `input.txt` and write numbered lines to `output.txt`.<br>
-    🇷🇸: Osnovna skripta koja čita iz `input.txt` i ispisuje redove sa brojevima u `output.txt`.
-  </td>
-</tr>
-
-<tr>
-  <td>
-    <a href="./day02_file_info/README.md"><strong>Day 02 – File Info</strong></a>
-  </td>
-  <td align="center">
-    <img src="./day02_file_info/assets/day02_file_info-preview-4.png" width="160"/>
-    <img src="./day02_file_info/assets/day02_file_info-preview-3.png" width="160"/>
-    <img src="./day02_file_info/assets/day02_file_info-preview-1.png" width="160"/>
-    <img src="./day02_file_info/assets/day02_file_info-preview-2.png" width="160"/>
-  </td>
-  <td>
-    🇬🇧: Basic CLI tool for file path manipulation using `os` module.<br>
-    🇷🇸: Osnovni CLI alat za rad sa putanjama koristeći `os` modul.
-  </td>
-</tr>
-
-<tr>
-  <td>
-    <a href="./day03_file_management/README.md"><strong>Day 03 – File Management Suite</strong></a>
-  </td>
-  <td align="center">
-    <img src="./day03_file_management/assets/file_structure_creator-step5.png" width="160"/>
-    <img src="./day03_file_management/assets/scanner-step4.png" width="160"/>
-    <img src="./day03_file_management/assets/cleaner_step4.png" width="160"/>
-    <img src="./day03_file_management/assets/image_report-step2.png" width="160"/>
-    <img src="./day03_file_management/assets/image_report-step3.png" width="160"/>
-    <img src="./day03_file_management/assets/cleaner_step3.png" width="160"/>
-  </td>
-  <td>
-    🇬🇧: Modular tools for creating, cleaning, scanning and documenting folder/file structures.<br>
-    🇷🇸: Modularni alati za kreiranje, čišćenje, skeniranje i dokumentovanje struktura fajlova i foldera.<br><br>
-    📜 Scripts: `scanner.py`, `cleaner.py`, `size_cleaner.py`, `file_structure_creator.py`, `image_report.py`, `logger.py`, `setup_test_folder.sh`
-  </td>
-</tr>
-
-<tr>
-  <td>
-    <a href="./day04_datetime"><strong>Day 04 – Timestamp Toolkit</strong></a>
-  </td>
-  <td align="center">
-    <img src="day04_datetime/assets/day04-preview-1.png" width="160"/>
-    <img src="day04_datetime/assets/day04-preview-2.png" width="160"/>
-    <img src="day04_datetime/assets/day04-preview-3.png" width="160"/>
-    <img src="day04_datetime/assets/day04-preview-4.png" width="160"/>
-  </td>
-  <td>
-    🇬🇧: Tools for generating timestamped folders, checking file age, and working with datetime objects.<br>
-    🇷🇸: Alati za kreiranje foldera sa vremenskom oznakom, proveru starosti fajlova i rad sa datumima/vremenima.<br><br>
-    📜 Scripts: `timestamp_generator.py`, `dated_folder_creator.py`, `old_file_checker.py`, `logger.py`, `main.py`
-  </td>
-</tr>
-
-  </tbody>
-</table>
-
-## 📘 Documentation
-
-#### 📁 All cheatsheets and guides can be found in [`/docs`](./docs) folder:
-
-- [Learning Roadmap](docs/learning_roadmap.md)
-- [AI Workflow & Copilot Setup](docs/ai_integration_guide.md)
-- [Logger Cheatsheet](docs/logger_cheatsheet.md)
-- [CLI Tools (Bash, Magick, ffmpeg)](docs/cli_toolkit_cheatsheet.md)
-- [Python Imports & Builtins](docs/python_imports_and_modules.md)
-- [Python Testing Guide](docs/python_testing_guide.md)
-- [Pylance & VS Code Tips](docs/ide_and_linting/pylance_explained.md)
-- [HTML in Markdown](docs/ide_and_linting/html_markdown_guide.md)
+🇬🇧 Structured Python automation projects with daily commits, aiming to transition from civil engineering to junior Python developer.  
+🇷🇸 Strukturisani Python projekti za automatizaciju sa dnevnim commit‑ima, sa ciljem prelaska iz građevine u junior Python programera.
 
 ---
 
-## 🤖 GitHub Copilot Configuration | GitHub Copilot konfiguracija
+## 📂 Project Overview | _Pregled projekata_
 
-![Copilot Enabled](https://img.shields.io/badge/GitHub_Copilot-configured-blue?logo=github&logoColor=white)
+| Project                 | _Projekat_                  | Description                      | _Opis_                                   | Docs                                          |
+| ----------------------- | --------------------------- | -------------------------------- | ---------------------------------------- | --------------------------------------------- |
+| **01-file-organizer**   | _Organizator fajlova_       | File cleanup & organization      | _Čišćenje i organizacija fajlova_        | [docs](./01-file-organizer/docs/)             |
+| **day01_basic_io**      | _Osnovni ulaz/izlaz_        | Python I/O basics                | _Osnove rada sa fajlovima i terminalom_  | [docs](./exercises/day01_basic_io/docs/)      |
+| **day02_path_ops**      | _Rad sa putanjama_          | Pathlib, absolute/relative paths | _Pathlib, apsolutne/relativne putanje_   | [docs](./exercises/day02_path_ops/docs/)      |
+| **day03_dir_walk**      | _Šetnja kroz direktorijume_ | os.walk & directory scanning     | _os.walk i skeniranje foldera_           | [docs](./exercises/day03_dir_walk/docs/)      |
+| **day04_datetime**      | _Rad sa vremenom_           | Datetime, timestamping, folders  | _Rad sa datumima, vremenima i folderima_ | [docs](./exercises/day04_datetime/docs/)      |
+| **day05_timestamp_log** | _Log sa vremenskim pečatom_ | Logging with CLI and `--pager`   | _Logovanje sa CLI i `--pager` opcijom_   | [docs](./exercises/day05_timestamp_log/docs/) |
 
-#### 🇬🇧: This repository uses a [`.github/copilot.yaml`](./.github/copilot.yaml) configuration file to guide GitHub Copilot's behavior.
-
-#### 🇷🇸: Ovaj repozitorijum koristi fajl [`.github/copilot.yaml`](./.github/copilot.yaml) za konfiguraciju ponašanja GitHub Copilot-a.
-
-#### 🇬🇧: Key configurations include:
-
-- Bilingual Markdown documentation (English + Serbian Latin)
-- Professional tone and full comment style
-- Python-first automation workflows
-- No external dependencies unless explicitly stated
-- UTC timestamps and descriptive variable naming
-
-#### 🇷🇸: Ključna podešavanja uključuju:
-
-- Dvojezična dokumentacija u Markdown fajlovima (engleski + srpska latinica)
-- Profesionalan ton i stil komentara
-- Automatizacija zasnovana na Python skriptama
-- Nema spoljašnjih zavisnosti osim ako nije eksplicitno navedeno
-- Upotreba UTC vremena i deskriptivno imenovanje promenljivih
+> Svaki projekat sadrži: `README.md`, `snippets.md`, `cheatsheet.md`, `line_by_line.md` (dvojezično).
 
 ---
 
-## 🛠 Developer Scripts
+## 📘 Documentation | _Dokumentacija_
 
-#### See [`scripts/`](./scripts/) folder for Python, Batch, and PowerShell utilities used to sync VS Code `.code-snippets` into project folders.Useful for automation and maintaining a consistent developer environment across all projects.
-
----
-
-## ✅ License
-
-#### 🇬🇧: This repo is licensed under the **MIT License**.
-
-#### 🇷🇸: Ovaj repo je licenciran pod **MIT licencom**.
+| Type         | _Tip_                      | Link                                                      |
+| ------------ | -------------------------- | --------------------------------------------------------- |
+| Roadmap      | _Plan učenja_              | [6_month_plan.md](./docs/6_month_plan.md)                 |
+| Cheatsheets  | _Brzi vodiči_              | `docs/*/cheatsheet.md`                                    |
+| Snippets     | _Kodni isečci_             | `docs/*/snippets.md`                                      |
+| Line-by-line | _Analiza liniju po liniju_ | `docs/*/line_by_line.md`                                  |
+| AI & Copilot | _AI radni tok_             | [ai_integration_guide.md](./docs/ai_integration_guide.md) |
 
 ---
 
-## 🧠 Author
+## 📅 Next Milestone | _Sledeći korak_
 
-**Josip Pavlović**
-🛠️ Civil Engineer ➝ Python Developer
-📍 Novi Sad, Serbia
-🔗 [github.com/Jole85](https://github.com/Jole85)
+- **Rework:** `day05_os_basics` – ponovna obrada skripti i kompletiranje dokumentacije.
+- **Daily start:** 10:00–20:00 (od 2. avgusta, sa blokovima i obaveznim pauzama).
+- **Goal:** stabilna baza Python automatizacije + portfolio na GitHub‑u sa profesionalnom dokumentacijom.
 
-📌 _Last updated: 2025-07-21_
+---
+
+## 🧪 Minimal Test Plan | _Minimalni plan testiranja_
+
+- `init → write → tail -n 2` prikazuje poslednje dve dodate linije.
+- `read --pager` otvara pager i izlazi se sa `q`.
+- `clear` bez `--force` ne sme da obriše fajl.
+
+---
+
+## 🧠 Author | _Autor_
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue?style=flat-square)](https://www.linkedin.com/in/josip-p-151951338/)[![GitHub](https://img.shields.io/badge/GitHub-Jole85-black?style=flat-square)](https://github.com/Jole85)
+
+**Josip Pavlović** – aspiring Python developer from Novi Sad
+
+_Last updated: 2025‑08‑01 | \_Poslednje ažuriranje: 01.08.2025_
