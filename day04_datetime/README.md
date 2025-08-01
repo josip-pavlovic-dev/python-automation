@@ -35,21 +35,8 @@ Ovaj projekat prikazuje automatizaciju pomoću Python `datetime` modula. Obuhvat
 
 ```
 
-day04_datetime/
-│
-├── dated_folder_creator.py
-├── old_file_checker.py
-├── timestamp_generator.py
-├── logger.py
-│
-├── docs/
-│ ├── dated_folder_creator_cheatsheet.md
-│ ├── old_file_checker_cheatsheet.md
-│ ├── timestamp_generator_cheatsheet.md
-│ ├── datetime_module_cheatsheet.md
-│ └── README.md
-│
-└── README.md ← This file
+IMPORT!!!
+
 
 ```
 

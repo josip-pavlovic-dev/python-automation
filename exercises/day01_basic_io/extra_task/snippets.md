@@ -1,6 +1,45 @@
-# ✂️ Code Snippets
+# ✂️ Snippets
 
-## 🔹 Define file paths with pathlib | _Definisanje putanja fajlova pomoću pathlib-a_
+## 📌 Snippets – basic_version.py
+
+---
+
+### 📥 Reading a file line by line | _Čitanje fajla red po red_
+
+```python
+with open("input.txt", "r", encoding="utf-8") as file:
+    for line in file:
+        print(line.strip())
+```
+
+### 📥🔢 Writing lines with line numbers | _Pisanje redova sa rednim brojevima_
+
+```python
+with open("input.txt", "r", encoding="utf-8") as input_file, \
+     open("output.txt", "w", encoding="utf-8") as output_file:
+
+    for index, line in enumerate(input_file, start=1):
+        output_file.write(f"{index}: {line}")
+```
+
+### ✅ File existence check (optional) | _Provera da li fajl postoji (opciono)_
+
+```python
+import os
+
+if os.path.exists("input.txt"):
+    print("Fajl postoji, nastavljamo.")
+else:
+    print("Fajl nije pronađen.")
+```
+
+---
+
+## 📌 Snippets – extended_version.py
+
+---
+
+### 🔹 Define file paths with pathlib | _Definisanje putanja fajlova pomoću pathlib-a_
 
 ```python
 from pathlib import Path
@@ -14,7 +53,7 @@ Use pathlib to create absolute paths that work across OS | _Korišćenje pathlib
 
 ---
 
-## 🔹 Read file and write to output with line numbers | _Čitanje fajla i pisanje u izlazni fajl sa rednim brojevima_
+### 🔹 Read file and write to output with line numbers | _Čitanje fajla i pisanje u izlazni fajl sa rednim brojevima_
 
 ```python
 with INPUT_FILE.open("r", encoding="utf-8") as input_file,      OUTPUT_FILE.open("w", encoding="utf-8") as output_file:
@@ -26,7 +65,7 @@ Using context manager and enumerate for numbered output | _Korišćenje context 
 
 ---
 
-## 🔹 Capture user input | _Hvatanje korisničkog unosa_
+### 🔹 Capture user input | _Hvatanje korisničkog unosa_
 
 ```python
 lines: list[str] = []
@@ -41,7 +80,7 @@ Loop until empty line is entered | _Petlja dok se ne unese prazna linija_
 
 ---
 
-## 🔹 Write user input to file | _Pisanje unosa u fajl_
+### 🔹 Write user input to file | _Pisanje unosa u fajl_
 
 ```python
 with OUTPUT_FILE.open("w", encoding="utf-8") as output_file:
@@ -53,7 +92,7 @@ Save input to output.txt with line numbers | _Sačuvaj unos u output.txt sa redn
 
 ---
 
-## 🔹 CLI mode switch | _Prekidač za režime preko komandne linije_
+### 🔹 CLI mode switch | _Prekidač za režime preko komandne linije_
 
 ```python
 if len(sys.argv) > 1 and sys.argv[1] == "--interactive":
@@ -63,3 +102,5 @@ else:
 ```
 
 Run in interactive mode if flag is passed | _Pokreni interaktivni režim ako je prosleđen argument_
+
+---

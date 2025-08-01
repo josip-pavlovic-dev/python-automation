@@ -1,4 +1,0 @@
-from day04_datetime import timestamp_generator
-
-
-gen-timestamp_generator

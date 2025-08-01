@@ -57,7 +57,3 @@ Vraca velicinu fajla u bajtovima.
 - Ova skripta je idealna za razumevanje putanja, radnog direktorijuma i sistemskih funkcija.
 
 ---
-
-## 🗂️ Lokacija
-
-Smešteno u `docs/vs-snippets/`
