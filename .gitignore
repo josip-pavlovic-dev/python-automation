@@ -33,3 +33,7 @@ structure.txt
 
 # Slučajni folder koji ne želimo da pratimo
 kitchen_recipes/
+
+# Fajlovi koje ne želimo da pratimo
+line_by_line.md
+
