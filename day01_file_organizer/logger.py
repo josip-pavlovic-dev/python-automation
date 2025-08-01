@@ -6,7 +6,7 @@ import os
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 LOG_FILE = os.path.join(BASE_DIR, "log.txt")
 
-def log(message, level="INFO"):
+def log(message: str, level: str = "INFO") -> None:
     """
     Upisuje poruku u log.txt sa timestampom i nivoom poruke.
     

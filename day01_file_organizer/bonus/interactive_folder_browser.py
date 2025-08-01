@@ -1,7 +1,9 @@
 import os
 
-def get_available_drives():
-    drives = []
+from typing import List
+
+def get_available_drives() -> List[str]:
+    drives: List[str] = []
     for letter in 'CDEFGHIJKLMNOPQRSTUVWXYZ':
         drive = f"{letter}:\\"
         if os.path.exists(drive):
