@@ -1,37 +1,34 @@
-# 📁 File Handling Snippets – Day 01
+# 🧩 Snippets for `logger.py` | _Snippeti za `logger.py`_
 
-### ✅ Kreiranje foldera ako ne postoji
+## 🔧 Logger setup | _Podešavanje logovanja_
+
 ```python
-import os
+from pathlib import Path
+import logging
 
-target_folder = "organized"
-os.makedirs(target_folder, exist_ok=True)
+def setup_logger():
+    logger = logging.getLogger("file_organizer")
+    if logger.handlers:
+        return logger
+
+    logs_dir = Path(__file__).resolve().parents[2] / "logs"
+    logs_dir.mkdir(parents=True, exist_ok=True)
+    log_file = logs_dir / "log.txt"
+
+    file_handler = logging.FileHandler(log_file, encoding="utf-8")
+    formatter = logging.Formatter("%(asctime)s - %(levelname)s - %(message)s")
+    file_handler.setFormatter(formatter)
+
+    logger.setLevel(logging.INFO)
+    logger.addHandler(file_handler)
+
+    return logger
 ```
 
-### ✅ Premestanje fajla u folder
-```python
-import shutil
-shutil.move("document.txt", "organized/document.txt")
-```
+### 🧠 Notes | _Beleške_
 
-### ✅ Provera ekstenzije fajla pre sortiranja
-```python
-ext = os.path.splitext("file.txt")[1]
-if ext.lower() in [".txt", ".jpg", ".pdf"]:
-    # move file or handle
-```
+- `resolve().parents[2]` navigates to the root project directory. | _Navigira do root foldera projekta (dva nivoa iznad skripte)._
+- `logger.handlers` prevents adding duplicate handlers. | _Sprečava višestruko dodavanje istih handlera._
+- `log_file` is always created as `logs/log.txt`. | _Log se kreira u `logs/log.txt` bez obzira odakle se pokreće skripta._
 
-### ✅ Dinamičko kreiranje putanje
-```python
-path = os.path.join("base", "subfolder", "file.txt")
-```
-
-### ✅ Osnovni logger
-```python
-from datetime import datetime
-
-def log(msg):
-    ts = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-    with open("log.txt", "a") as f:
-        f.write(f"[{ts}] {msg}\n")
-```
+---
