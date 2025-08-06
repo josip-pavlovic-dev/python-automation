@@ -1,0 +1,18 @@
+# .ruff.toml – Ruff konfiguracioni fajl za statičku analizu koda
+# 📍 Postavi ovaj fajl u root folder (npr. python-automation/.ruff.toml)
+
+# ✅ Aktivni linteri
+select = ["E", "F", "I", "B", "UP"]
+# E: pycodestyle (stil)
+# F: pyflakes (logičke greške)
+# I: isort (organizacija importova)
+# B: flake8-bugbear (potencijalno opasni obrasci)
+# UP: pyupgrade (modernizacija Python koda)
+
+# ❌ Pravila koja želiš da ignorišeš globalno
+ignore = ["B008"]  # npr. ignoriši korišćenje `eval`, `exec`, i sličnih poziva
+
+# 🧪 Prilagođena pravila za test fajlove
+[lint.per-file-ignores]
+"test_*.py" = ["S101"]  # ignoriši pravilo S101: `assert` u testovima je dozvoljen
+

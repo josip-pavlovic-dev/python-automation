@@ -15,8 +15,8 @@
 
 | Action (EN)           | Akcija (SR)               | Shortcut / Prečica   |
 | --------------------- | ------------------------- | -------------------- |
-| New File              | Novi fajl                 | `A` (Explorer fokus) |
-| New Folder            | Novi folder               | `Shift + A`          |
+| New File              | Novi fajl                 | `alt + N` (Explorer fokus) |
+| New Folder            | Novi folder               | `alt + Shift + N`          |
 | Toggle Explorer Focus | Prebaci fokus na Explorer | `Ctrl + Shift + E`   |
 
 ---
