@@ -1,6 +1,23 @@
-# 🛠️ sync_snippets.py
+# 🔄 sync*snippets | Sinhronizacija VS Code snippetsa*
 
-#### A utility script that automates the synchronization of `.code-snippets` files across all active Python automation project folders. Ideal for structured development environments like `python-automation/`.
+Ova skripta automatski kopira sve `.code-snippets` fajlove iz `docs/vs-snippets/` u `.vscode/` folder repozitorijuma, tako da su ti snippet-i dostupni unutar VS Code editora.
+
+---
+
+## 📂 Struktura foldera
+
+```
+
+scripts/
+└── sync_snippets/
+    ├── sync_snippets.py   # Glavna Python skripta
+    ├── sync_snippets.bat  # Batch fajl za Windows
+    ├── sync_snippets.ps1  # PowerShell alternativa
+    └── README.md          # Ovaj fajl
+
+```
+
+---
 
 ## 📌 Purpose
 
@@ -15,18 +32,18 @@ This tool eliminates repetitive manual work by:
 ## 🗂️ Folder Structure Expected
 
 ```
-
-dev-learning/
-└── python-automation/
+python-automation/
 ├── docs/
 │   └── vs-snippets/
-│       ├── day01\_file\_organizer.code-snippets
-│       ├── day01\_file\_organizer\_sr.code-snippets
+│       ├── day01_file_organizer.code-snippets
+│       ├── day01_file_organizer_sr.code-snippets
 │       ├── ...
-├── 01-file-organizer/
-├── day02\_file\_info/
-├── day03\_file\_management/
-└── day04\_datetime/
+│
+│
+├── day01_file_organizer/
+├── day02_file_info/
+├── day03_file_management/
+└── day04_datetime/
 
 ```
 
@@ -68,5 +85,7 @@ Each project will receive its matching `.code-snippets` files in its `.vscode/` 
 
 ## 🧠 Author’s Note
 
-This script is tailored for the personal setup of [JoleDev](https://github.com/Jole85), but it’s a solid baseline for any structured Python learning environment.  
+This script is tailored for the personal setup of [Josip Pavlović](https://github.com/josip-pavlovic-dev), but it’s a solid baseline for any structured Python learning environment.  
 Ideal if you're maintaining multiple projects and want to keep `.code-snippets` clean and in sync.
+
+---

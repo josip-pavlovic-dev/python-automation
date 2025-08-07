@@ -1,0 +1,13 @@
+Windows Registry Editor Version 5.00
+
+; Otključavanje USB selektivnog suspendovanja
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Power\PowerSettings\2a737441-1930-4402-8d77-b2bebba308a3\abfc2519-3608-4c2a-94ea-171b0ed546ab]
+"Attributes"=dword:00000002
+
+; Otključavanje Hibernate After
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Power\PowerSettings\238C9FA8-0AAD-41ED-83F4-97BE242C8F20\9D7815A6-7EE4-497E-8888-515A05F02364]
+"Attributes"=dword:00000002
+
+; Otključavanje Allow Hybrid Sleep
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Power\PowerSettings\238C9FA8-0AAD-41ED-83F4-97BE242C8F20\94AC6D29-73CE-41A6-809F-6363BA21B47E]
+"Attributes"=dword:00000002

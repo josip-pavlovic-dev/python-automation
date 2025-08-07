@@ -4,50 +4,25 @@
 
 ## 📁 Structure / Struktura
 
-```
-
-scripts/
-│
-├── sync\_snippets/
-│   ├── sync\_snippets.md         ← Dokumentacija za rad skripti
-│   ├── sync\_snippets.py         ← Python skripta za sinhronizaciju snippeta
-│   ├── sync\_snippets.bat        ← Windows batch fajl
-│   └── sync\_snippets.ps1        ← PowerShell verzija
-
-```
+| Path                   | Description (EN)                                    | Opis (SR)                                         |
+| ---------------------- | --------------------------------------------------- | ------------------------------------------------- |
+| `sync_snippets/`       | Automatically syncs code snippets to VS Code folder | Automatski sinhronizuje code-snippetse u VS Code  |
+| `follow_focus_mod.ahk` | Moves mouse to active screen when switching windows | Pomera miš na aktivan ekran kad se menja prozor   |
+| `power_tools/`         | Unlocks hidden power options in Control Panel       | Otključava skrivene Power opcije u Kontrol Panelu |
+| `git/`                 | Git automation scripts for Windows/Linux            | Git skripte za Windows i Linux                    |
 
 ---
 
-## 🔍 Description / Opis
+## 🔧 Instructions | _Uputstvo_
 
-This folder contains internal automation tools that enhance productivity and help maintain consistent workflows across the `python-automation` repository.  
-Ova fascikla sadrži interne alate za automatizaciju koji poboljšavaju produktivnost i olakšavaju održavanje doslednog toka rada u okviru `python-automation` repozitorijuma.
-
-### 🔄 `sync_snippets/` – Snippet Synchronization / Sinhronizacija snippeta
-
-- Synchronizes `.code-snippets` files from `docs/vs-snippets/` to project-specific `.vscode/` folders.
-- Maintains exceptions (e.g. `pylance_basics`, `commenting_basics`) for global `.vscode/`.
-- Čisti stari sadržaj i prepisuje samo relevantne fajlove.
+- Sve skripte treba pokretati sa odgovarajućim privilegijama (npr. kao administrator).
+- `.reg` fajl **primeniti ručno**: dupli klik → potvrditi izmene u Registry-u.
+- `.ahk` skripte pokrenuti ručno dok se ne postavi automatsko startovanje.
 
 ---
 
-## 📄 Documentation / Dokumentacija
+## 🧠 Napomena
 
-- [sync_snippets.md](./sync_snippets.md) – Usage instructions and logic overview  
-  – Uputstvo za upotrebu i opis logike
-
----
-
-## ✅ Usage Tips / Saveti za korišćenje
-
-- Run the script via terminal or double-click `.bat`/`.ps1` if on Windows.
-- Pokreni skriptu iz terminala ili dvostrukim klikom na `.bat`/`.ps1` fajl na Windows sistemu.
-
----
-
-## 📌 Note / Napomena
-
-These scripts are internal utilities and not intended for standalone deployment.  
-Ove skripte su interne pomoćne alatke i nisu namenjene za samostalno pokretanje van projekta.
+Skripte su pažljivo testirane i podešene za tvoj svakodnevni rad. Svaka ima svoj README.md (ako je potrebno), i mogu se koristiti nezavisno.
 
 ---
