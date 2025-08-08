@@ -36,3 +36,5 @@ kitchen_recipes/
 
 # Fajlovi koje ne želimo da pratimo
 
+day01_file_organizer/docs/amateur_notes/
+docs/communication_guides/plan_kickoff_2025.md

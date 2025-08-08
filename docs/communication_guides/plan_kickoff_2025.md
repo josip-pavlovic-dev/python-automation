@@ -1,104 +1,59 @@
-# 🚀 Career Kickoff Plan 2025–2026 | _Plan karijerne tranzicije 2025–2026_
+# *plan_kickoff_2025.md*
 
-## 🎯 Goal | _Cilj_
+## 🎯 Početak
 
-Become a **Junior Python Developer** (focused on automation) by **February 1st, 2026**, with a professional GitHub portfolio, updated LinkedIn profile, and readiness to apply for **remote and freelance jobs**.  
-| _Postati **Junior Python Developer** (automatizacija) do **1. februara 2026.**, sa profesionalnim GitHub portfoliom, ažuriranim LinkedIn profilom i spremnošću za apliciranje na **remote i freelance poslove**._
-
----
-
-## 📆 Phases | _Faze učenja_
-
-### ✅ Phase 1 (Aug–Sep): Python Automation Deep Dive
-
-- Modules: `os`, `shutil`, `pathlib`, `datetime`, `logging`, `argparse`
-- Goal: 6–8 mini-projects
-
-| _Moduli: `os`, `shutil`, `pathlib`, `datetime`, `logging`, `argparse`_  
-| _Cilj: 6–8 mini projekata sa realnom primenom_
+Od **4. avgusta 2025.** započet je zvaničan šestomesečni plan učenja i karijerne tranzicije iz građevine u **Python automatizaciju i data engineering**. Sve pre ovog datuma smatram pripremnom fazom – tehničko prilagođavanje, ispitivanje metoda učenja i testiranje radnog ritma.
 
 ---
 
-### ✅ Phase 2 (Oct–Nov): Automation + Data Pipelines
+### 🖥️ Radno okruženje
 
-- Focus: `CSV`, `JSON`, `SQLite`, ETL flows
-- Goal: 2–3 medium-scale projects
-
-| _Fokus: `CSV`, `JSON`, `SQLite`, ETL tokovi_  
-| _Cilj: 2–3 srednje kompleksna projekta_
-
----
-
-### ✅ Phase 3 (Dec–Jan): Data Engineering Foundations
-
-- Focus: ingestion, transformation, batch processing
-- Goal: 2 large projects + 1 open-source contribution
-
-| _Fokus: učitavanje podataka, transformacije, batch obrada_  
-| _Cilj: 2 velika projekta + 1 open-source doprinos_
+* Dva ekrana (laptop + TV) za podelu rada: **VS Code** na TV-u, **ChatGPT** i dokumentacija na laptopu
+* Integrisani Git Bash u VS Code-u
+* GitHub kao glavni portfolio
+* `.gitignore` za interne fajlove (npr. `amateur_notes/`, lični planovi, interni logovi)
 
 ---
 
-## 🕙 Daily Routine | _Dnevna rutina_
+### 🛠️ Metodologija učenja
 
-- 4 focused work sprints (2–2.5h each) between **10:00 and 20:00**
-- Includes physical and family breaks
-- Code + documentation daily
-
-| _4 fokusirana bloka rada (po 2–2.5h) između **10:00 i 20:00**_  
-| _Uključuje fizičke i porodične pauze_  
-| _Svaki dan: kodiranje + dokumentacija_
+* **Amater mod**: spor tempo, ali detaljna tehničko-logička analiza svake linije koda, uz mini demonstracije
+* Svaki dan minimalno **1 kompletno obrađen kod**
+* Paralelno razvijanje glavnih skripti i pytest testova
+* Interna dokumentacija u `amateur_notes/` (samo na srpskom)
+* Javna dokumentacija po standardima (`README.md`, `cheatsheet.md`, `snippets.md`, `line_by_line.md`)
 
 ---
 
-## 📁 Project Structure | _Struktura projekta_
+### 📂 Struktura projekata
+
+Svi mini-projekti prate unapred definisanu strukturu:
 
 ```
-
-dayXX\_project\_name/
-├── main.py
-├── logger.py (optional)
-├── bonus/ (optional)
-├── assets/ (VS Code screenshots, terminal output)
+project_name/
+│
+├── src/
+├── tests/
 ├── docs/
-│   ├── README.md
-│   ├── cheatsheet.md
-│   ├── snippets.md
-│   └── line\_by\_line.md (for complex scripts only)
-
+└── amateur_notes/
 ```
 
-| _Svaki projekat ima ovu strukturu. Obavezni su: `main.py`, `docs/README.md`, `docs/cheatsheet.md`, `docs/snippets.md`_  
-| _Folder `line_by_line.md` koristi se samo za kompleksne skripte i stavlja se u `.gitignore`._
+* `tests/` – pytest skripte, folder je u root `python-automation/tests` sa podfolderima po projektima
+* `docs/` – javna dokumentacija
+* `amateur_notes/` – interna dokumentacija, u `.gitignore`
 
 ---
 
-## 📑 Markdown Standards | _Standardi za .md fajlove_
+### ⏳ Plan po fazama
 
-### 🔤 Section Titles | _Naslovi sekcija_
-
-- `## 📌 Explanation: | _Objašnjenje:_`
-- `## ✅ Why use absolute paths? | _Zašto koristiti apsolutne putanje?_`
-
-### 📝 Sentence Format | _Format rečenica_
-
-- `Writes each line to the output file. | _Upisuje svaku liniju u izlazni fajl._`
-
-### 📋 Lists
-
-- `- Description in English | _Prevod na srpski_`
-
-### 📊 Tables
-
-- `Header 1 | _Zaglavlje 1_`
-- `Row content | _Sadržaj reda_`
+1. **Avgust–Septembar** – Python automatizacija (os, pathlib, shutil, datetime, logging, argparse) kroz 6–8 mini-projekata
+2. **Oktobar–Novembar** – Automatizacija + Data Pipelines (CSV, JSON, SQLite, ETL tokovi) kroz 2–3 srednja projekta
+3. **Decembar–Januar** – Osnove data engineering-a i batch obrade kroz 2 velika projekta i open-source doprinos
 
 ---
 
-## 👤 Author | _Autor_
+### 🎯 Krajnji cilj
 
-![GitHub](https://img.shields.io/badge/GitHub-Josip--Pavlovic-blue?logo=github)  
-![Career Path](https://img.shields.io/badge/Learning-Python%20Automation%20%26%20Data%20Engineering-blueviolet)
+Do **1. februara 2026.** biti spreman za **Junior Python Developer / Python Automation** pozicije, primarno na remote i stranom tržištu, sa jakim GitHub portfoliom i optimizovanim LinkedIn profilom.
 
-**Josip Pavlović** — aspiring Python developer from Novi Sad  
-🔗 [LinkedIn](https://www.linkedin.com/in/josip-p-151951338/)
+---
