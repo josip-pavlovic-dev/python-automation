@@ -6,14 +6,15 @@ This script demonstrates key features of the `os` module through modular file an
 """
 
 from trening import (
+    create_a_new_file,
+    create_new_directory,
+    delete_directory,
+    delete_file,
     get_current_working_directory,
     list_directory_contents,
-    create_new_directory,
-    create_a_new_file,
     rename_directory,
-    delete_directory,
-    delete_file
 )
+
 
 def main():
     print("📁 OS Module – Basic File Operations\n")

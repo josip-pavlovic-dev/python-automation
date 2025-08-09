@@ -1,6 +1,8 @@
-import os
 import datetime
+import os
+
 from logger import log_message
+
 
 def analyze_files(folder_path):
     folder_path = folder_path.strip()  # uklanja višak razmaka

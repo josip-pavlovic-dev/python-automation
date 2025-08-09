@@ -52,4 +52,50 @@
 
 ---
 
+## Forma upita za slanje:
+
+🎯 CILJ (kratko):
+
+- Npr. "Generisati README.md za legacy/day01_basic_io"
+
+📂 PRILOZI:
+
+- cheatsheet.md (iz docs/)
+- snippets.md (iz docs/)
+- main.py (iz root-a projekta)
+- structure.txt (celokupna struktura projekta)
+
+🛠️ KORACI:
+
+1. Pročitati priložene fajlove i structure.txt
+2. Kreirati README.md po standardu koji smo ranije dogovorili (bilingvalno, badge-ovi itd.)
+3. Ne menjati strukturu, samo generisati dokument
+4. Poslati ceo fajl u odgovoru
+
+⏱️ HITNOST:
+
+- Odmah (ovo je deo današnjeg plana za legacy)
+
+---
+
+Koristi ovu mini-šemu (kratko, strogo):
+
+ZADATAK: [1–2 rečenice – šta želiš]
+KONTEKST: [maks 3 rečenice – zašto, gde]
+FAJLOVI: [relativne putanje, opciono opseg linija]
+KOMANDE: [ako ima – šta da pokrenem / očekivani output]
+DONE KADA: [objektivni kriterijumi – npr. svi testovi prolaze, README ažuriran]
+OGRANIČENJA: [npr. bez spoljnjih biblioteka, Python 3.13, Windows]
+
+---
+
+Primer (realan)
+
+ZADATAK: Dovrši logger formattere i proveri JSON izlaz.
+KONTEKST: Logger ne hvata traceback kao JSON – sutra radim pytest integraciju.
+FAJLOVI: day01_file_organizer/src/logger.py (linije 40–120)
+KOMANDE: pytest -q
+DONE KADA: test_logger.py prolazi; line_by_line.md dopunjen primerom JSON loga.
+OGRANIČENJA: ostati na standardnoj biblioteci; bez spoljnjih handlera.
+
 🗂️ _Ovaj fajl koristi se kao referenca tokom komunikacije sa asistentom i za efikasnije korišćenje profesionalne terminologije tokom učenja._

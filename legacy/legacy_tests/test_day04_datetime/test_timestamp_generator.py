@@ -1,5 +1,7 @@
 import unittest
+
 from day04_datetime.timestamp_generator import generate_timestamps
+
 
 class TestTimestampGenerator(unittest.TestCase):
 

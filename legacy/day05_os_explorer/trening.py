@@ -5,6 +5,7 @@ Author: Josip Pavlović
 
 import os
 
+
 def get_current_working_directory() -> str:
     """
     ✅ Funkcija: get_current_working_directory

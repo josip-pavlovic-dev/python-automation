@@ -6,7 +6,7 @@
 
 **Project type:** Python Automation  
 **Date:** 2025-07-14  
-**Status:** ✅ Completed  
+**Status:** ✅ Completed
 
 <h3 align="center">🖼️ Preview Images / Pregled slika</h3>
 
@@ -36,8 +36,6 @@
     </td>
   </tr>
 </table>
-
-
 
 ## 🇬🇧: 📌 Description
 
@@ -75,7 +73,6 @@
 
 #### Cilj: Vežbanje rada sa modulima `os`, `datetime`, `logging` i rad u terminalu. Projektom sam dodatno učvrstio rad sa putanjama i logovanjem grešaka.
 
-
 ---
 
 ## 🧠 What I Learned | Šta sam naučio
@@ -104,7 +101,6 @@
 - Korišćenje `input()` za unos foldera i validacija unosa
 - Analiza sadržaja foldera i logovanje sa modernim CLI pristupom
 
-
 ---
 
 ## 🚀 How to Run | Kako pokrenuti
@@ -114,6 +110,7 @@ python main.py
 ```
 
 #### 🇬🇧: Then enter the name of the folder you want to analyze (e.g., `test_files`)
+
 #### 🇷🇸: Zatim uneti ime foldera koji želite da analizirate (npr., `test_files`)
 
 ---
@@ -134,7 +131,7 @@ day02_file_info/
 ```
 
 ## ©️ Author | Autor
-#### Josip Pavlović  
+
+#### Josip Pavlović
+
 #### Repository: [python-automation](https://github.com/Jole85/python-automation)
-
-

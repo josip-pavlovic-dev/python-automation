@@ -1,9 +1,9 @@
 # 📘 DAY01*BASIC_IO – Extended Version | \_DAY01_BASIC_IO – Proširena verzija*
 
-![Status](https://img.shields.io/badge/status-completed-brightgreen) | _![Status](https://img.shields.io/badge/status-završeno-brightgreen)_
-![Level](https://img.shields.io/badge/level-beginner-blue) | _![Nivo](https://img.shields.io/badge/nivo-početni-blue)_
-![Category](https://img.shields.io/badge/topic-basic--io-lightgrey) | _![Kategorija](https://img.shields.io/badge/tema-osnovni--io-lightgrey)_
-![Python](https://img.shields.io/badge/python-3.11+-blueviolet) | _![Python](https://img.shields.io/badge/python-3.11+-blueviolet)_
+![Status](https://img.shields.io/badge/status-completed-brightgreen)
+![Level](https://img.shields.io/badge/level-beginner-blue)
+![Category](https://img.shields.io/badge/topic-basic--io-lightgrey)
+![Python](https://img.shields.io/badge/python-3.11+-blueviolet)
 
 ## 📝 Task | _Zadatak_
 

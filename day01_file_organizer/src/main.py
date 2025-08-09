@@ -3,57 +3,54 @@ Sorts files in the selected directory by their extension.
 Uses argparse for CLI, Pathlib for paths, shutil for moving files, and a custom logger.
 """
 
-from pathlib import Path
-import shutil
+from __future__ import annotations
+
 import argparse
+import shutil
+import sys
+from pathlib import Path
 
-# 📌 Import custom modules
-from src.logger import setup_logger
-from src.utils.interactive_folder_browser import select_folder_gui
-
-# ✅ Initialize logger
-logger = setup_logger()
-
-def get_arguments():
-    """
-    Parses command-line arguments.
-    Returns the selected directory as a Path object.
-    """
-    parser = argparse.ArgumentParser(description="Organize files by extension.")
-    parser.add_argument(
-        "-p", "--path",
-        type=Path,
-        help="Path to the folder to organize."
-    )
-    args = parser.parse_args()
-
-    if args.path and args.path.exists():
-        logger.info(f"CLI folder path received: {args.path}")
-        return args.path
-    else:
-        selected = select_folder_gui()
-        logger.info(f"Selected folder via GUI: {selected}")
-        return Path(selected)
+from .logger import setup_logger  # ако немаш пакетну структуру, прилагоди import
 
 
-def organize_files_by_extension(folder_path: Path):
-    """
-    Organizes files in the given folder by moving them into subfolders based on file extension.
-    """
-    for file in folder_path.iterdir():
-        if file.is_file():
-            ext = file.suffix[1:] or "no_extension"  # remove dot, fallback if no extension
-            target_folder = folder_path / ext
-            target_folder.mkdir(exist_ok=True)
-            try:
-                shutil.move(str(file), str(target_folder / file.name))
-                logger.info(f"Moved {file.name} to {target_folder}")
-            except Exception as e:
-                logger.error(f"Error moving {file.name}: {e}")
+def organize_by_extension(root: Path, dry_run: bool = False) -> int:
+    if not root.exists() or not root.is_dir():
+        raise ValueError(f"Path not found or not a directory: {root}")
 
+    moved = 0
+    for p in root.iterdir():
+        if p.is_file():
+            ext = p.suffix.lower().lstrip(".") or "_noext"
+            target_dir = root / ext
+            if not target_dir.exists():
+                if not dry_run:
+                    target_dir.mkdir(parents=True, exist_ok=True)
+            dest = target_dir / p.name
+            if dest != p:
+                if dry_run:
+                    print(f"[DRY] {p.name} -> {target_dir.name}/")
+                else:
+                    shutil.move(str(p), str(dest))
+                moved += 1
+    return moved
+
+def parse_args(argv: list[str]) -> argparse.Namespace:
+    ap = argparse.ArgumentParser(prog="day01_file_organizer", description="Organize files by extension.")
+    ap.add_argument("--root", required=True, help="Folder to organize.")
+    ap.add_argument("--dry-run", action="store_true", help="Preview actions without moving files.")
+    return ap.parse_args(argv)
+
+def main(argv: list[str] | None = None) -> int:
+    args = parse_args(argv or sys.argv[1:])
+    logger = setup_logger()
+    root = Path(args.root).expanduser().resolve()
+    try:
+        cnt = organize_by_extension(root, dry_run=args.dry_run)
+        logger.info("Moved %d item(s) in %s", cnt, root)
+        return 0
+    except Exception as e:
+        logger.error("Failed: %s", e)
+        return 1
 
 if __name__ == "__main__":
-    logger.info("🚀 File Organizer Started")
-    folder = get_arguments()
-    organize_files_by_extension(folder)
-    logger.info("✅ File Organizer Finished")
+    raise SystemExit(main())

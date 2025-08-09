@@ -28,8 +28,8 @@ Generates a complete list of all folders and files and saves it to a `structure.
 
 ### 🧪 Command for CMD terminal:
 
-```cmd
-tree /f /a > structure.txt
+```cmtree /f /a > structure.txtd
+
 ```
 
 - Displays folder and file hierarchy | _Prikazuje hijerarhiju foldera i fajlova_

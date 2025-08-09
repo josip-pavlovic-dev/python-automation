@@ -5,47 +5,32 @@ Provides a logger configured with file and console (stream) handlers.
 
 | _Obezbeđuje logger konfigurisan za upis u fajl i ispis u konzoli._
 """
-
 import logging
-from pathlib import Path
 from datetime import datetime
+from pathlib import Path
+
 
 def setup_logger() -> logging.Logger:
-    """
-    Creates and configures a logger with file and stream handlers.
-
-    | _Kreira i konfiguriše logger sa handlerima za fajl i terminal._
-    """
     logger = logging.getLogger("file_organizer")
     logger.setLevel(logging.INFO)
-
     if logger.hasHandlers():
         return logger
 
-    # ✅ Define log file path
     log_dir = Path(__file__).resolve().parent.parent / "log"
     log_dir.mkdir(exist_ok=True)
+    ts = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
+    log_file = log_dir / f"log_{ts}.txt"
 
-    timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
-    log_file = log_dir / f"log_{timestamp}.txt"
+    fh = logging.FileHandler(log_file, mode="w", encoding="utf-8")
+    sh = logging.StreamHandler()
 
-    # ✅ File handler
-    file_handler = logging.FileHandler(log_file, mode="w")
-    file_handler.setLevel(logging.INFO)
+    fmt = logging.Formatter("%(asctime)s | %(levelname)s | %(name)s | %(message)s",
+                            datefmt="%Y-%m-%d %H:%M:%S")
+    fh.setFormatter(fmt)
+    sh.setFormatter(fmt)
 
-    # ✅ Stream handler (console)
-    stream_handler = logging.StreamHandler()
-    stream_handler.setLevel(logging.INFO)
-
-    # ✅ Formatter
-    formatter = logging.Formatter(
-        "%(asctime)s | %(levelname)s | %(message)s", datefmt="%Y-%m-%d %H:%M:%S"
-    )
-    file_handler.setFormatter(formatter)
-    stream_handler.setFormatter(formatter)
-
-    # ✅ Add handlers to logger
-    logger.addHandler(file_handler)
-    logger.addHandler(stream_handler)
-
+    fh.setLevel(logging.INFO)
+    sh.setLevel(logging.INFO)
+    logger.addHandler(fh)
+    logger.addHandler(sh)
     return logger
