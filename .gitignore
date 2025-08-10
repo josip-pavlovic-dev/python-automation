@@ -31,14 +31,12 @@ Thumbs.db
 # Internal folder structure overview file (used with ChatGPT only) | Interni fajl sa strukturom foldera (koristi se samo sa ChatGPT-om)
 structure.txt
 
-# Slučajni folder koji ne želimo da pratimo
+# Folder koji ne želimo da pratimo
 kitchen_recipes/
+amateur_notes/
+templates/
 
 # Fajlovi koje ne želimo da pratimo
-
-
-
-# Local planning files
 docs/communication_guides/daily_schedule_template.md
 docs/communication_guides/plan_kickoff_2025.md
 docs/communication_guides/how_to_decide.md
