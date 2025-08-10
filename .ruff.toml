@@ -1,6 +1,7 @@
 # .ruff.toml – Ruff konfiguracioni fajl za statičku analizu koda
 # 📍 Postavi ovaj fajl u root folder (npr. python-automation/.ruff.toml)
 
+[lint]
 # ✅ Aktivni linteri
 select = ["E", "F", "I", "B", "UP"]
 # E: pycodestyle (stil)
