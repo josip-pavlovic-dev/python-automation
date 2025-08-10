@@ -11,11 +11,13 @@ LOG_DIR = ROOT / "logs"
 LOG_FILE = LOG_DIR / "app.log"
 TS_FMT = "%Y-%m-%d %H:%M:%S"  # npr. 2025-07-31 20:47:03
 
+
 def ensure_log_exists() -> Path:
     """Osigurajte se da direktorijum sa logovima i log fajl postoji."""
     LOG_DIR.mkdir(parents=True, exist_ok=True)
-    LOG_FILE.touch(exist_ok=True)  
+    LOG_FILE.touch(exist_ok=True)
     return LOG_FILE
+
 
 def detect_terminal_pager() -> str:
     """
@@ -40,6 +42,7 @@ def detect_terminal_pager() -> str:
 
     return "print"  # fallback: direktni ispis
 
+
 def write_log(message: str) -> Path:
     ensure_log_exists()
     line = f"[{datetime.now().strftime(TS_FMT)}] {message}\n"
@@ -47,10 +50,12 @@ def write_log(message: str) -> Path:
         f.write(line)
     return LOG_FILE
 
+
 def read_log() -> str:
     if not LOG_FILE.exists():
         return ""
     return LOG_FILE.read_text(encoding="utf-8")
+
 
 def tail_log(n: int = 10) -> list[str]:
     """Vraća poslednjih N linija iz app.log bez modifikovanja fajla."""
@@ -59,21 +64,26 @@ def tail_log(n: int = 10) -> list[str]:
     with LOG_FILE.open("r", encoding="utf-8") as f:
         lines = f.readlines()
     return lines[-n:]
-    
+
+
 def clear_log(force: bool = False) -> None:
     if LOG_FILE.exists():
         if not force:
-            raise SystemExit("Odbijam da obrišem log fajl. Koristite --force da biste prisilili brisanje.")
+            raise SystemExit(
+                "Odbijam da obrišem log fajl. Koristite --force da biste prisilili brisanje."
+            )
         LOG_FILE.unlink()
     else:
         print("Log fajl ne postoji, ništa se ne briše.")
 
+
 # ---------------- CLI ----------------
+
 
 def build_parser() -> argparse.ArgumentParser:
     p = argparse.ArgumentParser(
         description="Basic timestamp logging.",
-        formatter_class=argparse.ArgumentDefaultsHelpFormatter
+        formatter_class=argparse.ArgumentDefaultsHelpFormatter,
     )
     sub = p.add_subparsers(dest="cmd", required=True)
 
@@ -86,9 +96,10 @@ def build_parser() -> argparse.ArgumentParser:
     # ⬇️ READ sa --pager
     r = sub.add_parser("read", help="Print entire log (be careful if big)")
     r.add_argument(
-        "--pager", "-p",
+        "--pager",
+        "-p",
         action="store_true",
-        help="Pipe output through pager (less/more)"
+        help="Pipe output through pager (less/more)",
     )
 
     c = sub.add_parser("clear", help="Delete app.log (dangerous)")
@@ -96,14 +107,18 @@ def build_parser() -> argparse.ArgumentParser:
 
     sub.add_parser("init", help="Create logs/ and empty app.log")
     return p
+
+
 def main():
     ensure_log_exists()  # <- garantuje da se app.log kreira pri svakom startu
     args = build_parser().parse_args()
 
     if args.cmd == "write":
-        path = write_log(args.message); print(f"Appended to {path}")
+        path = write_log(args.message)
+        print(f"Appended to {path}")
     elif args.cmd == "tail":
-        for line in tail_log(args.lines): print(line, end="")
+        for line in tail_log(args.lines):
+            print(line, end="")
     elif args.cmd == "read":
         content = read_log()
         if not args.pager:
@@ -115,7 +130,9 @@ def main():
             else:
                 try:
                     proc = subprocess.Popen(pager, stdin=subprocess.PIPE, shell=True)
-                    proc.communicate(input=content.encode(sys.stdout.encoding or "utf-8"))
+                    proc.communicate(
+                        input=content.encode(sys.stdout.encoding or "utf-8")
+                    )
                 except FileNotFoundError:
                     print(content, end="")
     elif args.cmd == "clear":
@@ -123,6 +140,7 @@ def main():
         print("Log cleared." if args.force else "Use --force to clear.")
     elif args.cmd == "init":
         print(f"Initialized {ensure_log_exists()}")
+
 
 if __name__ == "__main__":
     main()

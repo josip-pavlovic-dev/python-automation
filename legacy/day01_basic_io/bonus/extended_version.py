@@ -9,12 +9,14 @@ Kako se pokreće:
 
 import sys
 
+
 def process_file_input():
     """Reads input.txt line by line and writes numbered lines to output.txt"""
     """Čita input.txt liniju po liniju i upisuje u output.txt sa rednim brojevima"""
     try:
-        with open("input.txt", "r", encoding="utf-8") as input_file, \
-             open("output.txt", "w", encoding="utf-8") as output_file:
+        with open("input.txt", "r", encoding="utf-8") as input_file, open(
+            "output.txt", "w", encoding="utf-8"
+        ) as output_file:
 
             for index, line in enumerate(input_file, start=1):
                 print(line.strip())  # print to terminal
@@ -23,7 +25,10 @@ def process_file_input():
         print("\n✅ File processed successfully and written to output.txt")
 
     except FileNotFoundError:
-        print("❌ input.txt not found. Please make sure it exists in the current directory.")
+        print(
+            "❌ input.txt not found. Please make sure it exists in the current directory."
+        )
+
 
 def process_user_input() -> None:
     """Prompts the user for multi-line input and writes numbered lines to output.txt"""
@@ -41,6 +46,7 @@ def process_user_input() -> None:
             output_file.write(f"{index}: {line}\n")
 
     print("\n✅ Input captured and written to output.txt")
+
 
 if __name__ == "__main__":
     if len(sys.argv) > 1 and sys.argv[1] == "--interactive":

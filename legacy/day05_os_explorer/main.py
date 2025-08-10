@@ -38,5 +38,6 @@ def main():
     # 6. Delete directory
     delete_directory("renamed_dir")
 
+
 if __name__ == "__main__":
     main()

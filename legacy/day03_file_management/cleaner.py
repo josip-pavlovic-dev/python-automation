@@ -1,6 +1,7 @@
 import os
 from logger import log
 
+
 def clean_folder(folder_path, extension=".tmp"):
     try:
         log(f"Započinjem čišćenje foldera: {folder_path}", level="INFO")
@@ -13,14 +14,16 @@ def clean_folder(folder_path, extension=".tmp"):
                     os.remove(file_path)
                     deleted_files += 1
 
-        log(f"Čišćenje završeno. Obrisano ukupno {deleted_files} fajlova.", level="INFO")
+        log(
+            f"Čišćenje završeno. Obrisano ukupno {deleted_files} fajlova.", level="INFO"
+        )
 
     except Exception as e:
         log(f"Greška pri čišćenju foldera: {str(e)}", level="ERROR")
+
 
 if __name__ == "__main__":
     # Koristi baznu apsolutnu putanju iz foldera gde se cleaner.py nalazi
     base_folder = os.path.join(os.path.dirname(__file__), "test_folder")
     clean_folder(base_folder, extension=".tmp")
 # Ovaj fajl je deo skripte za čišćenje foldera i briše sve fajlove sa ekstenzijom .tmp
-

@@ -1,5 +1,6 @@
 from datetime import datetime
 
+
 class TaskTimer:
     def __init__(self, name: str):
         self.name = name

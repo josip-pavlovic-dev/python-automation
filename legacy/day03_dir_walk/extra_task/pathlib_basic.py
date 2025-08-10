@@ -1,5 +1,6 @@
 from pathlib import Path
 
+
 def pathlib_basics_demo() -> None:
     base_dir = Path(__file__).resolve().parent
     print(f"📂 Base directory: {base_dir}")
@@ -11,6 +12,7 @@ def pathlib_basics_demo() -> None:
         print("✅ test.txt exists")
     else:
         print("❌ test.txt does not exist")
+
 
 if __name__ == "__main__":
     pathlib_basics_demo()

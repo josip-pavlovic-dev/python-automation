@@ -7,7 +7,8 @@ output_file = base_dir / "file_filtering_output.txt"
 
 # 🎯 Filteri
 size_threshold = 1_000  # minimalna veličina u bajtovima (1 KB)
-days_threshold = 7      # stariji fajlovi od 7 dana se ignorišu
+days_threshold = 7  # stariji fajlovi od 7 dana se ignorišu
+
 
 # 📝 Funkcija za formatiranje informacija o fajlu
 def file_info(file_path: Path) -> str:
@@ -15,14 +16,17 @@ def file_info(file_path: Path) -> str:
     modified_time = datetime.fromtimestamp(file_path.stat().st_mtime)
     return f"{file_path.name} | {size} B | Last modified: {modified_time.strftime('%Y-%m-%d %H:%M:%S')}"
 
+
 # 🔍 Pretraga svih fajlova
 all_files = list(base_dir.rglob("*.*"))
 
 # 🧹 Filtriranje fajlova po veličini i datumu
 filtered_files = [
-    f for f in all_files
+    f
+    for f in all_files
     if f.stat().st_size >= size_threshold
-    and (datetime.now() - datetime.fromtimestamp(f.stat().st_mtime)).days <= days_threshold
+    and (datetime.now() - datetime.fromtimestamp(f.stat().st_mtime)).days
+    <= days_threshold
 ]
 
 # 📑 Razdvajanje po tipu fajla

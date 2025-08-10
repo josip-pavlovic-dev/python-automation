@@ -98,4 +98,53 @@ KOMANDE: pytest -q
 DONE KADA: test_logger.py prolazi; line_by_line.md dopunjen primerom JSON loga.
 OGRANIČENJA: ostati na standardnoj biblioteci; bez spoljnjih handlera.
 
+---
+
+## 📅 Daily Standup – 10.08.2025
+
+**🕗 Vreme:** 08:30 – 09:00
+**🎯 Tema dana:**
+
+- Završetak `logger.py` (formatteri, handleri, refaktor)
+- Prvi kompletan pytest setup i testiranje
+- Integracija pytest-a u workflow
+
+---
+
+### 🎯 **3 glavna cilja dana**
+
+1. Finalizirati `logger.py` sa svim formatterima i handlerima.
+2. Napraviti i pokrenuti prvi pytest test fajl (`test_logger.py`).
+3. Uključiti pytest u projektnu strukturu i dokumentovati proces.
+
+---
+
+### ⚠️ **Potencijalne prepreke**
+
+- Previše vremena na sitnicama u formatterima umesto na kompletiranju celog logger-a.
+- Nedovoljno jasna povezanost testova i koda (`assert` logike).
+- Kašnjenje zbog dodatnih objašnjenja u Amateur modu.
+
+---
+
+### 📏 **Metrika uspeha**
+
+- `logger.py` refaktorisan i commit-ovan sa 0 grešaka.
+- Svi testovi prolaze (`pytest -q` → svi “.”).
+- Postoji ažuran `line_by_line.md` i `pytest_cheatsheet.md`.
+
+---
+
+### ⏳ **Plan blokova (rezime)**
+
+- **Blok 1 (10:00 – 12:30):** Završetak i testiranje `logger.py`. Obraditi formatter-e!!!
+- **Blok 2 (13:30 – 15:30):** Uvod u pytest + pisanje prvog testa.
+- **Blok 3 (16:00 – 18:00):** Proširenje testova + integracija u projekat.
+- **Blok 4 (18:30 – 20:00):** Dokumentacija (`line_by_line`, `pytest_cheatsheet`) + cleanup.
+
+---
+
+Ako želiš, mogu ti napraviti i **večernji Wrap-up template** sada, da ga samo ispuniš sutra u 20:00 kad završimo dan.
+Hoćeš i to odmah?
+
 🗂️ _Ovaj fajl koristi se kao referenca tokom komunikacije sa asistentom i za efikasnije korišćenje profesionalne terminologije tokom učenja._

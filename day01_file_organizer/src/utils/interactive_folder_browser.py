@@ -10,6 +10,7 @@ Provides a simple GUI dialog for selecting a directory.
 from tkinter import Tk, filedialog
 from pathlib import Path
 
+
 def select_directory_gui() -> Path:
     """
     Launches a GUI file dialog to select a directory.

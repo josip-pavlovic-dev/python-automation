@@ -5,6 +5,7 @@ Provides a logger configured with file and console (stream) handlers.
 
 | _Obezbeđuje logger konfigurisan za upis u fajl i ispis u konzoli._
 """
+
 import logging
 from datetime import datetime
 from pathlib import Path
@@ -24,8 +25,10 @@ def setup_logger() -> logging.Logger:
     fh = logging.FileHandler(log_file, mode="w", encoding="utf-8")
     sh = logging.StreamHandler()
 
-    fmt = logging.Formatter("%(asctime)s | %(levelname)s | %(name)s | %(message)s",
-                            datefmt="%Y-%m-%d %H:%M:%S")
+    fmt = logging.Formatter(
+        "%(asctime)s | %(levelname)s | %(name)s | %(message)s",
+        datefmt="%Y-%m-%d %H:%M:%S",
+    )
     fh.setFormatter(fmt)
     sh.setFormatter(fmt)
 

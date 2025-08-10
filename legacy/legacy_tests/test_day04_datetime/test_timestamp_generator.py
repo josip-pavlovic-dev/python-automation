@@ -19,5 +19,6 @@ class TestTimestampGenerator(unittest.TestCase):
         for ts in timestamps:
             self.assertRegex(ts, r"^\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2}$")
 
+
 if __name__ == "__main__":
     unittest.main()

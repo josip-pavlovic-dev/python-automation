@@ -1,6 +1,7 @@
 from pathlib import Path
 from datetime import datetime
 
+
 def main() -> None:
     print("📂 Polazni direktorijum je jedan nivo iznad skripte: \n")
     base_dir = (Path(__file__).parents[1]).resolve()
@@ -39,6 +40,7 @@ def main() -> None:
         f.write(f"\nUkupno fajlova u trenutnom folderu: {len(top_level_files)}\n")
 
     print(f"\n✅ Rezultat sačuvan u: {out_path}")
+
 
 if __name__ == "__main__":
     main()

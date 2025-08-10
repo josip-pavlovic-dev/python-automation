@@ -1,6 +1,6 @@
 import logging
 
-# ✅ Postavljamo osnovnu konfiguraciju logovanja – 
+# ✅ Postavljamo osnovnu konfiguraciju logovanja –
 # svi logger-i (koji nemaju sopstvene Handlere) koristiće ovaj nivo i format
 logging.basicConfig(level=logging.INFO)
 

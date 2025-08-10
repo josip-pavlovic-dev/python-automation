@@ -1,6 +1,7 @@
 from pathlib import Path
 from datetime import datetime
 
+
 def main() -> None:
     # Polazni direktorijum jedan nivo iznad skripta
     base_dir = (Path(__file__).resolve().parent / "..").resolve()
@@ -38,6 +39,7 @@ def main() -> None:
         f.write("\n" + "=" * 40 + "\n")
 
     print(f"\n✅ Rezultat sačuvan u: {out_path}")
+
 
 if __name__ == "__main__":
     main()

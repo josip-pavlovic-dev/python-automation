@@ -1,6 +1,7 @@
 from pathlib import Path
 from datetime import datetime
 
+
 def pathlib_scan_demo() -> None:
     base_dir = Path(__file__).resolve().parent
 
@@ -8,6 +9,7 @@ def pathlib_scan_demo() -> None:
     for f in base_dir.rglob("*.*"):
         mtime = datetime.fromtimestamp(f.stat().st_mtime)
         print(f"📄 {f} (last modified: {mtime})")
+
 
 if __name__ == "__main__":
     pathlib_scan_demo()

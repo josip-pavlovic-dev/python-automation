@@ -19,7 +19,7 @@ def get_image_info(image_path):
             "filename": os.path.basename(image_path),
             "format": img.format,
             "size": os.path.getsize(image_path),
-            "dimensions": f"{img.width}x{img.height}"
+            "dimensions": f"{img.width}x{img.height}",
         }
 
 
@@ -35,7 +35,9 @@ def scan_images(folder_path):
         path = os.path.join(folder_path, filename)
 
         # Filtrira slike po ekstenzijama / Filters images by extension
-        if os.path.isfile(path) and filename.lower().endswith(('.png', '.jpg', '.jpeg')):
+        if os.path.isfile(path) and filename.lower().endswith(
+            (".png", ".jpg", ".jpeg")
+        ):
             try:
                 image_data.append(get_image_info(path))
                 print(f"[OK] {filename} obrađen / processed.")
@@ -50,7 +52,9 @@ def write_csv(report_data, output_path):
     os.makedirs(os.path.dirname(output_path), exist_ok=True)
 
     with open(output_path, mode="w", newline="") as file:
-        writer = csv.DictWriter(file, fieldnames=["filename", "format", "size", "dimensions"])
+        writer = csv.DictWriter(
+            file, fieldnames=["filename", "format", "size", "dimensions"]
+        )
         writer.writeheader()
         writer.writerows(report_data)
 

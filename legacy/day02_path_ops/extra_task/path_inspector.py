@@ -13,12 +13,12 @@ base_dir = os.path.dirname(script_path)
 print(f"Script directory: {base_dir}")
 
 # ℹ️ Going 3 levels up to reach the project root | _Idemo tri nivoa iznad do root foldera projekta_
-project_root = os.path.abspath(os.path.join(base_dir, '..', '..', '..'))
+project_root = os.path.abspath(os.path.join(base_dir, "..", "..", ".."))
 print(f"Project root path: {project_root}")
 
 # ℹ️ Construct absolute path to SVG image inside assets/ | _Kreiramo apsolutnu putanju do slike u assets/ folderu_
-svg_filename = 'agent_mode_active.svg'
-svg_path_abs = os.path.join(project_root, 'assets', svg_filename)
+svg_filename = "agent_mode_active.svg"
+svg_path_abs = os.path.join(project_root, "assets", svg_filename)
 print(f"Absolute path to SVG: {svg_path_abs}")
 
 # ℹ️ Calculate relative path from current script to target file | _Relativna putanja od skripte do SVG fajla_
@@ -30,4 +30,3 @@ if os.path.exists(svg_path_abs):
     print("✅ File exists.")
 else:
     print("❌ File not found!")
-

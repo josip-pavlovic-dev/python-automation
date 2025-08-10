@@ -1,5 +1,6 @@
 from pathlib import Path
 
+
 class PathWalker:
     def __init__(self, root: Path):
         self.root = Path(root).resolve()

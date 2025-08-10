@@ -34,11 +34,17 @@ def organize_by_extension(root: Path, dry_run: bool = False) -> int:
                 moved += 1
     return moved
 
+
 def parse_args(argv: list[str]) -> argparse.Namespace:
-    ap = argparse.ArgumentParser(prog="day01_file_organizer", description="Organize files by extension.")
+    ap = argparse.ArgumentParser(
+        prog="day01_file_organizer", description="Organize files by extension."
+    )
     ap.add_argument("--root", required=True, help="Folder to organize.")
-    ap.add_argument("--dry-run", action="store_true", help="Preview actions without moving files.")
+    ap.add_argument(
+        "--dry-run", action="store_true", help="Preview actions without moving files."
+    )
     return ap.parse_args(argv)
+
 
 def main(argv: list[str] | None = None) -> int:
     args = parse_args(argv or sys.argv[1:])
@@ -51,6 +57,7 @@ def main(argv: list[str] | None = None) -> int:
     except Exception as e:
         logger.error("Failed: %s", e)
         return 1
+
 
 if __name__ == "__main__":
     raise SystemExit(main())

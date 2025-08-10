@@ -9,14 +9,15 @@ LOG_FILE = os.path.join(BASE_DIR, "log.txt")
 
 # 📌 ANSI boje
 COLORS = {
-    "INFO": "\033[92m",     # Zeleno
+    "INFO": "\033[92m",  # Zeleno
     "WARNING": "\033[93m",  # Žuto
-    "ERROR": "\033[91m",    # Crveno
-    "RESET": "\033[0m"      # Reset
+    "ERROR": "\033[91m",  # Crveno
+    "RESET": "\033[0m",  # Reset
 }
 
 # 📌 Limit veličine log fajla za rotaciju (u bajtovima)
 MAX_LOG_SIZE = 100 * 1024  # 100 KB
+
 
 def rotate_log():
     if os.path.exists(LOG_FILE) and os.path.getsize(LOG_FILE) >= MAX_LOG_SIZE:
@@ -24,6 +25,7 @@ def rotate_log():
         backup_name = f"log_{timestamp}.txt"
         backup_path = os.path.join(BASE_DIR, backup_name)
         shutil.move(LOG_FILE, backup_path)
+
 
 def log_message(message, level="INFO"):
     """
@@ -53,5 +55,3 @@ if __name__ == "__main__":
     log_message("Test poruka", level="INFO")
     log_message("Ovo je upozorenje!", level="WARNING")
     log_message("Simulirana greška", level="ERROR")
-
-

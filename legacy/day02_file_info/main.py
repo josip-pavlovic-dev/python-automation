@@ -22,13 +22,14 @@ def analyze_files(folder_path):
 
         if os.path.isfile(file_path):
             file_size = os.path.getsize(file_path)
-            ext = os.path.splitext(filename)[1] or 'N/A'
+            ext = os.path.splitext(filename)[1] or "N/A"
             modified_time = datetime.datetime.fromtimestamp(os.path.getmtime(file_path))
 
             log_message(
                 f"📄 {filename} | Ekstenzija: {ext} | "
                 f"Veličina: {file_size} B | Poslednja izmena: {modified_time.strftime('%Y-%m-%d %H:%M:%S')}"
             )
+
 
 if __name__ == "__main__":
     print("🔎 Unesi naziv foldera koji želiš da analiziraš (primer: test_files)")

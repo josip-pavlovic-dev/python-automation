@@ -9,6 +9,7 @@ target_folder = os.path.join(os.path.dirname(__file__), "test_folder")
 # 📌 Globalni rečnik za brojanje fajlova po tipu (ekstenziji)
 file_type_count = {}
 
+
 def scan_folder(folder_path):
     """
     🔍 Recursively scans folder and logs structure
@@ -18,7 +19,7 @@ def scan_folder(folder_path):
         log(f"📁 Scanning folder: {folder_path}", level="INFO")
         for item in os.listdir(folder_path):
             item_path = os.path.join(folder_path, item)
-            
+
             if os.path.isdir(item_path):
                 log(f"📂 Folder found: {item_path}", level="INFO")
                 scan_folder(item_path)
@@ -32,13 +33,16 @@ def scan_folder(folder_path):
                 if ext:
                     file_type_count[ext] = file_type_count.get(ext, 0) + 1
                 else:
-                    file_type_count["(no extension)"] = file_type_count.get("(no extension)", 0) + 1
+                    file_type_count["(no extension)"] = (
+                        file_type_count.get("(no extension)", 0) + 1
+                    )
 
             else:
                 log(f"⚠ Unknown item type: {item_path}", level="WARNING")
 
     except Exception as e:
         log(f"❌ Error while scanning: {str(e)}", level="ERROR")
+
 
 # ▶️ Script entry point
 # ▶️ Ulazna tačka skripte
@@ -51,4 +55,3 @@ if __name__ == "__main__":
     for ext, count in file_type_count.items():
         log(f"   {ext}: {count} file(s)", level="INFO")
     log(f"✅ Finished scanning folder: {target_folder}", level="INFO")
-

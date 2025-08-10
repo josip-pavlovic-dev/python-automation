@@ -17,4 +17,3 @@ if isinstance(result, list):
         print(res.text)
 else:
     print(result.text)
-

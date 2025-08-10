@@ -20,16 +20,18 @@ FOLDER_MAP = {
     "day04_datetime.code-snippets": "day04_datetime",
 }
 
+
 # Pomoćna funkcija: briše sve .code-snippets fajlove iz datog .vscode foldera
 def clean_vscode_folder(vscode_path: Path):
     if vscode_path.exists():
         for file in vscode_path.glob("*.code-snippets"):
             file.unlink()
 
+
 # Glavna logika
 def sync_snippets():
     project_root = Path.cwd()
-    
+
     # 1. Globalni snippets → python-automation/.vscode
     root_vscode = project_root / ".vscode"
     root_vscode.mkdir(exist_ok=True)
@@ -47,6 +49,7 @@ def sync_snippets():
         src_file = SOURCE_DIR / filename
         if src_file.exists():
             shutil.copy2(src_file, target_vscode / filename)
+
 
 if __name__ == "__main__":
     sync_snippets()

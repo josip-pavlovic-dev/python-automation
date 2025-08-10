@@ -4,6 +4,7 @@ import subprocess
 from logger import log
 from size_cleaner import clean_by_size
 
+
 def list_files(folder_path):
     """
     Pomoćna funkcija koja ispisuje sve fajlove u folderu i podfolderima.
@@ -15,17 +16,19 @@ def list_files(folder_path):
             size = os.path.getsize(file_path)
             log(f"{file_path} ({size} bajtova)", level="INFO")
 
+
 if __name__ == "__main__":
     try:
         # Pokušavamo da pronađemo bash automatski (npr. Git Bash)
         bash_path = shutil.which("bash")
         if bash_path is None:
-            raise RuntimeError("Bash interpreter nije pronađen. Da li je Git Bash instaliran?")
+            raise RuntimeError(
+                "Bash interpreter nije pronađen. Da li je Git Bash instaliran?"
+            )
 
         # Pokrećemo bash skriptu
         subprocess.run([bash_path, "setup_test_folder.sh"], check=True)
 
-        
         log("Test struktura kreirana.", level="INFO")
 
         # Pokretanje skripte za brisanje fajlova ispod 100 bajtova

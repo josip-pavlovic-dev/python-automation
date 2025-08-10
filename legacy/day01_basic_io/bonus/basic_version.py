@@ -11,8 +11,9 @@ Zadatak:
 # - input.txt za čitanje ("r")
 # - output.txt za pisanje ("w")
 # Znak \ koristi se da se linija nastavi u sledećem redu
-with open("input.txt", "r", encoding="utf-8") as input_file, \
-     open("output.txt", "w", encoding="utf-8") as output_file:
+with open("input.txt", "r", encoding="utf-8") as input_file, open(
+    "output.txt", "w", encoding="utf-8"
+) as output_file:
 
     # enumerate nam daje redni broj (index) i sadržaj linije (line)
     # start=1 znači da brojanje kreće od 1
