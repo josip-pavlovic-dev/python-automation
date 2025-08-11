@@ -28,7 +28,8 @@ Generates a complete list of all folders and files and saves it to a `structure.
 
 ### 🧪 Command for CMD terminal:
 
-```cmtree /f /a > structure.txtd
+```cmd
+tree /f /a > structure.txt
 
 ```
 
