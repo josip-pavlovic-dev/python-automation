@@ -1,27 +1,20 @@
-# interactive_folder_browser.py
-"""
-📁 day01_file_organizer/src/utils/interactive_folder_browser.py
-
-Provides a simple GUI dialog for selecting a directory.
-
-| _Omogućava izbor foldera kroz grafički interfejs._
-"""
-
-from tkinter import Tk, filedialog
 from pathlib import Path
 
 
-def select_directory_gui() -> Path:
+def choose_folder(prompt: str, base: Path) -> Path:
     """
-    Launches a GUI file dialog to select a directory.
-
-    | _Pokreće GUI dijalog za izbor direktorijuma._
+    Minimal interactive folder chooser:
+      - asks user for a relative path inside `base`
+      - returns that directory if it exists, else raises FileNotFoundError
     """
-    root = Tk()
-    root.withdraw()
-    selected_path = filedialog.askdirectory()
+    base = Path(base)
+    if not base.exists() or not base.is_dir():
+        raise FileNotFoundError(base)
 
-    if not selected_path:
-        raise ValueError("Nijedan folder nije izabran.")
+    user_input = input(prompt).strip()
+    selected = (base / user_input)
 
-    return Path(selected_path).resolve()
+    if not selected.exists() or not selected.is_dir():
+        raise FileNotFoundError(selected)
+
+    return selected
