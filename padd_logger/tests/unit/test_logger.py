@@ -4,6 +4,12 @@ from pathlib import Path
 import pytest
 
 
+def test_sanity():
+    # ENG: Simple sanity check to verify pytest works
+    # SR: Osnovna provera da pytest radi
+    assert 2 + 2 == 4
+
+
 def test_get_logger_contract(tmp_path: Path):
     """
     Minimalni ugovor:

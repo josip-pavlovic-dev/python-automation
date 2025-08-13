@@ -1,5 +1,10 @@
-# tests/unit/test_main.py
 import pytest
+
+
+def test_sanity_main():
+    # ENG: Simple sanity check for main.py
+    # SR: Osnovna provera da pytest radi za main.py
+    assert "padd" in "padd_logger"
 
 
 def test_main_returns_zero():
