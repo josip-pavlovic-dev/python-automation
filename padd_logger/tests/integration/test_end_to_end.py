@@ -1,5 +1,5 @@
 from pathlib import Path
-from logger import get_logger
+from logger import get_logger  # (не морамо га директно користити, али добро је за проверу API-ja)
 from utils import interactive_folder_browser as ifb
 import main
 import pytest

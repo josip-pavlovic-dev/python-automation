@@ -1,4 +1,14 @@
 [tool.pytest.ini_options]
-addopts = "-q -ra"
+minversion = "8.0"
 testpaths = ["tests"]
 pythonpath = ["src"]
+
+# Tiši izlaz + kratak rezime xfail/skip + stani na prvom padu (brže debagovanje)
+# Pokrij ceo src/ i generiši i terminal i HTML coverage izveštaj
+addopts = """
+-q -ra --maxfail=1
+--cov=src
+--cov-branch
+--cov-report=term-missing:skip-covered
+--cov-report=html:.reports/coverage_html
+"""
