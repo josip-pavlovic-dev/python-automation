@@ -45,7 +45,9 @@
 **Šta sam probao:** 1) … 2) …  
 **Minimalni primer/poruka greške:**
 
+```text
 <kod ili pytest output od 3–15 linija>
+```
 
 **Šta očekujem:** …
 
@@ -77,5 +79,3 @@
 - Literatura (ref)
 
 > Artefakti: `labs/zero_foundations/docs/_chat_refs/` + `docs/` + `tests/` (repo je source-of-truth).
-
----
