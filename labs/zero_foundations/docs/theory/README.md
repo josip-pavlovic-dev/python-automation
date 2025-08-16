@@ -9,6 +9,8 @@ Sadržaj je organizovan **po danima/lekcijama** i prati ritam mini-zadataka. Na 
 - Posle svake lekcije uradi priložene mini-zadatke (u tvom projektu) i odgovori na kviz.
 - Jednom nedeljno popuni `weekly_sync.md` (u tvom repou) sa ključnim uvidima.
 
+---
+
 ## Organizacija u “više chatova” (po uzoru na PADD)
 
 Ako želiš veću kontrolu, postavi više chatova:
@@ -21,6 +23,8 @@ Ako želiš veću kontrolu, postavi više chatova:
 - **Chat F — HTTP & Raspored (L15–L16):** `requests` i zakazivanje/“pakovanje”.
 
 > Svaki chat ima jasna „ovlašćenja“ (scope): pitanja, primeri i revizije **samo** iz svog domena.
+
+---
 
 ## Tabela sadržaja
 
@@ -42,3 +46,5 @@ Ako želiš veću kontrolu, postavi više chatova:
 - L16 — Raspoređivanje i “pakovanje”: Task Scheduler/cron, `python -m`, struktura projekta
 
 > Kviz odgovori su u posebnom fajlu `docs/quizzes_answers.md` da izbegnemo „spojlere“ tokom učenja.
+
+---
