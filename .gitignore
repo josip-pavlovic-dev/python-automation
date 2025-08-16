@@ -6,11 +6,15 @@
 __pycache__/
 *.py[cod]
 *$py.class
+*.pyc
+.pytest_cache/
+.ruff_cache/
 
 # Virtual environment | Virtuelno okruženje
 .venv/
 venv/
 ENV/
+**/.venv/
 
 # VSCode project settings | Podešavanja za VS Code projekte
 .vscode/
