@@ -30,7 +30,7 @@ Thumbs.db
 
 # Environment variables | Fajlovi sa okruženjima
 .env
-.env.*
+!.env.example
 
 # Internal folder structure overview file (used with ChatGPT only) | Interni fajl sa strukturom foldera (koristi se samo sa ChatGPT-om)
 structure.txt
