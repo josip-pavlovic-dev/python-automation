@@ -1,0 +1,16 @@
+# General
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+.venv/
+venv/
+.envrc
+.idea/
+.vscode/
+.reports/
+
+# OS
+.DS_Store
+Thumbs.db

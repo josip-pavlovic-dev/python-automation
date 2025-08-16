@@ -1,75 +1,59 @@
-from __future__ import annotations
+# ENG: Idempotent logger factory with a single StreamHandler by default.
+# SR:  Idempotentna fabrika logera sa jednim StreamHandler-om po difoltu.
 
+from __future__ import annotations
 import logging
-from pathlib import Path
+from pathlib import Path  # kept for next increment (FileHandler); unused for now
 from typing import Optional, Union
 
-# --- internal helpers ---------------------------------------------------------
+# Defaults (public so tests can import them) | ENG/SR
+DEFAULT_FMT = "%(asctime)s | %(levelname)s | %(name)s | %(message)s"
+DEFAULT_DATEFMT = "%Y-%m-%d %H:%M:%S"
 
-_LEVELS = {
-    "CRITICAL": logging.CRITICAL,
-    "ERROR": logging.ERROR,
-    "WARNING": logging.WARNING,
-    "INFO": logging.INFO,
-    "DEBUG": logging.DEBUG,
-    "NOTSET": logging.NOTSET,
-}
-
-
-def _coerce_level(level: Union[str, int]) -> int:
+def _coerce_level(level: Optional[Union[int, str]], fallback: int = logging.INFO) -> int:
+    # ENG: Accept int or string (e.g., "INFO"), else ValueError.
+    # SR:  Prihvata int ili string (npr. "INFO"), inače ValueError.
+    if level is None:
+        return fallback
     if isinstance(level, int):
         return level
     if isinstance(level, str):
-        lv = _LEVELS.get(level.upper())
-        if lv is not None:
-            return lv
-    raise ValueError(f"Invalid logging level: {level!r}")
+        up = level.upper()
+        if up in logging._nameToLevel:
+            return logging._nameToLevel[up]
+        raise ValueError(f"Invalid log level string: {level!r}")
+    raise ValueError(f"Invalid log level type: {type(level).__name__}")
 
+def _make_formatter() -> logging.Formatter:
+    # ENG: Unified formatter for all handlers.
+    # SR:  Jedinstven formatter za sve handlere.
+    return logging.Formatter(fmt=DEFAULT_FMT, datefmt=DEFAULT_DATEFMT)
 
-# --- public API ---------------------------------------------------------------
+def _ensure_stream_handler(logger: logging.Logger) -> None:
+    # ENG: Ensure exactly one StreamHandler (non-file) with our formatter.
+    # SR:  Obezbedi tačno jedan StreamHandler (ne-fajl) sa našim formatter-om.
+    for h in logger.handlers:
+        if isinstance(h, logging.StreamHandler) and not isinstance(h, logging.FileHandler):
+            if h.formatter is None or getattr(h.formatter._style, "_fmt", None) != DEFAULT_FMT:
+                h.setFormatter(_make_formatter())
+            return
+    sh = logging.StreamHandler()
+    sh.setFormatter(_make_formatter())
+    logger.addHandler(sh)
 
 def get_logger(
     name: str,
-    level: Union[str, int] = "INFO",
-    log_file: Optional[Path] = None,
+    level: Union[int, str] = "INFO",
+    log_file: Optional[Path] = None,  # kept for compatibility; used in next increment
 ) -> logging.Logger:
     """
-    Create or fetch a named logger.
-
-    Rules:
-      - idempotent by name (no duplicate handlers on repeated calls)
-      - if log_file is provided: attach a single FileHandler to that file
-      - ensure at least one handler exists (NullHandler when no file)
+    ENG: Create/fetch named logger, set level, and guarantee a single StreamHandler.
+    SR:  Kreiraj/dobavi logger po imenu, postavi nivo i garantuj jedan StreamHandler.
     """
-    logger = logging.getLogger(name)
-    logger.setLevel(_coerce_level(level))
-    logger.propagate = False  # don't bubble to root handlers
-
-    if log_file is not None:
-        log_file = Path(log_file)
-        log_file.parent.mkdir(parents=True, exist_ok=True)
-
-        # Attach a FileHandler only if an identical one doesn't exist
-        for h in logger.handlers:
-            if isinstance(h, logging.FileHandler):
-                try:
-                    existing = Path(h.baseFilename).resolve()
-                except Exception:
-                    existing = None
-                if existing and existing == log_file.resolve():
-                    break  # already attached
-        else:
-            fh = logging.FileHandler(log_file, encoding="utf-8")
-            fh.setLevel(logger.level)
-            fh.setFormatter(
-                logging.Formatter(
-                    "%(asctime)s | %(levelname)s | %(name)s | %(message)s"
-                )
-            )
-            logger.addHandler(fh)
-    else:
-        # Ensure .handlers is truthy even without a file (tests expect at least one)
-        if not logger.handlers:
-            logger.addHandler(logging.NullHandler())
-
-    return logger
+    lg = logging.getLogger(name)
+    lg.setLevel(_coerce_level(level))
+    lg.propagate = False
+    _ensure_stream_handler(lg)
+    # FileHandler will be added in v1.1 (utf-8, standard format). | ENG/SR
+    return lg
+    # Note: log_file is kept for compatibility; it will be used in the next increment.
