@@ -1,8 +1,4 @@
-# .gitignore file for Python-automation project
-# Defines files and folders to be excluded from version control
-# Definiše fajlove i foldere koje nećemo uključivati u Git verzionisanje
-
-# Byte-compiled / optimized / DLL files | Bajt-kompajlirani fajlovi / optimizovani / DLL
+# Python bytecode / test cache
 __pycache__/
 *.py[cod]
 *$py.class
@@ -10,39 +6,40 @@ __pycache__/
 .pytest_cache/
 .ruff_cache/
 
-# Virtual environment | Virtuelno okruženje
+# Virtual environments
 .venv/
 venv/
 ENV/
 **/.venv/
 
-# VSCode project settings | Podešavanja za VS Code projekte
+# Editors/IDEs
 .vscode/
 
-# System files | Sistemski fajlovi
+# OS junk
 .DS_Store
 Thumbs.db
 
-# Log and cache files | Logovi i fajlovi sa kešom
+# Logs / temp / cache
 *.log
 *.cache
 *.tmp
 
-# Environment variables | Fajlovi sa okruženjima
+# Env files
 .env
 !.env.example
 
-# Internal folder structure overview file (used with ChatGPT only) | Interni fajl sa strukturom foldera (koristi se samo sa ChatGPT-om)
+# Local helper (not for repo)
 structure.txt
 
-# Folder koji ne želimo da pratimo
-kitchen_recipes/
-amateur_notes/
-templates/
-labs/zero_foundations/docs/theory/
+# Project-specific (keep private)
+amateur_notes/**
+docs/communication_guides/**
+templates/**
 
-# Fajlovi koje ne želimo da pratimo
-docs/communication_guides/daily_schedule_template.md
-docs/communication_guides/plan_kickoff_2025.md
-docs/communication_guides/how_to_decide.md
-padd_logger/docs/amateur_notes/structure.txt
+# THEORY: ignorisi sve, osim indexa i "published"
+labs/zero_foundations/docs/theory/**
+!labs/zero_foundations/docs/theory/
+!labs/zero_foundations/docs/theory/README.md
+!labs/zero_foundations/docs/theory/published/
+!labs/zero_foundations/docs/theory/published/**
+
