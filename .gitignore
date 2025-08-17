@@ -39,7 +39,7 @@ structure.txt
 kitchen_recipes/
 amateur_notes/
 templates/
-
+labs/zero_foundations/docs/theory/
 # Fajlovi koje ne želimo da pratimo
 docs/communication_guides/daily_schedule_template.md
 docs/communication_guides/plan_kickoff_2025.md
