@@ -31,9 +31,13 @@ pytest
 
 ---
 
-## 📚 Reference (chat)
+## 📚 Chat References
 
-- [OOP Foundations — chat reference](./_chat_refs/chat_oop_foundations.md)
+- [zf14_mentor_central.md](../docs/_chat_refs/zf14_mentor_central.md) – Glavni koordinacioni chat za plan, hand-off i retro.
+- [zf14_a_core_python.md](../docs/_chat_refs/zf14_A_core_python.md) – Core Python lekcije i vežbe (TDD pristup).
+- [chat_oop_foundations.md](../docs/_chat_refs/chat_oop_foundations.md) – OOP uvod i povezani materijali.
+- [amateur_mod_expl.md](../docs/_chat_refs/amateur_mod_expl.md) – Objašnjenje Amateur moda za prve mesece učenja.
+- [zf14_auto_materials.md](../docs/_chat_refs/zf14_auto_materials.md) – Meta-chat za automatsko generisanje materijala na osnovu aktivne oblasti.
 
 ---
 
