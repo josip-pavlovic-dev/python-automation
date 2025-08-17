@@ -11,14 +11,15 @@ from typing import Any, Iterable, List, Tuple
 def is_empty(value: Any) -> bool:
     """Return True if value is empty/falsy. | Vrati True ako je vrednost prazna/falsy."""
     # TODO: implement using Python truthiness. | TODO: implementiraj koristeći truthiness.
-    raise NotImplementedError
+    return not bool(value)
 
 def countdown(n: int) -> list[int]:
     """Return [n, n-1, ..., 1]. | Vrati [n, n-1, ..., 1]."""
     # TODO: implement with range. | TODO: implementiraj uz range.
-    raise NotImplementedError
+    return list(range(n, 0, -1))
 
 def enumerate_1(xs: Iterable[Any]) -> List[Tuple[int, Any]]:
     """Enumerate starting from 1. | Enumeracija počev od 1."""
     # TODO: use enumerate(xs, start=1). | TODO: koristi enumerate(xs, start=1).
-    raise NotImplementedError
+    return list(enumerate(xs, start=1))
+
