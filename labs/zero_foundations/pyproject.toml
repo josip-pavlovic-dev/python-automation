@@ -1,4 +1,28 @@
+# === Pytest podešavanja (već si imao ovo; ostavljamo) ===
 [tool.pytest.ini_options]
-addopts = "-q -ra"
-testpaths = ["tests"]
-pythonpath = ["src"]
+addopts = "-q -ra"          # tiši izlaz + rezime razloga neuspeha
+testpaths = ["tests"]        # folder sa testovima (u ZF-14 je labs/zero_foundations/tests)
+pythonpath = ["src"]         # dodaje 'src' na sys.path za test sesiju
+
+# === Ruff (lint + format import-a + pyupgrade) ===
+[tool.ruff]
+line-length = 88
+target-version = "py313"     # usklađeno sa tvojim venv-om (3.13)
+
+[tool.ruff.lint]
+# E,F: pycodestyle/pyflakes; I: isort; UP: pyupgrade (npr. list[int] umesto typing.List)
+select = ["E", "F", "I", "UP"]
+
+# (opciono) možeš dodati i ignore ako kasnije želiš da utišaš pojedine poruke:
+# ignore = ["D100"]  # primer
+
+[tool.ruff.format]
+# format preferencije (opciono, kompatibilno sa Black stilom)
+quote-style = "double"
+indent-style = "space"
+skip-magic-trailing-comma = false
+
+# === Black (da je konfiguracija dosledna i iz CLI-a) ===
+[tool.black]
+line-length = 88
+target-version = ["py313"]

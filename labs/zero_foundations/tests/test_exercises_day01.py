@@ -1,5 +1,7 @@
 import pytest
-from src.basics.exercises_day01 import is_empty, countdown, enumerate_1
+
+from src.basics.exercises_day01 import countdown, enumerate_1, is_empty
+
 
 def test_is_empty_basic():
     assert is_empty(0) is True

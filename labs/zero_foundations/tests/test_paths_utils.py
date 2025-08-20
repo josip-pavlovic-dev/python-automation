@@ -1,5 +1,7 @@
 from pathlib import Path
-from files.paths_utils import list_py_files, count_lines, files_larger_than
+
+from files.paths_utils import count_lines, files_larger_than, list_py_files
+
 
 def test_list_py_files_and_count_lines(tmp_path: Path):
     pkg = tmp_path / "pkg"

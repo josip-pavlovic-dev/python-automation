@@ -13,13 +13,12 @@
 - **Male iteracije.** Kratke poruke, konkretni koraci, brzi feedback loop.
 - **Uvek merenje.** Svaki dan: šta je zeleni test, koji je commit, koja je lekcija zatvorena.
 - **Repo je „source of truth“.** Ključni sadržaji iz chatova čuvaju se kao `.md` fajlovi u repou.
-- **Bez rupa u znanju.** Ako nešto ne razumeš, pauziramo i „spuštamo nivo“ do kristalnog razumevanja.
+- **Bez rupa u znanju.** Ako nešto ne razumem, pauziramo i „spuštamo nivo“ do kristalnog razumevanja.
 
 ---
 
 ## 2) Hijerarhija i scope chatova
 
-> Nazive drži dosledno da bi pretraga i navigacija bile lake.
 
 - **`ZF-14 | Mentor Central (hub)`**  
   **Scope:** plan dana/nedelje, DoD, blokade, hand-off, retro.  
