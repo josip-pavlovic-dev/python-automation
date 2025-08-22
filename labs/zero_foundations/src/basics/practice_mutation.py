@@ -1,5 +1,7 @@
 from __future__ import annotations
+
 from typing import Any
+
 
 def append_mutate(lst: list[Any], x: Any):
     # TODO: mutiraj listu .append(x) i vrati (id_pre, id_posle, lst)

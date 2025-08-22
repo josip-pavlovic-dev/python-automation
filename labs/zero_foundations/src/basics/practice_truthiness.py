@@ -1,5 +1,6 @@
 from typing import Any
 
+
 def is_truthy(obj: Any) -> bool:
     # TODO: vrati bool(obj)
     raise NotImplementedError

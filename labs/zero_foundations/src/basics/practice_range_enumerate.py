@@ -1,4 +1,6 @@
-from typing import Iterable, Any
+from collections.abc import Iterable
+from typing import Any
+
 
 def countdown(n: int) -> list[int]:
     # TODO: koristi range sa negativnim korakom

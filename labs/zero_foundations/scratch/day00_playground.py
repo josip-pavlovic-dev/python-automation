@@ -2,10 +2,11 @@
 #SR : Pokreni sa "python -m scratch.day00_playground" iz korena projekta
 
 from __future__ import annotations
-from pathlib import Path
+
 import csv
 import json
-from typing import Any, Iterable, Dict, List, Tuple
+from pathlib import Path
+from typing import Any
 
 
 #ENG: Helpers
@@ -48,8 +49,8 @@ def demo_truthiness() -> None:
 #SR : Sekvence: list i tuple; indeksiranje, sečenje, kopiranje
 def demo_sequences() -> None:
     title("SEQUENCES (list/tuple)")
-    xs: List[int] = [10, 20, 30, 40, 50]
-    tp: Tuple[int, int, int] = (1, 2, 3)
+    xs: list[int] = [10, 20, 30, 40, 50]
+    tp: tuple[int, int, int] = (1, 2, 3)
     print("xs:", xs, "len:", len(xs))
     print("tp:", tp, "len:", len(tp))
 
@@ -88,7 +89,7 @@ def demo_sets() -> None:
 #SR : Rečnici (mapiranja) + bezbedan pristup + komprehencije
 def demo_dicts() -> None:
     title("DICTS")
-    cfg: Dict[str, Any] = {"level": "INFO", "file": "app.log"}
+    cfg: dict[str, Any] = {"level": "INFO", "file": "app.log"}
     print("cfg:", cfg)
     print("get existing:", cfg.get("level"))
     print("get missing with default:", cfg.get("mode", "w"))
@@ -125,7 +126,7 @@ def demo_file_io_text(base: Path) -> None:
     with open(txt, "w", encoding="utf-8") as f:
         f.write("Zdravo, fajl!\n")
         f.write("Druga linija\n")
-    with open(txt, "r", encoding="utf-8") as f:
+    with open(txt, encoding="utf-8") as f:
         print("read:", f.read().strip())
 
 
@@ -137,7 +138,7 @@ def demo_file_io_json(base: Path) -> None:
     js = base / "user.json"
     with open(js, "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
-    with open(js, "r", encoding="utf-8") as f:
+    with open(js, encoding="utf-8") as f:
         loaded = json.load(f)
     print("json loaded:", loaded)
 
@@ -157,7 +158,7 @@ def demo_file_io_csv(base: Path) -> None:
         w.writeheader()
         w.writerows(rows)
 
-    with open(csv_path, "r", encoding="utf-8", newline="") as f:
+    with open(csv_path, encoding="utf-8", newline="") as f:
         r = csv.DictReader(f)
         loaded = list(r)
     print("csv loaded:", loaded)
