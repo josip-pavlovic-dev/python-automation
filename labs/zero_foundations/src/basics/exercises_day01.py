@@ -14,13 +14,24 @@ def is_empty(value: Any) -> bool:
     # TODO: implementiraj koristeći truthiness.
     return not bool(value)
 
+
 def countdown(n: int) -> list[int]:
     """Vrati [n, n-1, ..., 1]."""
     # TODO: implementiraj uz range.
     return list(range(n, 0, -1))
 
+
 def enumerate_1(xs: Iterable[Any]) -> list[tuple[int, Any]]:
     """Enumeracija počev od 1."""
     # TODO: koristi enumerate(xs, start=1).
     return list(enumerate(xs, start=1))
+
+
+#def float_equal(a: float, b: float, tolerance: float = 1e-9) -> bool:
+    """Uporedi dva broja sa tolerancijom."""
+ #   return abs(a - b)  < tolerance
+
+def float_equal(a :float, b :float, rel_tol :float =1e-9, abs_tol :float =0.0) -> bool:
+    """Uporedi dva broja sa tolerancijom."""
+    return abs(a - b) <= max(rel_tol * max(abs(a), abs(b)), abs_tol)
 
