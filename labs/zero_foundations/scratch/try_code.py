@@ -38,4 +38,3 @@ print("\n=== hasattr() ===")
 print("hasattr(5, '__abs__') =", hasattr(5, "__abs__"))  # True
 print("hasattr('text', '__abs__') =", hasattr("text", "__abs__"))  # False
 print("hasattr(None, '__abs__') =", hasattr(None, "__abs__"))  # False
-
