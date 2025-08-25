@@ -1,33 +1,40 @@
-# Ime_funkcije_analysis.md
+# ime_funkcije_analysis.md
 
-> 📌 **UPUTSTVO:** Ovaj fajl korisnik popunjava SAMOSTALNO koristeći kao vodič fajl `analysis_notes.md`. Fajl služi za ličnu vežbu, razumevanje i primenu koncepata na konkretnoj funkciji. Mentor pomaže samo ako korisnik naiđe na poteškoće.
+> 📌 **UPUTSTVO:** Ovaj fajl sadrži krajnji pregled funkcije, zasnovan na testiranju i razumevanju tokom rada u REPL-u i dokumentaciji. Popunjava se **nakon** što je `*_analysis_notes.md` kompletiran.
 
-## 🧠 Mentalni model
+## 🔹 1. Kratak opis funkcije
 
-_(šta ova funkcija **radi**, bez obzira na implementaciju)_
+_(Šta funkcija radi u jednoj rečenici?)_
 
-## 📥 Tip ulaza
+## 🔸 2. Lična pretpostavka pre analize
 
-_(šta očekuje kao input, da li postoji fallback, šta je validno?)_
+_(Šta sam mislio da funkcija radi pre nego što sam je testirao?)_
 
-## 📤 Tip izlaza
+## 🔍 3. REPL testiranje (ulaz/izlaz, tipovi, identiteti)
 
-_(šta funkcija vraća, u kojim slučajevima se ponaša neobično?)_
+_(type(), id(), vrednosti koje funkcija vraća, očekivano/neočekivano ponašanje)_
 
-## 🔁 Transformacija, Validacija, IO
+## 📚 4. Šta proveriti u `help()` / `signature`?
 
-_(da li menja tip, validira ulaz, upisuje/čita podatke itd.)_
+_(Koji su argumenti? Koji tip vraća? Šta piše u `__doc__`?)_
 
-## 🔬 Uvidi iz REPL testiranja
+## 🧭 5. Python Tutor analiza
 
-- tip ulaza i izlaza (`type()`)
-- id() ako postoji mutacija
-- ponašanje na granici
+_(Koji deo funkcije je bio ključan? Kako su argumenti prošli kroz funkciju?)_
 
-## 🧩 Zanimljive upotrebe
+## ✅ 6. Da li je funkcija:
 
-- Da li se koristi u `lambda`, `key=` kod `sorted()`, `filter()` itd.
+- Transformaciona: ✅ / ❌
+- Validaciona: ✅ / ❌
+- IO: ✅ / ❌
+- Pomoćna: ✅ / ❌
 
-## 🔗 Povezane funkcije / koncepti
+## 🚩 7. Granični slučajevi
 
-_(npr. `math.isclose()` ako se koristi `abs()`, ili `isinstance()` za validaciju)_
+_(Ekstremne vrednosti, neočekivani tipovi, rubna ponašanja)_
+
+## 🧠 8. Zaključak i korisnost
+
+_(Kada bih ovu funkciju mogao da koristim? Kako bih je objasnio drugaru?)_
+
+---

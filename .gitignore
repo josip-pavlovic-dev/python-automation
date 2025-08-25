@@ -38,6 +38,7 @@ templates/**
 
 
 # THEORY: ignorisi sve, osim indexa i "published"
+labs/core_functions/**
 labs/zero_foundations/docs/theory/**
 !labs/zero_foundations/docs/theory/
 !labs/zero_foundations/docs/theory/README.md
