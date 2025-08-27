@@ -1,5 +1,3 @@
-# md_from_url_and_translate.py
-
 import argparse
 import os
 from pathlib import Path
@@ -32,18 +30,28 @@ def html_to_md(html: str) -> str:
 def translate_md(md_text: str, auth_key: str, target_lang: str = "SR") -> str:
     """Prevedi Markdown koristeći DeepL API."""
     if deepl is None:
-        raise RuntimeError("deepl paket nije instaliran. Instaliraj ga sa `pip install deepl`.")
+        raise RuntimeError(
+            "deepl paket nije instaliran. Instaliraj ga sa `pip install deepl`."
+        )
     translator = deepl.Translator(auth_key)
     result = translator.translate_text(md_text, target_lang=target_lang)
     return result.text
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Skini URL → Markdown (+ opcioni prevod na srpski).")
+    parser = argparse.ArgumentParser(
+        description="Skini URL → Markdown (+ opcioni prevod na srpski)."
+    )
     parser.add_argument("url", help="URL zvanične dokumentacije")
-    parser.add_argument("-o", "--output", required=True, help="osnovno ime fajla (bez ekstenzije)")
-    parser.add_argument("-d", "--directory", default=".", help="folder gde se čuvaju fajlovi")
-    parser.add_argument("--no-translate", action="store_true", help="samo Markdown EN, bez prevoda")
+    parser.add_argument(
+        "-o", "--output", required=True, help="osnovno ime fajla (bez ekstenzije)"
+    )
+    parser.add_argument(
+        "-d", "--directory", default=".", help="folder gde se čuvaju fajlovi"
+    )
+    parser.add_argument(
+        "--no-translate", action="store_true", help="samo Markdown EN, bez prevoda"
+    )
     args = parser.parse_args()
 
     Path(args.directory).mkdir(parents=True, exist_ok=True)
@@ -65,7 +73,9 @@ def main():
     print("[3/4] Translate Markdown → Serbian...")
     auth_key = os.getenv("DEEPL_AUTH_KEY")
     if not auth_key:
-        raise RuntimeError("Nema DEEPL_AUTH_KEY u .env fajlu (ili koristi --no-translate).")
+        raise RuntimeError(
+            "Nema DEEPL_AUTH_KEY u .env fajlu (ili koristi --no-translate)."
+        )
 
     sr_text = translate_md(md_text, auth_key, target_lang="SR")
 
@@ -78,4 +88,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-

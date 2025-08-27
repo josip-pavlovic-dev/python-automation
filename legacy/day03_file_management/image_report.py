@@ -1,6 +1,7 @@
-import os
-from PIL import Image
 import csv
+import os
+
+from PIL import Image
 
 # 📌 Bazna putanja (folder u kome se nalazi ovaj fajl) / Base path (folder containing this script)
 BASE_DIR = os.path.dirname(__file__)

@@ -1,8 +1,8 @@
 # 👨‍💻 Josip Pavlović – Developer Profile | Josip Pavlović – Profil Programera
 
-📍 Location / Lokacija: Novi Sad, Serbia  
-📧 Email: jolepavlovic@outlook.com  
-📞 Phone / Telefon: +381 63 490133  
+📍 Location / Lokacija: Novi Sad, Serbia
+📧 Email: jolepavlovic@outlook.com
+📞 Phone / Telefon: +381 63 490133
 🌐 GitHub: [github.com/jolepavlovic](https://github.com/jolepavlovic)
 
 ---
@@ -15,63 +15,66 @@
 
 ---
 
-## 📜 Certifications | Sertifikati 
+## 📜 Certifications | Sertifikati
 
-### ✅ **Programming Basics with C#** – SoftUni  
-###### *Certificate: 75% (September 2024)*  
-###### 🇬🇧: *Introduction to programming, conditional statements, loops, basic logic*
-###### 🇷🇸: *Uvod u programiranje, uslovne naredbe, petlje, osnovna logika*
+### ✅ **Programming Basics with C#** – SoftUni
+
+###### _Certificate: 75% (September 2024)_
+
+###### 🇬🇧: _Introduction to programming, conditional statements, loops, basic logic_
+
+###### 🇷🇸: _Uvod u programiranje, uslovne naredbe, petlje, osnovna logika_
 
 ## 📖 Courses | Kursevi
-- 🐍 **Python – 100 Days of Code** – Angela Yu (Udemy)  
-- 🤖 **Automate the Boring Stuff with Python** – Al Sweigart (Udemy)  
-- 🌐 **The Complete Web Development Bootcamp** – Angela Yu (Udemy)  
+
+- 🐍 **Python – 100 Days of Code** – Angela Yu (Udemy)
+- 🤖 **Automate the Boring Stuff with Python** – Al Sweigart (Udemy)
+- 🌐 **The Complete Web Development Bootcamp** – Angela Yu (Udemy)
 - 🧱 **The Fullstack Developer Path** – Scrimba (in progress)
 
 ---
 
-## 📂 GitHub Projects | GitHub Projekti 
+## 📂 GitHub Projects | GitHub Projekti
 
-- [`python-automation`](https://github.com/Jole85/python-automation)  
-  🇬🇧: *Python scripts for automation (file handling, logs, metadata, timestamps)*  
-  🇷🇸: *Python skripte za automatizaciju (rad sa fajlovima, logovi, metapodaci, vreme)*
+- [`python-automation`](https://github.com/Jole85/python-automation)
+  🇬🇧: _Python scripts for automation (file handling, logs, metadata, timestamps)_
+  🇷🇸: _Python skripte za automatizaciju (rad sa fajlovima, logovi, metapodaci, vreme)_
 
-- [`web-development`](https://github.com/Jole85/web-development)  
-  🇬🇧: *HTML, CSS, JS projects – portfolio, landing pages, frontend basics*  
-  🇷🇸: *Projekti u HTML, CSS, JS – portfolio, početne stranice, frontend osnove*
+- [`web-development`](https://github.com/Jole85/web-development)
+  🇬🇧: _HTML, CSS, JS projects – portfolio, landing pages, frontend basics_
+  🇷🇸: _Projekti u HTML, CSS, JS – portfolio, početne stranice, frontend osnove_
 
-- [`dev-learning`](https://github.com/Jole85/dev-learning)  
-  🇬🇧: *Daily study logs, Markdown notes, deep dive analyses*  
-  🇷🇸: *Dnevni dnevnici, Markdown beleške, temeljne analize koncepata*
-
----
-
-## 🕒 Timeline | Tabela napretka  
-
-| Month / Mesec     | Progress / Napredak                                                     |
-|-------------------|--------------------------------------------------------------------------|
-| Sept 2024         | C# Certificate – entry to programming                                    |
-| Okt–Nov 2024      | Focused on Python and algorithmic thinking                               |
-| Dec 2024          | First practical scripts and file automation                              |
-| Jan–Mar 2025      | HTML, CSS, JS – static and responsive pages                              |
-| Jul 2025          | GitHub documentation, AI integration, Copilot automation                 |
+- [`dev-learning`](https://github.com/Jole85/dev-learning)
+  🇬🇧: _Daily study logs, Markdown notes, deep dive analyses_
+  🇷🇸: _Dnevni dnevnici, Markdown beleške, temeljne analize koncepata_
 
 ---
 
-## 🛠️ Skills | Veštine 
+## 🕒 Timeline | Tabela napretka
 
-
-| Area / Oblast       | Tools / Jezici i alati                         |
-|---------------------|------------------------------------------------|
-| Programming          | Python, C# (basic), JavaScript (basic)        |
-| Web Dev              | HTML, CSS, Git, Markdown                      |
-| Automation           | Bash, GitHub Copilot, file scripting          |
-| Tools & Platforms    | VS Code, GitHub, Git Bash                     |
-| Documentation        | Markdown, project README, AI-assisted writing |
+| Month / Mesec | Progress / Napredak                                      |
+| ------------- | -------------------------------------------------------- |
+| Sept 2024     | C# Certificate – entry to programming                    |
+| Okt–Nov 2024  | Focused on Python and algorithmic thinking               |
+| Dec 2024      | First practical scripts and file automation              |
+| Jan–Mar 2025  | HTML, CSS, JS – static and responsive pages              |
+| Jul 2025      | GitHub documentation, AI integration, Copilot automation |
 
 ---
 
-## 🧠 Why IT? | Zašto IT? 
+## 🛠️ Skills | Veštine
+
+| Area / Oblast     | Tools / Jezici i alati                        |
+| ----------------- | --------------------------------------------- |
+| Programming       | Python, C# (basic), JavaScript (basic)        |
+| Web Dev           | HTML, CSS, Git, Markdown                      |
+| Automation        | Bash, GitHub Copilot, file scripting          |
+| Tools & Platforms | VS Code, GitHub, Git Bash                     |
+| Documentation     | Markdown, project README, AI-assisted writing |
+
+---
+
+## 🧠 Why IT? | Zašto IT?
 
 #### 🇬🇧: I decided to leave the construction industry and pursue a sustainable and intellectually challenging career in IT. I enjoy solving problems, learning daily, and building reusable solutions that help others.
 
@@ -86,12 +89,14 @@
 #### 🇷🇸: Do kraja 2025. planiram da apliciram za poziciju **Junior Python Developera** ili **Automation inženjera** u timu koji ceni temeljnost, dokumentaciju i kvalitet koda.
 
 ---
+
 ## 📌 Attachments | Prilog
 
 #### 🇬🇧: 📄 [CV / Resume](../docs/cv_en.pdf)
-#### 🇷🇸: 📄 [CV / Rezime](../docs/cv_sr.pdf)  
+
+#### 🇷🇸: 📄 [CV / Rezime](../docs/cv_sr.pdf)
+
 #### 🧾 [Portfolio Projects](./README.md#projects)
 
-> 🇬🇧: 📝 *This markdown file is part of my live documentation and personal developer profile.*  
-> 🇷🇸: 📝 *Ovaj markdown fajl je deo moje žive dokumentacije i ličnog profila kao programera.*
-
+> 🇬🇧: 📝 _This markdown file is part of my live documentation and personal developer profile._
+> 🇷🇸: 📝 _Ovaj markdown fajl je deo moje žive dokumentacije i ličnog profila kao programera._

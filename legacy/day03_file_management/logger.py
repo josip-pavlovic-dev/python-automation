@@ -1,6 +1,6 @@
 # pyright: reportUndefinedVariable=false
-from datetime import datetime
 import os
+from datetime import datetime
 
 # 📌 Apsolutna putanja do log fajla
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))

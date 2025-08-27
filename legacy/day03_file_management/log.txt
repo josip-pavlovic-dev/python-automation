@@ -46,3 +46,9 @@
 [2025-07-30 21:14:36] [INFO] ✅ Finished scanning folder: C:\Users\JoleDev\dev-learning\python-automation\day03_file_management\test_folder
 [2025-08-13 16:01:27] [WARNING] Ovo je upozorenje
 [2025-08-13 16:01:27] [ERROR] Simulirana greška u testu
+[2025-08-27 02:01:49] [WARNING] Ovo je upozorenje
+[2025-08-27 02:01:49] [ERROR] Simulirana greška u testu
+[2025-08-27 02:06:46] [WARNING] Ovo je upozorenje
+[2025-08-27 02:06:46] [ERROR] Simulirana greška u testu
+[2025-08-27 02:08:40] [WARNING] Ovo je upozorenje
+[2025-08-27 02:08:40] [ERROR] Simulirana greška u testu

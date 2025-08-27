@@ -10,7 +10,7 @@
 
 ## 🎯 Purpose | _Svrha_
 
-🇬🇧 Structured Python automation projects with daily commits, aiming to transition from civil engineering to junior Python developer.  
+🇬🇧 Structured Python automation projects with daily commits, aiming to transition from civil engineering to junior Python developer.
 🇷🇸 Strukturisani Python projekti za automatizaciju sa dnevnim commit‑ima, sa ciljem prelaska iz građevine u junior Python programera.
 
 ---

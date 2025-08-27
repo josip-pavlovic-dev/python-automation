@@ -10,7 +10,7 @@
 
 ## 🎯 Purpose | Svrha
 
-🇬🇧: This folder contains multilingual cheatsheets, reusable automation patterns, and technical documentation for CLI tools, Python modules, and VS Code configuration.  
+🇬🇧: This folder contains multilingual cheatsheets, reusable automation patterns, and technical documentation for CLI tools, Python modules, and VS Code configuration.
 🇷🇸: Ova fascikla sadrži dvojezične vodiče, ponovo iskoristive skripte i tehničku dokumentaciju za CLI alate, Python module i konfiguraciju razvojne okoline.
 
 ---
@@ -64,10 +64,10 @@
 
 ## 👤 Author | Autor
 
-**Josip Pavlović**  
-📧 [jolepavlovic@outlook.com](mailto:jolepavlovic@outlook.com)  
-🌍 Novi Sad, Serbia  
-💼 [github.com/Jole85](https://github.com/Jole85)  
+**Josip Pavlović**
+📧 [jolepavlovic@outlook.com](mailto:jolepavlovic@outlook.com)
+🌍 Novi Sad, Serbia
+💼 [github.com/Jole85](https://github.com/Jole85)
 🔁 Career Switch: Civil Engineer → Python Developer
 
 ---

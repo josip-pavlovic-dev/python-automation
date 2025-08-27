@@ -7,7 +7,7 @@
 
 ## 📅 Official Kickoff | _Zvanični početak_
 
-**Date:** 2025-08-08
+**Date:** 2025-x-x
 **Description:** Official start of the **Kickoff 2025** phase, following a one-month preparation period.
 
 _Zvanični početak faze **Kickoff 2025** nakon jednomesečnog pripremnog perioda._
@@ -62,7 +62,6 @@ project_name/
 
 ## 🏁 Final Goal | _Konačni cilj_
 
-By **February 1, 2026**: professional GitHub portfolio, updated LinkedIn, active job applications for **Junior Python Developer / Python Automation** roles.
-_Do **1. februara 2026.**: profesionalan GitHub portfolio, ažuriran LinkedIn i aktivne prijave za pozicije **Junior Python Developer / Python Automation**._
+- By **February 1, 2026**: professional GitHub portfolio, updated LinkedIn, active job applications for **Junior Python Developer / Python Automation** roles. -_Do **1. februara 2026.**: profesionalan GitHub portfolio, ažuriran LinkedIn i aktivne prijave za pozicije **Junior Python Developer / Python Automation**._
 
 ---

@@ -30,6 +30,7 @@ Ovaj fajl je **pojmovni rečnik**. Svaki put kad naletimo na nepoznat termin u r
 - **base (osnova)**
   Drugi parametar `int()` → u kojoj je bazi broj u stringu (`2` za binarno, `16` za hex).
   Primer: `int("FF", 16) == 255`.
+  Posebno: `base=0` → Python sam prepoznaje prefiks (`0b` za binarno, `0x` za hex, `0o` za oktal).
 
 - **underscores**
   `_` u string-ciframa za čitljivost (`"1_000" == 1000`). Ako su dupli ili na pogrešnom mestu → `ValueError`.
@@ -58,8 +59,40 @@ Ovaj fajl je **pojmovni rečnik**. Svaki put kad naletimo na nepoznat termin u r
   Fallback za integer-like objekte. Ako nema `__int__`, ali postoji `__index__`, i dalje radi `int(obj)`.
 
 - ****str** / **repr****
+
   - `__str__`: lep prikaz (za korisnike).
   - `__repr__`: tehnički prikaz (za debug, serijalizaciju).
+
+- **Dunder protokol**
+  Skup pravila kako Python koristi ove magične metode. Primer: `int(obj)` → prvo traži `__int__()`, pa ako ne postoji → `__index__()`.
+
+---
+
+## Bytes i Bytearray
+
+- **bytes**
+  Nepromenljiva sekvenca bajtova. Koristi se za raw podatke (fajlovi, mrežni paketi). Izgleda kao string sa prefiksom `b` → `b"hello"`.
+
+- **bytearray**
+  Promenljiva verzija `bytes`. Možeš menjati elemente bez kreiranja novog objekta.
+
+- **Upotreba sa int():**
+  ```python
+  int(b"2a", 16)        # 42
+  int(bytearray(b"10"), 2)  # 2
+  ```
+
+---
+
+## API pojmovi
+
+- **API (Application Programming Interface)**
+  U programiranju: skup pravila/metoda koji definiše kako razgovaraš sa klasom, bibliotekom ili servisom.
+  👉 Primer: `int` ima API (njegove metode: `bit_length`, `to_bytes`…), `math` modul ima API (`sqrt`, `sin`, `cos`).
+
+- **numbers API (Python)**
+  Dogovor (standardizacija) da svi brojoliki tipovi (`int`, `float`, `complex`, `Fraction`, `Decimal`) imaju iste osnovne atribute: `.real`, `.imag`, `.numerator`, `.denominator`.
+  👉 Tako svi brojevi dele zajednički “meni” metoda/atributa i mogu se tretirati uniformno.
 
 ---
 
