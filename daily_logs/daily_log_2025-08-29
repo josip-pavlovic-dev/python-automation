@@ -2,7 +2,7 @@
 
 ## 📍 Fokus dana
 
-- Nastavak **Dan B** → završetak `dict` (hashable, get vs \[]) i sumiranje u jedan cheatsheet.
+- Nastavak **Dan B** → završetak `dict` (hashable, get vs []) i sumiranje u jedan cheatsheet.
 - Paralelno raščišćavanje **VS Code/venv/pytest** okruženja.
 - Učenje kroz testove (`pytest.raises`, `assert`, `get/setdefault/pop`).
 - Početak sistematizacije znanja u “basics” fajlove (npr. `dict_basics.md`).
