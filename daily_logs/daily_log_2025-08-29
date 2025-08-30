@@ -1,0 +1,86 @@
+# 📅 `daily_log_2025-08-29.md`
+
+## 📍 Fokus dana
+
+- Nastavak **Dan B** → završetak `dict` (hashable, get vs \[]) i sumiranje u jedan cheatsheet.
+- Paralelno raščišćavanje **VS Code/venv/pytest** okruženja.
+- Učenje kroz testove (`pytest.raises`, `assert`, `get/setdefault/pop`).
+- Početak sistematizacije znanja u “basics” fajlove (npr. `dict_basics.md`).
+
+---
+
+## ✅ Obavljeno
+
+- **Dict**:
+
+  - Napravljeni testovi za `hashable vs unhashable` i za `get() vs []`.
+  - ASCII posteri za oba slučaja.
+  - Spojeno u objedinjeni fajl `docs/cheatsheets/dict_basics.md`.
+
+- **Try/Except & Exceptions**:
+
+  - Cheatsheet za `try/except/else/finally`, `raise`, `assert`, `pass`, `...`, `pytest.raises`.
+  - Objašnjeni `singleton`, `Ellipsis`, `sentinel`.
+
+- **VS Code & venv**:
+
+  - Razlikovani globalni i lokalni `settings.json`.
+  - Predložen `launch.json` i `tasks.json` za core_functions.
+  - Objašnjeno šta znači Pylance IntelliSense vs Copilot AI predlog.
+
+- **Mini REPL sesije**:
+
+  - Za dict (`get`, `setdefault`, `pop`, `hashable`).
+  - Za `==` vs `is`.
+
+- **Terminologija**:
+
+  - Truthiness, identity, hashable/unhashable.
+
+---
+
+## 🧱 Problemi & rešenja
+
+- **Confusion Tab vs Copilot/Pylance** → razjašnjeno da ghost predlog = Copilot, dropdown = Pylance.
+- **`setdefault().append()` vraća None** → objašnjeno da `append` mutira in-place.
+- **Zašto `get` vraća `"guest"` a ne `"user"`** → ključ nije postojao, pa default.
+- **Singletoni i sentinel vrednosti** → objašnjeno kad koristiti `is`.
+- **Okruženje** → izdvojeni lokalni `.venv` i settings za `core_functions`.
+
+---
+
+## 🧠 Naučeno
+
+- Razlika između **jednakosti** (`==`) i **identiteta** (`is`).
+- **Singletoni** (`None`, `True`, `False`, `Ellipsis`) → porede se `is`.
+- **Sentinel** kao jedinstveni marker (`MISSING = object()`).
+- `.get`, `.setdefault`, `.pop` → različite semantike i efekti.
+- Kako koristiti `pytest.raises` i `match` za očekivane greške.
+- Kako razlikovati Copilot i Pylance u VS Code.
+
+---
+
+## 🗂️ Artefakti
+
+- `labs/core_functions/tests/test_dict_hashable.py`
+- `labs/core_functions/tests/test_dict_get_vs_indexing.py`
+- `docs/diagrams/dict_hashable_refs.md`
+- `docs/diagrams/dict_get_vs_indexing.md`
+- `docs/cheatsheets/dict_basics.md`
+- `docs/cheatsheets/run_python.md` (planiran, draft cheatsheet za pokretanje skripti)
+- Cheatsheet za try/except sintaksu (lokalni draft).
+
+---
+
+## 🔜 Plan za 30.08 (nastavak)
+
+- Započeti **Dan C**: `set` i `tuple`.
+- Pripremiti REPL + mini testove za:
+
+  - operacije nad set-ovima (`|`, `&`, `-`, `<=`, `>=`).
+  - hashability tuple vs unhashable tipovi.
+
+- Napraviti `docs/cheatsheets/set_basics.md` i `tuple_basics.md`.
+- Glossary dopuna: `frozenset`, `immutable sequence`, `subset/superset`.
+
+---

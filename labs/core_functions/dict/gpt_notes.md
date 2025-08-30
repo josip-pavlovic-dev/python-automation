@@ -1,26 +1,3 @@
-top! krećemo sa **dict** baš kao što smo uradili za list 👇
-(+ objašnjenje zašto ti Ruff “briše” `import pytest`)
-
----
-
-## 0) Zašto Ruff briše `import pytest`?
-
-- Ruff javlja **F401: imported but unused** → u tvom testu `test_grid_gotcha` **ne koristiš** `pytest` (nema `pytest.raises` itd.), pa predlaže da obrišeš `import pytest`.
-- U testovima gde **koristiš** `pytest.raises(...)`, `import pytest` je potreban i Ruff neće prigovarati.
-- Ako ipak želiš da zadržiš import (npr. zbog šablona), dodaj komentare:
-
-  - u tom fajlu: `import pytest  # noqa: F401`
-  - ili u **.ruff.toml** (preporuka samo ako želiš šire pravilo):
-
-    ```toml
-    [tool.ruff.per-file-ignores]
-    "labs/core_functions/tests/*" = ["F401"]  # dozvoli neiskorišćen import u testovima
-    ```
-
-> Ukratko: test bez `pytest.raises` → ukloni `import pytest`. Test sa `raises` → ostavi import.
-
----
-
 # 1) Uvod u `dict` (od nule)
 
 - **mapiranje**: ključ → vrednost
@@ -103,11 +80,6 @@ dp = copy.deepcopy(d)      # duboka
 
 # 3) REPL plan (10 kratkih koraka)
 
-Sačuvaj kao `labs/core_functions/dict_repl_plan.md` (copy/paste blokovi).
-
-````markdown
-# REPL: dict (10 koraka)
-
 ## 1) Osnove i pristup
 
 ```python
@@ -116,9 +88,8 @@ print(d["a"])      # 1
 d["c"] = 3
 print(d)           # {'a':1,'b':2,'c':3}
 ```
-````
 
-## 2) get vs \[]
+## 2) get vs []
 
 ```python
 d = {"x": 1}
@@ -211,13 +182,9 @@ print(sh["x"][0])   # 99  (curi)
 print(dp["x"][0])   # 1   (ne curi)
 ```
 
-````
-
 ---
 
 # 4) Testovi za `dict` (pytest)
-
-Fajl: `labs/core_functions/tests/test_dict_basics.py`
 
 ```python
 import copy
@@ -260,7 +227,7 @@ def test_setdefault_builds_container_once():
     d.setdefault("items", []).append("x")
     d.setdefault("items", []).append("y")
     assert d["items"] == ["x", "y"]
-````
+```
 
 Pokretanje:
 
@@ -296,14 +263,6 @@ print(d, sh, dp)
 
 **Mentor:** Zašto `{([1],2): "no"}` baca `TypeError`?
 **Junior:** `tuple` je hashable samo ako su njegovi elementi hashable – a lista `[1]` nije.
-
----
-
-Ako želiš, mogu odmah i **cheatsheet za dict** u fajl `docs/cheatsheets/dict_cheatsheet.md` (isti stil kao za listu), plus mali “poster” za **hashable vs unhashable** sa primerima. Reci, pa isporučujem u sledećem koraku.
-
----
-
-sjajno — dopunio sam tvoj `dict_cheatsheet.md` (ispod je kompletan sadržaj koji možeš da **zameniš** u fajlu). Uključio sam kratke REPL blokove i “gotcha” primere. (Polazna verzija koju si poslao: )
 
 ---
 
@@ -470,11 +429,6 @@ else:
 - **mapping** – struktura “ključ→vrednost” (npr. `dict`).
 - **shallow copy** – kopira samo spoljni kontejner, deli unutrašnje reference.
 - **deep copy** – rekurzivno kopira unutrašnje objekte.
-
----
-
-super, uživajte u šetnji! 💙
-Pripremio sam ti traženo – **mini test fajl** i **ASCII poster**. Samo ih iskopiraj u repo.
 
 ---
 
@@ -681,7 +635,6 @@ def test_unhashable_keys_fail():
 
 ```markdown
 # Poster: Hashable vs Unhashable
-```
 
 ## Hashable (može biti ključ u dict/set)
 
@@ -698,7 +651,6 @@ set → promenljiv (može dodavati/brisati) → nema hash
 
 ASCII prikaz odnosa:
 
-```
     +-------------------+
     |   HASHABLE        |
     |  (immutable)      |
@@ -717,10 +669,6 @@ ASCII prikaz odnosa:
     +-------------------+
 ```
 
-```
-
-```
-
 ---
 
 📌 Predlog: kad se vratiš sa šetnje, možeš probati:
@@ -730,14 +678,6 @@ pytest labs/core_functions/tests/test_dict_hashable.py -q
 ```
 
 da vidiš kako testovi rade.
-
-Želiš da odmah pripremim i **mini REPL plan (10 kratkih koraka)** za `dict` kao što smo radili sa listama?
-
----
-
-super! evo **mini REPL plana (10 koraka) za `dict`** – copy/paste blokovi sa očekivanim ishodima u komentarima. Predloženi put:
-
-`labs/core_functions/dict_repl_plan.md`
 
 ---
 
@@ -950,10 +890,757 @@ def test_unhashable_key_fail():
   pytest labs/core_functions/tests/test_dict_hashable.py -q
   ```
 
-- Poster otvori u **Markor** na telefonu → odličan brzi pregled.
-
 ---
 
 Hoćeš da nastavimo ovim stilom (test + ASCII “poster”) i za sledeće teme iz dict (npr. `get() vs []` i `KeyError`)?
+
+---
+
+### Opcije pokretanja:
+
+#### 1. Klasično (relativna putanja)
+
+Ako si u `labs/core_functions`:
+
+```bash
+python dayB/try_code.py
+```
+
+#### 2. Kao modul (`-m`)
+
+Za `-m` moraš da pokreneš **iznad** `dayB` foldera, jer se on tretira kao paket.
+Dakle:
+
+```bash
+cd labs/core_functions
+python -m dayB.try_code
+```
+
+👉 ali **samo ako u `dayB/` postoji `__init__.py`** (pa je paket).
+Ako ga nema, onda koristiš samo fajl putanju (opcija 1).
+
+#### 3. Ako si u root repoa (`python-automation`)
+
+```bash
+cd ~/dev-learning/python-automation
+python -m labs.core_functions.dayB.try_code
+```
+
+---
+
+⚡ Brza preporuka (za vežbanje):
+Pošto si još u fazi učenja i ne radiš deployment, najjednostavnije → **koristi opciju 1**:
+
+```bash
+python labs/core_functions/dayB/try_code.py
+```
+
+---
+
+super pitanja — kratko i jasno, pa REPL mini-blokovi gde vredi 👇
+
+---
+
+## 1) Tab i “ko mi zapravo predlaže kod”: Pylance vs Copilot
+
+- **Pylance** = jezički server za Python (statika). Daje **IntelliSense**: listu predloga, tipove, docstringe.
+
+  - Vizuelno: padajući meni sa ikonama tipova (`ƒ`, `()`, 🧠…), nema “ghost” teksta u liniji.
+  - Triger: `Ctrl+Space` (ili samo kucaš, pa se meni otvori).
+
+- **GitHub Copilot** = AI predlog (hela linija/blok) kao **sivi ghost tekst u editoru**.
+
+  - Prihvatanje: `Tab` (ili `Ctrl+Enter`).
+  - Odbij: nastavi da kucaš, ili `Esc`.
+  - Ikonica Copilota se često vidi u status-baru; u listi predloga piše “Copilot”.
+
+- **Da li “trošiš Copilot” pritiskom na Tab?**
+  Ako prihvatiš **Copilot ghost** → da, to je Copilot predlog. Ako samo biraš iz **Pylance menija** → to je Pylance.
+- **Kako da kontrolišeš?**
+
+  - Privremeno ugasi Copilot u ovom workspace-u: Command Palette → “Copilot: Disable For Workspace”.
+  - Uključi/isključi inline predloge: `editor.inlineSuggest.enabled`.
+
+> Pravilo: vidiš **ghost** → Copilot; vidiš **dropdown listu** → Pylance.
+
+---
+
+## 2) “Bool sintakse” koje najčešće koristiš (mini-spisak)
+
+Generalno sve ispod vraća `True/False`:
+
+- **Članstvo**:
+
+  - `k in d` (za dict gleda **ključeve**)
+  - `v in d.values()` (vrednosti)
+  - `"x" in s` (string), `x in lista`, `x in set`
+
+- **Negacija članstva**: `x not in kolekcija`
+- **Poređenja (vrednosti)**: `==`, `!=`, `<`, `<=`, `>`, `>=`
+
+  - liste/stringovi: leksikografski (`[1,2] < [1,3]`)
+
+- **Identitet (isti objekat?)**: `is`, `is not`
+- **Truthiness (istinita vrednost)**: `if d:` (prazan `dict/list/str` je `False`)
+- **Len proverе**: `len(xs) == 0` (ekvivalentno `not xs`)
+- **Set relacije**: `<=` (subset), `>=` (superset), `|`, `&`, `-`
+- **String predikati**: `"abc".startswith("a")`, `.endswith("c")`, `str.isdigit()`, …
+
+Brzi primeri:
+
+```python
+d = {"a": 1, "b": 2}
+assert "a" in d
+assert 1 not in d           # vrednosti nisu članstvo
+assert 1 in d.values()
+
+xs = [1,2,3]
+assert 2 in xs and 9 not in xs
+assert xs and len(xs) == 3  # True
+```
+
+---
+
+## 3) `==` vs `is` (kada šta?)
+
+- `==` proverava **jednakost vrednosti**.
+- `is` proverava **identitet objekta** (da li su iste reference / isti `id()`).
+
+Koristi `is` **samo** sa **singletonima**: `None`, `True`, `False`, `Ellipsis`, ili svojim sentinelom.
+
+REPL:
+
+```python
+a = [1,2]; b = [1,2]; c = a
+assert (a == b) is True     # iste vrednosti
+assert (a is b) is False    # različni objekti
+assert (a is c) is True     # isti objekat
+
+x = None
+assert (x is None)          # is je ispravno za None
+```
+
+> Zbog interninga, ponekad mali int/kratki stringovi mogu “deliti” objekat, ali se na to **ne oslanjamo**; za vrednosti → `==`.
+
+---
+
+## 4) `.get` i “rođaci” koje vredi znati (bezbedan pristup sa default-om)
+
+Najkorisniji “safe access” idiomi:
+
+| Gde              | Šta radi                                 | Primer                               |
+| ---------------- | ---------------------------------------- | ------------------------------------ |
+| **dict**         | uzmi vrednost ili `default`              | `d.get(k, default)`                  |
+| **dict**         | uzmi i ukloni (sa default-om)            | `d.pop(k, default)`                  |
+| **dict**         | dohvati ili kreiraj pa vrati (za append) | `d.setdefault(k, [])`                |
+| **objekat**      | uzmi atribut ili `default`               | `getattr(obj, "name", "N/A")`        |
+| **objekat**      | postavi atribut                          | `setattr(obj, "name", "Jole")`       |
+| **okruženje**    | uzmi var iz env-a ili `default`          | `os.environ.get("API_KEY", "")`      |
+| **default dict** | mapirani podrazumevani tip               | `defaultdict(list)` iz `collections` |
+| **Counter**      | brojanje sa podrazumevanim 0             | `Counter(seq)["key"]` →              |
+
+Mikro-primjeri:
+
+```python
+# dict.get / pop / setdefault
+d = {}
+d.setdefault("items", []).append("x")     # {'items': ['x']}
+v = d.get("user", "guest")                # 'guest'
+v = d.pop("missing", None)                # None (bez KeyError)
+
+# getattr
+class U: pass
+u = U()
+name = getattr(u, "name", "anon")         # 'anon'
+setattr(u, "name", "Jole")
+assert u.name == "Jole"
+
+# defaultdict
+from collections import defaultdict, Counter
+dd = defaultdict(list)
+dd["a"].append(1)                         # ne baca KeyError; auto-kreira listu
+cnt = Counter("banana")
+assert cnt["a"] == 3                      # 0 za “nepostojeće” ključeve
+```
+
+---
+
+## Mini-REPL “za poneti”
+
+```python
+# 1) in / not in
+d = {"a":1}
+print("a" in d, 1 in d.values())          # True True
+
+# 2) == vs is
+a, b, c = [1,2], [1,2], None
+print(a == b, a is b)                     # True False
+print(c is None)                          # True
+
+# 3) get / pop / setdefault / getattr
+d = {}
+print(d.get("x", 99))                     # 99
+print(d.pop("x", None))                   # None
+d.setdefault("items", []).append("x")
+print(d)                                  # {'items': ['x']}
+
+class U: pass
+u = U()
+print(getattr(u, "name", "anon"))         # 'anon'
+setattr(u, "name", "Jole")
+print(u.name)                             # 'Jole'
+```
+
+---
+
+top pitanja—idemo redom, kratko i jasno, sa REPL primerima i mini-cheatsheetom 👇
+
+---
+
+## 1) Šta su “singletoni”, `Ellipsis` i “sentinel”
+
+- **Singleton** = objekat od kog u sistemu postoji **samo jedna instanca**.
+  U Pythonu: `None`, `True`, `False`, `Ellipsis` (`...`), ponekad i `NotImplemented`.
+  Za njih se koristi **`is`** (identitet), npr. `x is None`.
+
+- **`Ellipsis`** (`...`) je poseban singleton. Često se koristi:
+
+  - kao “nije implementirano još” u telu funkcije/klase,
+  - u naprednim slice-ovima/numpy-u.
+    Primer:
+
+  ```python
+  def todo():
+      ...
+  ```
+
+  ili
+
+  ```python
+  if cond: return ...
+  ```
+
+- **Sentinel** = **jedinstveni marker** koji ne može da se pomeša sa “pravim” vrednostima.
+  Pravimo ga kao novi objekat:
+
+  ```python
+  MISSING = object()
+  def lookup(d, k):
+      v = d.get(k, MISSING)
+      if v is MISSING:
+          return "nije-nađeno"
+      return v
+  ```
+
+---
+
+## 2) Zašto `d.setdefault("items", []).append("x")` ispiše `None`?
+
+`setdefault` radi **dve stvari**:
+
+1. Ako ključ ne postoji → **ubaci** dati default i **vrati** **vrednost** pod tim ključem.
+2. Ako postoji → samo **vrati** postojeću vrednost.
+
+U tvom izrazu:
+
+- `d.setdefault("items", [])` **vrati listu** (npr. `[]`, pa posle `[... ]`).
+- **`append("x")`** vraća **`None`** (mutira listu in-place).
+  Zato ceo izraz štampa `None`, iako je dict izmenjen.
+
+REPL dokaz:
+
+```python
+d = {}
+x = d.setdefault("items", [])
+print(x)           # []
+x.append("x")
+print(d)           # {'items': ['x']}
+
+# ili u jednoj liniji (mutacija se desila, ali povrat je None)
+print(d.setdefault("items", []).append("y"))  # None
+print(d)  # {'items': ['x', 'y']}
+```
+
+---
+
+## 3) Zašto `d.get("user", "guest")` vraća `"guest"`?
+
+Jer **ključ `"user"` ne postoji** u `d`, pa `get` vraća **default** (`"guest"`).
+Ako ključ postoji → vrati njegovu vrednost.
+
+```python
+d = {}
+print(d.get("user", "guest"))  # 'guest'
+d["user"] = "jole"
+print(d.get("user", "guest"))  # 'jole'
+```
+
+---
+
+## 4) Cheatsheet: `try/except`, `raise`, `assert`, `pass`, … (za testove i svakodnevni kod)
+
+Sažeto + primeri koje viđaš u pytest-u.
+
+### 4.1. Osnovni oblik
+
+```python
+try:
+    risky()
+except ValueError as e:
+    print("nešto nije u formatu:", e)
+```
+
+### 4.2. Više `except` grana + zajednički roditelj
+
+```python
+try:
+    parse(x)
+except (ValueError, TypeError) as e:
+    handle(e)
+```
+
+### 4.3. `else` i `finally`
+
+```python
+try:
+    y = compute()
+except ZeroDivisionError:
+    y = 0
+else:
+    log("ok grana")          # radi se samo ako NIJE bilo izuzetka
+finally:
+    cleanup()                # uvek se izvršava
+```
+
+### 4.4. `raise` (podizanje greške – ručno)
+
+```python
+def safe_int(s):
+    if not isinstance(s, str):
+        raise TypeError("očekujem string")
+    return int(s)
+```
+
+### 4.5. `assert` (brza provera uslova)
+
+- U testovima se koristi stalno (nativni `assert`).
+- U **proizvodnom kodu** za validaciju → radije eksplicitni `if` + `raise`, jer Python može biti pokrenut sa `-O` pa se `assert` preskoči.
+
+```python
+def middle(xs):
+    assert xs, "lista ne sme biti prazna"  # test/razvoj: ok
+    return xs[len(xs)//2]
+```
+
+### 4.6. `pass` i `...` (Ellipsis)
+
+```python
+def interface_only():
+    pass       # namerno ništa
+
+def todo():
+    ...        # “ovde će ići kod kasnije”
+```
+
+### 4.7. `with` kontekst (zatvaranja resursa)
+
+```python
+with open("data.txt") as f:
+    data = f.read()
+# fajl automatski zatvoren
+```
+
+### 4.8. `pytest.raises` (očekujemo grešku)
+
+```python
+import pytest
+
+def test_bad_key():
+    d = {}
+    with pytest.raises(KeyError):
+        _ = d["missing"]
+
+def test_type_error():
+    with pytest.raises(TypeError, match="hashable"):
+        {[]: 1}
+```
+
+### 4.9. `warnings` (ako loviš upozorenja)
+
+```python
+import warnings
+def old():
+    warnings.warn("deprecated", DeprecationWarning)
+
+import pytest
+def test_warns():
+    with pytest.warns(DeprecationWarning):
+        old()
+```
+
+### 4.10. `unittest.mock` (stub/patch kad ti zatreba)
+
+```python
+from unittest.mock import patch
+
+def fetch(url):
+    ...
+
+def test_fetch():
+    with patch("mod.requests.get") as fake:
+        fake.return_value.json.return_value = {"ok": 1}
+        assert fetch("x") == {"ok": 1}
+```
+
+### 4.11. Patterni za “safe access” (često viđeni u testovima)
+
+```python
+# dict
+v = d.get("k", default)
+
+# objekat
+name = getattr(obj, "name", "anon")
+setattr(obj, "name", "Jole")
+
+# kolekcije
+from collections import defaultdict, Counter
+dd = defaultdict(list); dd["k"].append(1)
+cnt = Counter("banana"); assert cnt["a"] == 3
+```
+
+---
+
+## Mini-REPL blok (copy/paste)
+
+```python
+# 1) try/except/else/finally
+def risky(x):
+    return 10 // x
+
+try:
+    risky(0)
+except ZeroDivisionError:
+    print("deljenje nulom")
+else:
+    print("nema greške")
+finally:
+    print("gotovo")
+
+# 2) raise i assert
+def safe_div(a, b):
+    if b == 0:
+        raise ValueError("b ne sme biti 0")
+    return a / b
+
+assert safe_div(4,2) == 2.0
+
+# 3) pytest.raises (pokreni u testu)
+# with pytest.raises(ValueError):
+#     safe_div(1, 0)
+
+# 4) pass i ...
+def not_yet(): ...
+class Interface: pass
+```
+
+---
+
+## Glossary dopuna (mini)
+
+- **singleton** – jedinstveni objekat (npr. `None`, `Ellipsis`) → poredi se sa `is`.
+- **sentinel** – specijalna jedinstvena vrednost (`MISSING = object()`), marker “nema vrednost”.
+- **identity** – identitet objekta (`id(x)`), proverava se `is`.
+- **truthiness** – kako se objekat ponaša u `if` (prazne kolekcije su `False`).
+
+---
+
+super — evo “paketa” za **`dict: get() vs [] i KeyError`** u istom stilu (test + ASCII poster). Kopiraj u repo i pusti test.
+
+---
+
+## 📂 `labs/core_functions/tests/test_dict_get_vs_indexing.py`
+
+```python
+import pytest
+
+def test_get_returns_default_when_missing():
+    d = {"a": 1}
+    assert d.get("a") == 1
+    assert d.get("x") is None
+    assert d.get("x", 99) == 99          # bez KeyError-a
+
+def test_indexing_raises_keyerror_when_missing():
+    d = {"a": 1}
+    with pytest.raises(KeyError):
+        _ = d["x"]                       # [] traži da ključ postoji
+
+def test_no_side_effects_for_get():
+    d = {}
+    _ = d.get("items", [])               # ne menja dict
+    assert d == {}                       # i dalje prazan
+
+def test_setdefault_has_side_effects_once():
+    d = {}
+    # kreira 'items' ako ne postoji, vrati listu, pa se mutira append-om
+    d.setdefault("items", []).append("x")
+    assert d == {"items": ["x"]}
+
+    # drugi put se ključ već nalazi – koristi istu listu
+    d.setdefault("items", []).append("y")
+    assert d["items"] == ["x", "y"]
+
+def test_pop_with_default_is_safe():
+    d = {"a": 1}
+    assert d.pop("a", None) == 1         # vrati i ukloni
+    assert d == {}
+    assert d.pop("a", None) is None      # umesto KeyError-a
+
+def test_keyerror_message_contains_key():
+    d = {}
+    with pytest.raises(KeyError) as ei:
+        _ = d["user"]
+    # Lenja, ali korisna provera: poruka sadrži repr ključa
+    assert "'user'" in str(ei.value)
+```
+
+Pokretanje:
+
+```bash
+pytest labs/core_functions/tests/test_dict_get_vs_indexing.py -q
+```
+
+---
+
+## 📂 `docs/diagrams/dict_get_vs_indexing.md` (ASCII poster)
+
+```markdown
+# 🧭 dict: `get()` vs `[]` i `KeyError`
+
+Cilj: bezbedan pristup vrednosti kada ključ možda ne postoji.
+
+---
+
+## A) Indexing: d[k]
+
+Semantika:
+
+- PRETPOSTAVLJA da ključ POSTOJI.
+- Ako ne postoji → baca KeyError.
+
+ASCII:
+d = {"a": 1}
+
+         +-------------+
+    "a"  |     1       |   d["a"] → 1
+         +-------------+
+
+         +-------------+
+    "x"  |    nema     |   d["x"] → KeyError: 'x'
+         +-------------+
+
+---
+
+## B) get: d.get(k, default=None)
+
+Semantika:
+
+- Ako ključ postoji → vrati vrednost.
+- Ako ne postoji → vrati default (po difoltu None).
+- NIKAD ne baca KeyError.
+
+ASCII tok:
+postoji? ──► DA ──► vrati d[k]
+└► NE ──► vrati default (npr. 99 ili None)
+
+---
+
+## C) setdefault: d.setdefault(k, default)
+
+Semantika:
+
+- Ako ključ ne postoji → d[k] = default i VRATI default.
+- Ako postoji → VRATI postojeću vrednost (bez zamene).
+
+ASCII:
+d = {}
+d.setdefault("items", []) ──► d = {"items": []}
+d.setdefault("items", []).append("x") ──► {"items": ["x"]}
+
+⚠ Gotcha:
+d.setdefault("k", []).append(v) # vraća None jer append mutira listu in-place
+
+---
+
+## D) pop: d.pop(k, default=MISSING)
+
+- Ukloni i vrati d[k].
+- Ako ne postoji i default NIJE dat → KeyError.
+- Ako default JESTE dat → vrati default (bez greške).
+
+---
+
+## E) Najčešći obrasci
+
+- Bezbedno čitanje: v = d.get("user", "guest")
+- Uklanjanje bez greške: v = d.pop("user", None)
+- Gradnja liste u mapi: d.setdefault("items", []).append(x)
+- Tvrdi zahtev: v = d["user"] # ako ključ mora postojati
+
+Kratko pravilo:
+
+- Nisi siguran da ključ postoji? → `get`
+- Želiš da padne fail fast? → `[]`
+- Želiš da kreiraš pa koristiš? → `setdefault`
+- Želiš da ukloniš bezbolno? → `pop(..., default)`
+```
+
+---
+
+Odlično! Na osnovu svega što si mi poslao (int/str/bool/dict materijal, testovi, ASCII posteri, glossary dopune) možemo da napravimo objedinjeni fajl `docs/cheatsheets/dict_basics.md`. Evo primera gotove verzije:
+
+---
+
+# 📘 Dict Basics
+
+> Kratak i praktičan pregled rada sa Python `dict`.
+
+---
+
+## 1. Osnovni mentalni model
+
+- **dict** je _mapping_: **ključ → vrednost**.
+- Ključevi moraju biti **hashable** (npr. `int`, `str`, `tuple` od hashable elemenata).
+- Vrednosti mogu biti bilo koji tip.
+- Iteracija prolazi kroz **ključeve**.
+
+---
+
+## 2. Pravljenje i pristup
+
+```python
+d = {"a": 1, "b": 2}
+print(d["a"])   # 1
+print("a" in d) # True (pretražuje ključeve)
+```
+
+- `d["x"]` → baca **KeyError** ako ključ ne postoji.
+- `d.get("x", default)` → vraća `default` (ili `None` ako nije naveden).
+
+---
+
+## 3. Uporedba `[]` i `.get()`
+
+```python
+d = {}
+d["x"]      # ❌ KeyError
+d.get("x")  # None
+d.get("x", 0) # 0
+```
+
+📌 **Pravilo**: koristi `.get()` ako želiš bezbedan fallback.
+
+---
+
+## 4. Dodavanje i izmena
+
+```python
+d["c"] = 3           # novi ključ
+d["a"] = 99          # izmena postojeće vrednosti
+d.setdefault("z", 0) # d["z"] ako ne postoji → 0
+```
+
+⚠️ `setdefault` vraća vrednost i pravi ključ ako ga nema.
+
+---
+
+## 5. Brisanje
+
+```python
+del d["a"]          # KeyError ako ne postoji
+d.pop("b")          # vrati i ukloni (KeyError ako ne postoji)
+d.pop("b", None)    # fallback bez greške
+```
+
+---
+
+## 6. Iteracija
+
+```python
+for k in d: print(k)           # ključevi
+for v in d.values(): print(v)  # vrednosti
+for k, v in d.items(): print(k, v) # parovi
+```
+
+---
+
+## 7. Hashable vs Unhashable (ključ)
+
+- ✅ hashable: `int`, `str`, `tuple((1,2))`
+- ❌ unhashable: `list`, `dict`, `set`
+
+```python
+{[1,2]: "x"}  # ❌ TypeError
+```
+
+---
+
+## 8. ASCII Poster — hashable vs unhashable
+
+```
+         +----------------------+
+         |   Hashable (ok)      |
+         |----------------------|
+         | int, str, bool       |
+         | tuple(od hashable)   |
+         | frozenset            |
+         +----------------------+
+
+         +----------------------+
+         | Unhashable (greška)  |
+         |----------------------|
+         | list, dict, set      |
+         | bytearray            |
+         +----------------------+
+```
+
+---
+
+## 9. ASCII Poster — get() vs \[]
+
+```
+   d = {"a": 1}
+
+   [] pristup (strict):
+   d["x"]  -> ❌ KeyError
+
+   get() pristup (bezbedan):
+   d.get("x")      -> None
+   d.get("x", 0)   -> 0
+```
+
+---
+
+## 10. Mini testovi (pytest primer)
+
+```python
+import pytest
+
+def test_get_vs_brackets():
+    d = {"a": 1}
+    assert d.get("a") == 1
+    assert d.get("x") is None
+    with pytest.raises(KeyError):
+        _ = d["x"]
+
+def test_hashable_keys():
+    d = { (1,2): "ok" }
+    assert d[(1,2)] == "ok"
+    with pytest.raises(TypeError):
+        _ = { [1,2]: "bad" }
+```
+
+---
+
+✅ Ovim imaš na jednom mestu i **cheatsheet**, i **ASCII postere**, i **mini testove** za `dict`.
 
 ---
