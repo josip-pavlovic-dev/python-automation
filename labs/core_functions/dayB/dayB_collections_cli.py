@@ -1,4 +1,3 @@
-# src/dayB_collections_cli.py
 from __future__ import annotations
 
 import argparse
