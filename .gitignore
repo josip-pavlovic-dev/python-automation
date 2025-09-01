@@ -39,9 +39,10 @@ coverage.xml
 structure.txt
 
 # Project-specific (keep private)
-amateur_notes/**
 docs/communication_guides/**
 templates/**
+**/notes/
+**/amateur_notes/
 
 # THEORY za zero_foundations: ignoriši sve u /theory osim indexa i "published"
 labs/zero_foundations/docs/theory/**
@@ -50,5 +51,6 @@ labs/zero_foundations/docs/theory/**
 !labs/zero_foundations/docs/theory/published/
 !labs/zero_foundations/docs/theory/published/**
 
-# Ignoriši sve u /notes/
-**/notes/
+# Ignorisi sve fajlove sa imenom gpt_notes.md i chat_notes.md
+*gpt_notes.md
+*chat_notes.md
