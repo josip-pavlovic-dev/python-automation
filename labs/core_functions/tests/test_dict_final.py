@@ -1,0 +1,267 @@
+import builtins
+import copy
+import math
+
+import pytest
+
+# =========================
+# CREATE / MERGE / UPDATE
+# =========================
+
+def test_literal_creation_happy():
+    d = {"a": 1, "b": 2}
+    assert d == {"a": 1, "b": 2}
+    assert isinstance(d, dict)
+
+def test_from_pairs_happy():
+    pairs = [("a", 1), ("b", 2)]
+    d = dict(pairs)
+    assert d["a"] == 1 and d["b"] == 2
+
+def test_named_args_happy():
+    d = dict(a=1, b=2)  # ključevi su stringovi-validni identifikatori
+    assert d == {"a": 1, "b": 2}
+
+def test_tuple_key_literal_happy():
+    d = {(1, 2): "x"}
+    assert d[(1, 2)] == "x"
+
+def test_tuple_key_from_pairs_happy():
+    d = dict([((1, 2), "x")])
+    assert d[(1, 2)] == "x"
+
+def test_named_args_invalid_identifier_syntax_error():
+    code = 'dict((1,2)="x")'  # nevalidna sintaksa
+    with pytest.raises(SyntaxError):
+        compile(code, "<str>", "exec")
+
+def test_duplicate_keys_last_wins():
+    d = {"a": 1, "a": 2}
+    assert d["a"] == 2
+
+def test_merge_operator_pipe_creates_new():
+    a = {"x": 1}
+    b = {"y": 2}
+    c = a | b                   # novi dict
+    assert c == {"x": 1, "y": 2}
+    assert a == {"x": 1}        # a ostaje isto
+
+def test_merge_operator_ior_in_place():
+    a = {"x": 1}
+    b = {"y": 2}
+    a |= b                      # menja a in-place
+    assert a == {"x": 1, "y": 2}
+
+@pytest.mark.parametrize(
+    "src, other, expected",
+    [
+        ({"a": 1}, {"b": 2}, {"a": 1, "b": 2}),
+        ({"k": 1}, {"k": 3}, {"k": 3}),  # desni pobeđuje
+    ],
+)
+def test_update_behavior(src, other, expected):
+    src.update(other)
+    assert src == expected
+
+
+# =========================
+# GET / INDEXING / POP / SETDEFAULT / MEMBERSHIP
+# =========================
+
+def test_membership_is_on_keys():
+    d = {"a": 1, "b": 2}
+    assert "a" in d
+    assert 1 not in d
+    assert 1 in d.values()
+
+def test_get_vs_indexing_default_and_keyerror():
+    d = {"user": "ana"}
+    assert d.get("user", "guest") == "ana"
+    assert d.get("missing", "guest") == "guest"
+    with pytest.raises(KeyError):
+        _ = d["missing"]
+
+def test_get_returns_default_when_missing():
+    d = {"a": 1}
+    assert d.get("a") == 1
+    assert d.get("x") is None
+    assert d.get("x", 99) == 99
+
+def test_indexing_raises_keyerror_when_missing():
+    d = {"a": 1}
+    with pytest.raises(KeyError):
+        _ = d["x"]
+
+def test_no_side_effects_for_get():
+    d = {}
+    _ = d.get("items", [])         # ne menja dict
+    assert d == {}                 # i dalje prazan
+
+def test_setdefault_has_side_effects_once():
+    d = {}
+    d.setdefault("items", []).append("x")  # kreira listu
+    d.setdefault("items", []).append("y")  # koristi istu listu
+    assert d["items"] == ["x", "y"]
+
+def test_pop_with_default_is_safe():
+    d = {"a": 1}
+    assert d.pop("a", None) == 1   # vrati i ukloni
+    assert d == {}
+    assert d.pop("a", None) is None
+
+def test_keyerror_message_contains_key():
+    d = {}
+    with pytest.raises(KeyError) as ei:
+        _ = d["user"]
+    assert "'user'" in str(ei.value)
+
+
+# =========================
+# COPY SEMANTICS (assignment / shallow / deep)
+# =========================
+
+def test_assignment_is_same_reference():
+    d1 = {"x": [1, 2], "y": 3}
+    d2 = d1  # alias, nije kopija
+    assert d1 is d2
+    d2["x"][0] = 99
+    assert d1["x"][0] == 99
+
+def test_shallow_copy_dict_copy_new_outer_same_inner_refs():
+    d1 = {"x": [1, 2], "y": 3}
+    d2 = d1.copy()  # shallow
+    assert d1 is not d2
+    assert d1 == d2
+
+    # promena skalarne vrednosti -> različit ključ
+    d2["y"] = 100
+    assert d1["y"] == 3
+
+    # mutacija unutrašnje liste se deli
+    d2["x"][0] = 99
+    assert d1["x"][0] == 99
+
+def test_shallow_copy_copy_copy_equivalent_to_dict_copy():
+    d1 = {"x": [1, 2], "y": {"z": 0}}
+    d2 = copy.copy(d1)  # isto kao d1.copy()
+    assert d1 is not d2
+    assert d1["x"] is d2["x"]
+    assert d1["y"] is d2["y"]
+
+def test_deepcopy_isolated_nested_mutables():
+    d1 = {"x": [1, 2], "y": {"z": 0}}
+    d2 = copy.deepcopy(d1)
+    assert d1 is not d2
+    assert d1["x"] is not d2["x"]
+    assert d1["y"] is not d2["y"]
+    d2["x"][0] = 99
+    d2["y"]["z"] = 42
+    assert d1["x"][0] == 1
+    assert d1["y"]["z"] == 0
+
+def test_common_pitfall_list_inside_dict():
+    d1 = {"xs": [1, 2, 3]}
+    d2 = d1.copy()             # shallow
+    d3 = copy.deepcopy(d1)     # deep
+    d2["xs"].append(4)
+    assert d1["xs"] == [1, 2, 3, 4]
+    assert d2["xs"] == [1, 2, 3, 4]
+    assert d3["xs"] == [1, 2, 3]
+
+def test_overwriting_inner_reference_breaks_sharing():
+    d1 = {"xs": [1, 2]}
+    d2 = d1.copy()             # shallow -> dele listu
+    d2["xs"] = [999]           # nova referenca prekida deljenje
+    assert d1["xs"] == [1, 2]
+    assert d2["xs"] == [999]
+
+def test_shallow_copy_with_int_value_is_safe():
+    d1 = {"y": 3}
+    d2 = d1.copy()
+    assert d1 == d2 and d1 is not d2
+    d2["y"] = 100              # zamenjena referenca (immutable)
+    assert d1["y"] == 3 and d2["y"] == 100
+
+def test_shallow_copy_with_list_value_shares_reference():
+    d1 = {"y": [2, 3]}
+    d2 = d1.copy()
+    assert d1 == d2 and d1 is not d2
+    d2["y"][0] = 99            # mutacija deljene liste
+    assert d1["y"][0] == 99
+
+
+# =========================
+# HASHABILITY (ključ mora biti hashable)
+# =========================
+
+def is_hashable(x) -> bool:
+    try:
+        hash(x)
+        return True
+    except TypeError:
+        return False
+
+def test_hashable_simple_keys():
+    d = {
+        2: "int",
+        "x": "str",
+        (1, 2): "tuple",
+        frozenset({1, 2}): "frozenset",
+        None: "none",
+        True: "bool",
+    }
+    # sanity
+    assert d[2] == "int"
+    assert d["x"] == "str"
+    assert d[(1, 2)] == "tuple"
+    assert d[frozenset({1, 2})] == "frozenset"
+    assert d[None] == "none"
+    assert d[True] == "bool"
+    # i svi ključevi su zaista hashable
+    for k in d.keys():
+        assert is_hashable(k)
+
+@pytest.mark.parametrize(
+    "expr",
+    [
+        lambda: {[]: 1},
+        lambda: {{1, 2}: "set"},
+        lambda: {{1: 2}: "dict"},
+    ],
+)
+def test_unhashable_basic_types_raise(expr):
+    with pytest.raises(TypeError):
+        _ = expr()
+
+@pytest.mark.parametrize(
+    "expr",
+    [
+        lambda: {([1], 2): "no"},
+        lambda: {({1}, 2): "no"},
+        lambda: {(1, [2, 3]): "no"},
+    ],
+)
+def test_tuple_containing_unhashable_is_unhashable(expr):
+    with pytest.raises(TypeError):
+        _ = expr()
+
+def test_custom_object_without_hash_is_hashable_by_identity():
+    class A:
+        # nema __eq__/__hash__ → nasleđuje object.__hash__ → hashable po identitetu
+        pass
+    a1, a2 = A(), A()
+    d = {a1: "one", a2: "two"}
+    assert d[a1] == "one" and d[a2] == "two"
+    assert is_hashable(a1) and is_hashable(a2)
+
+def test_custom_object_explicitly_unhashable():
+    class B:
+        __hash__ = None    # standardno: instanca NIJE hashable
+    with pytest.raises(TypeError):
+        {B(): "x"}
+
+def test_is_hashable_helper_spot_checks():
+    samples_true  = [0, 1.5, "s", (1, 2), frozenset({1}), builtins, math]
+    samples_false = [[], {}, set(), [1, 2]]
+    assert all(is_hashable(x) for x in samples_true)
+    assert all(not is_hashable(x) for x in samples_false)
