@@ -52,8 +52,8 @@ def test_deepcopy_isolated_nested_mutables():
 @pytest.mark.parametrize(
     "factory",
     [
-        lambda: {"a": 1, "b": 2},                    # prost dict (samo immutable vrednosti)
-        lambda: {"a": (1, 2), "b": ("x", "y")},      # tuple vrednosti (immutable)
+        lambda: {"a": 1, "b": 2},                # prost dict (samo immutable vrednosti)
+        lambda: {"a": (1, 2), "b": ("x", "y")},  # tuple vrednosti (immutable)
     ],
 )
 def test_shallow_copy_ok_when_values_are_immutable(factory):

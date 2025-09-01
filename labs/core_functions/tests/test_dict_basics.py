@@ -23,7 +23,7 @@ def test_hashable_keys():
 
 def test_unhashable_keys_raise():
     with pytest.raises(TypeError):
-        {[]: 1}
+        {[]: 1} # lista nije hashable -> ne može kao ključ
     with pytest.raises(TypeError):
         {([1], 2): "no"}
 
