@@ -1,4 +1,3 @@
-# tests/test_dayA_core_types.py
 import pytest
 from dayA.dayA_core_types import str_display, str_from_bytes, to_bool, to_int
 
