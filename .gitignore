@@ -54,3 +54,5 @@ labs/zero_foundations/docs/theory/**
 # Ignorisi sve fajlove sa imenom gpt_notes.md i chat_notes.md
 *gpt_notes.md
 *chat_notes.md
+*.patch
+*.diff
