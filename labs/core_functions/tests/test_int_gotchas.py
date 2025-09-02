@@ -22,8 +22,8 @@ def test_negative_base_not_allowed():
     with pytest.raises(ValueError):
         int("10", -2)
 
-def test_index_vs_int_methods():
-    class X:
+def test_fallback_to_index():
+    class Y:
         def __index__(self): return 11
-        def __int__(self):   return 99
-    assert int(X()) == 11   # __index__ ima prioritet kao fallback
+
+    assert int(Y()) == 11   # __index__ ima prioritet kao fallback

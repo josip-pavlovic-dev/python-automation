@@ -54,3 +54,9 @@
 [2025-08-27 02:08:40] [ERROR] Simulirana greška u testu
 [2025-08-31 17:33:39] [WARNING] Ovo je upozorenje
 [2025-08-31 17:33:39] [ERROR] Simulirana greška u testu
+[2025-09-02 01:42:47] [WARNING] Ovo je upozorenje
+[2025-09-02 01:42:47] [ERROR] Simulirana greška u testu
+[2025-09-02 02:07:50] [WARNING] Ovo je upozorenje
+[2025-09-02 02:07:50] [ERROR] Simulirana greška u testu
+[2025-09-02 03:11:10] [WARNING] Ovo je upozorenje
+[2025-09-02 03:11:10] [ERROR] Simulirana greška u testu
