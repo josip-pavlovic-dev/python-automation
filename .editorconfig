@@ -1,0 +1,39 @@
+# top-most EditorConfig file
+root = true
+
+# Sve fajlove tretiraj kao UTF-8
+[*]
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+# Default indent: Python standard (4 razmaka)
+indent_style = space
+indent_size = 4
+
+# Python fajlovi (.py, .pyi)
+[*.{py,pyi}]
+indent_style = space
+indent_size = 4
+max_line_length = 88    # Black default
+
+# JSON i JSONC
+[*.{json,jsonc}]
+indent_style = space
+indent_size = 2
+
+# Markdown fajlovi
+[*.md]
+trim_trailing_whitespace = false  # u .md whitespace na kraju linije znači <br>
+indent_style = space
+indent_size = 2
+
+# YAML fajlovi (npr. GitHub Actions, configs)
+[*.{yml,yaml}]
+indent_style = space
+indent_size = 2
+
+# Makefile → tabovi obavezni
+[Makefile]
+indent_style = tab

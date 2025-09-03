@@ -262,28 +262,178 @@ bravo — sve si poslao što nam treba. Evo **jednog lista-za-rad (cheatsheet)**
 
 ## 2) Minimalne ispravke (copy/paste)
 
-### 2.1. U `python-automation/labs/core_functions/.vscode/settings.json`
-
-Zameni sadržaj ovim (čisto, bez ZF referenci):
+### 2.0. 🌍 Globalni (User) settings.json — profil “python-automation”
 
 ```json
 {
-  "python.defaultInterpreterPath": "${workspaceFolder}/labs/core_functions/.venv/Scripts/python.exe",
+  // --- Editor ergonomija ---
+  "window.zoomLevel": 0.5,
+  "editor.fontFamily": "Fira Code, Consolas, 'Courier New', monospace",
+  "editor.fontSize": 15,
+  "editor.lineHeight": 1.9,
+  "editor.fontLigatures": true,
+  "editor.cursorSmoothCaretAnimation": "explicit",
+  "editor.cursorBlinking": "phase",
+  "editor.cursorStyle": "line",
+  "editor.smoothScrolling": true,
+  "editor.inlineSuggest.enabled": true,
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": "active",
+  "editor.minimap.enabled": false,
+  "editor.wordWrap": "on",
+  "editor.rulers": [88], // vizuelni limit za Black
 
+  // --- Code actions / Ruff (na save pokreni fix/organize) ---
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": "explicit",
+    "source.fixAll": "explicit",
+    "source.fixAll.ruff": "explicit"
+  },
+
+  // --- Formatiranje po JEZICIMA (globalno kontrolisano) ---
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter",
+    "editor.formatOnSave": true
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features",
+    "editor.formatOnSave": true
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "black-formatter.args": ["--line-length", "88"],
+
+  // --- Files / autosave & završnice ---
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 800,
+  "files.autoGuessEncoding": true,
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  "files.associations": {
+    "*.code-snippets": "jsonc",
+    "*.json": "json"
+  },
+
+  // --- Terminal QoL ---
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "terminal.integrated.fontFamily": "Fira Code, Consolas, 'Courier New', monospace",
+  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.cursorStyle": "block",
+  "terminal.integrated.cursorBlinking": true,
+  "terminal.integrated.scrollOnInput": false,
+  "terminal.integrated.scrollback": 10000,
+  "terminal.integrated.copyOnSelection": true,
+  "terminal.integrated.rightClickBehavior": "paste",
+
+  // --- Python analiza ---
+  "python.defaultInterpreterPath": "c:\\Program Files\\Python313\\python.exe",
+  "python.analysis.typeCheckingMode": "basic",
+  "python.analysis.diagnosticMode": "workspace",
+  "python.analysis.autoSearchPaths": true,
+  "python.analysis.useLibraryCodeForTypes": true,
+  "python.linting.enabled": true,
+  "python.linting.ruffEnabled": true,
+  "python.linting.mypyEnabled": false,
+
+  // --- Testing (globalno uključen pytest) ---
+  "python.testing.pytestEnabled": true,
+  "python.testing.unittestEnabled": false,
+
+  // --- UI ---
+  "workbench.colorTheme": "Default Dark Modern",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.startupEditor": "newUntitledFile",
+  "workbench.editor.enablePreview": false,
+  "workbench.statusBar.visible": true,
+  "breadcrumbs.enabled": false,
+  "workbench.editor.showTabs": "multiple",
+  "workbench.editor.tabCloseButton": "right",
+  "workbench.editor.labelFormat": "short",
+  "workbench.editor.tabSizing": "shrink",
+  "workbench.editor.pinnedTabSizing": "compact",
+  "workbench.editor.wrapTabs": true,
+  "workbench.editor.pinnedTabsOnSeparateRow": true,
+  "workbench.editor.tabActionLocation": "right",
+  "workbench.editor.empty.hint": "hidden",
+  "workbench.colorCustomizations": {
+    "statusBar.background": "#2f3542",
+    "statusBar.noFolderBackground": "#2f3542",
+    "statusBar.debuggingBackground": "#ffa502",
+    "titleBar.activeBackground": "#1f2937",
+    "titleBar.activeForeground": "#e5e7eb"
+  },
+
+  // --- Sigurnost i sitnice ---
+  "security.workspace.trust.untrustedFiles": "open",
+  "window.menuBarVisibility": "compact",
+  "liveServer.settings.donotShowInfoMsg": true,
+
+  // --- JSONC formatiranje (zadržano) ---
+  "[jsonc]": { "editor.defaultFormatter": "esbenp.prettier-vscode" }
+}
+```
+
+---
+
+### 2.1. U `python-automation/labs/core_functions/.vscode/settings.json`
+
+```json
+{
+  // --- Formatiranje preuzima global (Black/JSON/Markdown) ---
+
+  // --- Interpreter: lokalni venv ovog repoa ---
+  "python.defaultInterpreterPath": "${workspaceFolder}/labs/core_functions/.venv/Scripts/python.exe",
+  "python.envFile": "${workspaceFolder}/.env",
+
+  // --- Pytest: folder sa testovima ---
   "python.testing.pytestEnabled": true,
   "python.testing.unittestEnabled": false,
   "python.testing.pytestArgs": ["labs/core_functions/tests"],
 
-  "editor.formatOnSave": true,
+  // --- Import putanje specifične za repo (ako treba) ---
+  "python.analysis.extraPaths": [
+    "${workspaceFolder}/labs/zero_foundations/src"
+  ],
+  "terminal.integrated.env.windows": {
+    "PYTHONPATH": "${workspaceFolder}/labs/zero_foundations/src"
+  },
+
+  // --- Ruff fix & organize imports na save (lokalni sloj) ---
   "editor.codeActionsOnSave": {
     "source.organizeImports": "explicit",
     "source.fixAll.ruff": "explicit"
   },
 
-  "terminal.integrated.defaultProfile.windows": "Git Bash",
-  "python.analysis.typeCheckingMode": "basic",
-  "python.linting.enabled": true,
-  "python.linting.ruffEnabled": true
+  // --- Higijena fajlova u ovom repo-u ---
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  "files.exclude": {
+    "**/__pycache__": true,
+    "**/*.pyc": true
+  },
+
+  // --- Explorer & UI preferencije (ostaje minimalistički) ---
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "explorer.compactFolders": false,
+  "workbench.sideBar.location": "left",
+  "workbench.editor.enablePreview": false,
+  "workbench.editor.highlightModifiedTabs": true,
+
+  // --- Kvalitet života ---
+  "files.autoSave": "onWindowChange",
+  "files.hotExit": "onExitAndWindowClose",
+  "editor.hover.enabled": true,
+  "editor.renderWhitespace": "boundary",
+  "editor.guides.indentation": true,
+
+  // --- Tema (može i global) ---
+  "workbench.colorTheme": "Default Dark Modern",
+
+  // --- Meta (ostavljeno prazno za buduće projekte) ---
+  "python-envs.pythonProjects": []
 }
 ```
 
