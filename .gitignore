@@ -56,3 +56,4 @@ labs/zero_foundations/docs/theory/**
 *chat_notes.md
 *.patch
 *.diff
+*try_code.py
